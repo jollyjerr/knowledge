@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "82a7040306626f32",
+    "type": "split",
+    "children": [
+      {
+        "id": "0880a830014c445d",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "math/proofs.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "12fff39e33a922a8",
+    "type": "split",
+    "children": [
+      {
+        "id": "ebf504952554b273",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0daaddd8b606d352",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "ba41f790de428f6b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7ecddd1b58a45538",
+    "type": "split",
+    "children": [
+      {
+        "id": "cff8f297d7f61f54",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0fd93dbe5720d85a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "math/proofs.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "0880a830014c445d",
+  "lastOpenFiles": [
+    "math/proofs.md",
+    "programming/css.md",
+    "programming/javascript.md",
+    "README.md",
+    "programming/computerScience/asymptoticAnalysis.md",
+    "other/veganism/general.md",
+    "math/math.md",
+    "business/README.md",
+    "business/personalBrand/README.md",
+    "business/finances/README.md"
+  ]
+}
