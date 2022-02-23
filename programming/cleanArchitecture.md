@@ -1,0 +1,84 @@
+# Clean Architecture
+By Robert C. Martin
+
+## Behavior vs Architecture
+Getting code to work, once, is not very hard and can be accomplished with sheer brute force of will. The goal of design and architecture is to reduce the amount of resources it takes to produce and maintain a system.
+
+When a project starts, the complexity of each feature is equal to the complexity of the feature itself - but if architecture is not managed, the complexity of each feature becomes higher by some degree until the project grinds to a halt.
+
+Both behavior and architecture are equally important in a system. If you only work on behavior, the project will become ever more costly to develop, and eventually impossible to change.
+
+**Behavior** is not discussed in this book.
+This book covers the entire other half, **architecture**.
+
+# TLDR: 
+1. **Paradigmes** restrict engineers from making mistakes and enable them to write scientifically falsifiable code (or mathmatically provable code in some circumstances). You use paradigmes to code up **modules**.
+2. **Modules** are a group of behaviors that are responsible to one actor. You combine modules to create **components**.
+3. **Components** are independent .jar files, ruby gems etc. They can also be deployed as services. They balance many concerns to be easy to change and easy to use. Abstract components should be stable and depend on few things, concrete components should be flexible and depend on many abstract things. Multiple components are strung together to create a product or **project**.
+4. **Architecture** is the strategy you use to keep a **project** open to development, deployment, operation, and maintenance. This is done best by keeping buisness rules (things your company would do manually if computers did not exist) abstract and knowing nothing about the concrete plug-ins of implementation (ui, frameworks, database, cloud providers, the web at all, etc...). You should write buisness rules to connect with implementation via simple objects and interfaces that the implementation layer can plug in to. You should delay the decision of implementation details as long as possible. Every layer of your project should be testable horizontally and testable vertically.
+
+
+## Programming Paradigms
+There are three paradigms, and it is not likely that there will be any others. Each paradigme *removes* capabilities from the last, and there is not anything left that the author sees could be removed.
+
+### Structured Programming
+*Imposes discipline on direct transfer of control*
+
+Edsger Dijkstra used mathmatical [proofs](../math/proofs) to prove programmatic structures and then tie them together to produce proven systems. He discovered that some uses of `goto` made proofs impossible to write. (Ones that prevented recursive decomposition) Nowdays most modern languages enforce structured programming which limits all programming to **sequence, selection, and iteration**.
+
+Dijkstra also said "Testing shows the presence, not the absence, of bugs". Programming shifted from trying to mathmatically prove programs as correct (because it litterally takes forever), to scientifically prove programs as correct enough for our purposes by using tests to find bugs.
+
+### Object-Oriented Programming
+*Imposes discipline on indirect transfer of control*
+
+OOP **did not** give us encapsulation,inheritance or polymorphism. All three of those things are equally possible in a structured language like C. OOP **did** make polymorphism easy and safe by standerdizing the conventions for using pointers to functions and abstracting it away. In this way, OOP imposed discipline on indirect transfer of control - something that was possible but was also messy and unsafe in C.
+
+This discipline makes it practical to use dependancy inversion across projects. For a given *caller* class and *callee*, the caller can now reference an interface that represents any various implementation of the callee rather than refrencing the callee itself. This inverts the relationship between flow of control and source code dependencies.
+
+The big win from this revolution is that fact that you can point all external concerns (UI, Database, Etc...) to *depend on* the buisness rules - rahter than the other way around. So buisness rules can stay stable while details of implementation can change freely (ex: a fax program can work with any fax machine, not just be written for one piece of hardware). Changes to the UI or Database can have zero effect on buisness rules - which is super powerfull.
+
+### Functional Programming
+*Imposes discipline upon assignment*
+
+Functional programming is based on lambda-calculus invented by Alonzo Church in the 1930s. All (or most) assignment is immutable. This is powerfull for architecture because it eleminates all problems that come from multiple threads and processors (race conditions, deadlock condition, concurrent update problems).
+
+Because machines are not infinitely powerful, you have to use this with care. In one case, *event sourcing*, applications limit operations on disk to Create and Read so that the data is immutable, but if you want to keep track of change over time you would need to recalculate that change from the beginning of time every time you read it, so you may make a compromise by caching some mutable state that can only be touched by a single "mutable component".
+
+## SOLID Design Principles
+
+Solid principles can be applied at any level of the fractal of software design, but they *must* be applied at the **module** level. **Modules** make up **components** and **components** *could* be an independent .jar file, npm module, ruby gem, or service.
+
+- **SRP** Single Responsibility Principle
+- **OCP** Open-Closed Principle
+- **LSP** Liskov Substitution Principle
+- **ISP** Interface Segregation Principle
+- **DIP** Dependency Inversion Principle
+
+#### Single Responsibility Principle
+*A module should be responsible to one actor*
+
+(aka code that changes together should live together). If the CEO and CTO both care about the budget system and make changes at different rates, there should be a module for both rather than one single budget module. Rather, you would have a single budget **component**. (Ex: Report Expenses Module and Group Expenses Module or whatever)
+
+#### Open-Closed Principle
+*A module should be open for extension but closed for modification*
+
+It is easier to write new code than it is to change old code. If component A should be protected from changes in component B, then component B should depend on component A. Abstract and stable code should have lots of dependants and few dependencies.
+
+#### Liskov Substitution Principle
+*A simple violation of substitutability can cause a system's architecture to be polluted with a significant amount of extra mechanisms*
+
+If something is similar to another thing they should be able to "plug-in" to the same interface without custom changes.
+
+#### Interface Segregation Principle
+*Depending on something that carries baggage that you don't need can cause you troubles that you didn't expect*
+
+Instead of depending on something that does a million things, depend on a interface you write that does exactly what you need - and then "plug-in" the thing that does a million things. Then you are only coupled to the functionality that you care about.
+
+#### Dependency Inversion Principle
+*The most flexible systems depend on abstractions, not concretions*
+
+Concrete implementation details should always depend on abstract stable code. Basically, buiseness logic should never need to change when the UI changes. Buiseness rules should never need to change when the database or ORM change.
+
+If you find yourself in a situation where the abstract is depending the concrete, you should invert the dependency by creating an interface and then the abstract code and concrete implementation both depend on the interface (which is abstract).
+
+## Component Principles
