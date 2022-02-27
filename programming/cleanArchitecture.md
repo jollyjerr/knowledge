@@ -82,3 +82,90 @@ Concrete implementation details should always depend on abstract stable code. Ba
 If you find yourself in a situation where the abstract is depending the concrete, you should invert the dependency by creating an interface and then the abstract code and concrete implementation both depend on the interface (which is abstract).
 
 ## Component Principles
+Gather together logic that changes together, dont depend on things you don't need, and version control your components.
+
+Components exist in a tension between three principals:
+
+```txt
+CRP(avoid unneeded releases)
+|                          |
+|Too many changes          |Hard to reuse
+|                          |
+|       Your component     |
+|                          |
+|                          |
+|                          |
+REP(reusers)--------------CCP(maintenance)
+                   |
+				   Too many releases
+```
+
+- REP - Reuse/Release Equivalence Principle: A component should be releasable together
+- CCP - Common Closure Principle: A component should change together for only one reason
+- CRP - Common Reuse Principle: Code that is reused together should be in the same component. If you depend on part of a component, you depend on the whole thing - so only depend on stuff you use 100% of.
+
+### Component Coupling
+Always draw out your components and the dependencies between them, if there is a cycle use DIP to break the cycle so that you can work on components independently and not force extra releases. Component architecture should be flexible and allowed to change constantly.
+
+## Stable Abstractions Principle
+*A component should be as abstract as it is stable*
+
+Components are sespended between the three principles outlined above while *also* being suspended between **The zone of uselessness** and **The zone of pain**. 
+
+A component is in **The zone of uselessness** if it is abstract and nothing depends on it. (Ex: leftover dead abstract classes)
+A component is the **The zone of pain** if it is concrete and many things depend on it. (Ex: Database schema)
+
+You should aim to keep components as abstract as they are stable. So something that is depended on greatly should be greatly abstract, while something depended on by nothing can be extreamly concrete and depend on many things itself.
+
+## Architecture
+*It's all coming together...*
+
+Basically a project can be split vertically and horizontally: **Components (x), Use Cases (y)**
+
+```txt
+y (use cases EX: add order, delete order)
+|  |
+|  |
+|  |
+|  |-------------
+|  |
+|  |-------------
+|  |
+----------------- x (components EX: The ui, application-specific business rules, application-indebendent business rules, the database)
+```
+
+You should be able to add use cases and components without interfearing with old ones. You should be able to pinpoint the exact code that handles a specific use case at a specific layer.
+
+This can all be in a monolith or components can be deployed as services - it does not really matter and is more domain specific.
+
+Consider the "chattyness" between layers. Remember that network requests are slow af, so if two layers are super chatty - having that chatter happen over the network will be slow.
+
+You should be able to test these layers horizontally (unit) and vertically (integration). Huzzah!
+
+### Screaming Architecture
+When you look at an apps source code it should scream what it is. Ex: "I AM A LOAN RISK ANALYSIS FINANCE APP CURRENTLY USING NEXTJS TO BE PRESENTED ON THE WEB". rather than: "I AM A CREATE-NEXT-APP."
+
+### Clean Architecture
+Using all of the principles we have talked about, a clean architecture should be obvious by now
+
+```txt
+| Abstract + Stable
+
+Entities (Enterprise Business Rules)
+*knows nothing about*
+Use Cases (Application Business Rules)
+*knows nothing about*
+Controllers + Presenters + Gateways (Interface Adapters)
+*knows nothing about*
+UI + Web + Devices + DB + External Interfaces (Frameworks & Drivers)
+
+| Concrete + Easy to change
+```
+
+Yes, frameworks and databases and the web itself are all at the bottom.
+
+And, as a fractal, you can see this same architecture scaling up and down with each layer while maintaining the clarity of **Use Cases** vs **Components** and testing vertically/horizontally.
+
+Communication between these layers should be **humble objects** so that each layer is interchangable. You should be able to totally change frameworks at any time and only touch the bottom layer.
+
+**Note:** The start script (main) should be and interchangible plugin. You should easily be able to start in production, start in dev, start in qa, etc...
