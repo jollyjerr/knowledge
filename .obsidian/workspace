@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "programming/cleanArchitecture.md",
+            "file": "programming/cleanCode.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/cleanArchitecture.md",
+                "file": "programming/cleanCode.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,7 @@
   },
   "active": "0880a830014c445d",
   "lastOpenFiles": [
+    "programming/cleanCode.md",
     "programming/cleanArchitecture.md",
     "business/personalBrand/blog.md",
     "math/proofs.md",
@@ -97,7 +98,6 @@
     "programming/infrastructure/singleServer.md",
     "programming/infrastructure/static.md",
     "programming/infrastructure/serverless.md",
-    "programming/infrastructure/containerOrchestration.md",
-    "programming/continuousDelivery.md"
+    "programming/infrastructure/containerOrchestration.md"
   ]
 }
