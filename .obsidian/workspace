@@ -91,13 +91,13 @@
   "lastOpenFiles": [
     "programming/cleanCode.md",
     "programming/cleanArchitecture.md",
+    "programming/continuousDelivery.md",
     "business/personalBrand/blog.md",
     "math/proofs.md",
     "other/veganism/general.md",
     "programming/computerScience/asymptoticAnalysis.md",
     "programming/infrastructure/singleServer.md",
     "programming/infrastructure/static.md",
-    "programming/infrastructure/serverless.md",
-    "programming/infrastructure/containerOrchestration.md"
+    "programming/infrastructure/serverless.md"
   ]
 }
