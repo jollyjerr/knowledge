@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "0880a830014c445d",
+        "id": "c2b97f7db331e97d",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "programming/cleanCode.md",
+            "file": "math/proofs.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programming/cleanCode.md",
+                "file": "math/proofs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0880a830014c445d",
+  "active": "c2b97f7db331e97d",
   "lastOpenFiles": [
-    "programming/cleanCode.md",
-    "programming/cleanArchitecture.md",
-    "programming/continuousDelivery.md",
-    "business/personalBrand/blog.md",
     "math/proofs.md",
+    "philosophy/1984.md",
+    "other/veganism/Animal Liberation.md",
     "other/veganism/general.md",
     "programming/computerScience/asymptoticAnalysis.md",
-    "programming/infrastructure/singleServer.md",
+    "programming/infrastructure/containerOrchestration.md",
+    "programming/infrastructure/serverless.md",
     "programming/infrastructure/static.md",
-    "programming/infrastructure/serverless.md"
+    "programming/infrastructure/singleServer.md",
+    "programming/Golang.md"
   ]
 }
