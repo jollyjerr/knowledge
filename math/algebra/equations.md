@@ -3,6 +3,7 @@
 - Equations: `x-3 = 10` -> `x-3+3 = 10+3` -> `x+0 = 13` -> `x = 13`
 
 Simplify or evaluate **expressions**
+
 Balance or solve **equations**
 
 - Equations with parentheses:
@@ -18,8 +19,10 @@ x = 4
 
 - Words to keep in mind:
 
-* = sum, increases
+(\*) = sum, increases
 
 (-) = difference
+
 x = product
+
 / = quotient
