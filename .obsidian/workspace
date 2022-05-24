@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "math/proofs.md",
+            "file": "math/algebra/operations.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "math/proofs.md",
+                "file": "math/algebra/operations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "c2b97f7db331e97d",
   "lastOpenFiles": [
-    "math/proofs.md",
-    "philosophy/1984.md",
-    "other/veganism/Animal Liberation.md",
+    "math/algebra/operations.md",
+    "business/personalBrand/blog.md",
+    "other/veganism/animal-liberation.md",
     "other/veganism/general.md",
-    "programming/computerScience/asymptoticAnalysis.md",
-    "programming/infrastructure/containerOrchestration.md",
-    "programming/infrastructure/serverless.md",
-    "programming/infrastructure/static.md",
-    "programming/infrastructure/singleServer.md",
-    "programming/Golang.md"
+    "math/proofs/proofs.md",
+    "other/religion/yoga.md",
+    "philosophy/1984.md",
+    "programming/computer-science/asymptotic-analysis.md",
+    "programming/infrastructure/container-orchestration.md",
+    "programming/infrastructure/serverless.md"
   ]
 }

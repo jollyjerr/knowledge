@@ -24,7 +24,7 @@ There are three paradigms, and it is not likely that there will be any others. E
 ### Structured Programming
 *Imposes discipline on direct transfer of control*
 
-Edsger Dijkstra used mathmatical [proofs](../math/proofs) to prove programmatic structures and then tie them together to produce proven systems. He discovered that some uses of `goto` made proofs impossible to write. (Ones that prevented recursive decomposition) Nowdays most modern languages enforce structured programming which limits all programming to **sequence, selection, and iteration**.
+Edsger Dijkstra used mathmatical [proofs](proofs.md) to prove programmatic structures and then tie them together to produce proven systems. He discovered that some uses of `goto` made proofs impossible to write. (Ones that prevented recursive decomposition) Nowdays most modern languages enforce structured programming which limits all programming to **sequence, selection, and iteration**.
 
 Dijkstra also said "Testing shows the presence, not the absence, of bugs". Programming shifted from trying to mathmatically prove programs as correct (because it litterally takes forever), to scientifically prove programs as correct enough for our purposes by using tests to find bugs.
 
