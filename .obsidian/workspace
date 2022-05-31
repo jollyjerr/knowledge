@@ -7,12 +7,8 @@
         "id": "c2b97f7db331e97d",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "math/algebra/operations.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "math/algebra/operations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +84,15 @@
   },
   "active": "c2b97f7db331e97d",
   "lastOpenFiles": [
+    "math/algebra/polynomials.md",
+    "math/algebra/like-terms.md",
     "math/algebra/operations.md",
+    "programming/computer-science/asymptotic-analysis.md",
     "business/personalBrand/blog.md",
     "other/veganism/animal-liberation.md",
     "other/veganism/general.md",
     "math/proofs/proofs.md",
     "other/religion/yoga.md",
-    "philosophy/1984.md",
-    "programming/computer-science/asymptotic-analysis.md",
-    "programming/infrastructure/container-orchestration.md",
-    "programming/infrastructure/serverless.md"
+    "philosophy/1984.md"
   ]
 }
