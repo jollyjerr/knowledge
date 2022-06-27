@@ -24,6 +24,19 @@ x^2 - 6x - 16 // Find the factors of -16 that sum to -6
 
 You can check your work by [multiplying](./polynomials.md) the polynomials
 
+- with coefficients
+
+Take the factors of the coefficient as well so that you can consider all posibilities
+
+```
+6x^2 + 10 + 4
+
+factors of 6: 6,1 || 3,2
+factors of 4: 4,1 || 2,2
+
+(3x + 2)(2x+2)
+```
+
 3. The difference of two squares
 
 Need two squares that can snap together
@@ -59,7 +72,12 @@ When completing the square with complex roots, you may end up in a situation lik
 
 `+/- sqt(-59/36) = +/- (sqt(-1) * sqt(59))/sqt(36) = +/- (i * sqt(59))/6`
 
-5. The quadratic formula
+5. Difference/sum of two cubes
+
+Difference formula: `a^3 - b^3 = (a - b)(a^2 + ab + b^2)`
+Sum formula: `a^3 + b^3 = (a + b)(a^2 - ab + b^2)`
+
+6. The quadratic formula
 
 The quadratic formula can be discovered by completing the square of `ax^2 + bx + c = 0`
 
