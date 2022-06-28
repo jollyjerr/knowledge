@@ -1,5 +1,3 @@
-# Fundamentals
-
 ## Sets
 
 All of mathematics can be described with sets. A **set** is a collection of **elements**. Sets can be infinite or finite.
