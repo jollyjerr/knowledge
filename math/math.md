@@ -4,3 +4,4 @@
 
 [proofs](./proofs/proofs.md)
 [algebra](./algebra/algebra.md)
+[trigonometry](./trigonometry/trigonometry.md)
