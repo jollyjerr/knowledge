@@ -14,6 +14,9 @@ Functions can be even, odd, or neither:
 - Odd: f(-x) = -(f(x))
 - Neither: Both of the obove conditions are false
 
+Even: symmetrical about the y access
+Odd: symmetrical about the origin
+
 ## Operations
 
 You can do all the normal operations with functions
