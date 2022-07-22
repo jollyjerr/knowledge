@@ -2,4 +2,5 @@
 
 ## Topics
 
-[fundamentals](./fundamentals/fundementals.md)
+[sets](./sets.md)
+[cartesian product](./cartesian-product.md)

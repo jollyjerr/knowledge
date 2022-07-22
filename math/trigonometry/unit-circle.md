@@ -74,7 +74,7 @@ a = x + n(2pi)
 
 If solving an equation for the set of all solutions, every coterminal angle is included in the set
 
-These full solutions are expressed in [set-builder notation](../proofs/fundamentals/sets.md)
+These full solutions are expressed in [set-builder notation](../proofs/sets.md)
 
 ```
 sin𝜭 = 0

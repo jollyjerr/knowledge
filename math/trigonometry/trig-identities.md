@@ -104,19 +104,19 @@ Use positive or negative result depending on the quadrent of the angle
 These can be derived from the sum-difference identities
 
 ```
-sin𝛳 * cos = 1/2[sin(𝛳+)+sin(𝛳-)]
-cos𝛳 * sin = 1/2[sin(𝛳+)-sin(𝛳-)]
-cos𝛳 * cos = 1/2[cos(𝛳+)+cos(𝛳-)]
-sin𝛳 * sin = 1/2[cos(𝛳-)-cos(𝛳+)]
+sin𝛳 * cosy = 1/2[sin(𝛳+y)+sin(𝛳-y)]
+cos𝛳 * siny = 1/2[sin(𝛳+y)-sin(𝛳-y)]
+cos𝛳 * cosy = 1/2[cos(𝛳+y)+cos(𝛳-y)]
+sin𝛳 * siny = 1/2[cos(𝛳-y)-cos(𝛳+y)]
 ```
 
 #### Sum (or difference) to product identities
 
 ```
-sin𝛳 + sin = 2sin((𝛳 + )/2) * cos((𝛳 - )/2)
-sin𝛳 - sin = 2cos((𝛳 + )/2) * sin((𝛳 - )/2)
-cos𝛳 + cos = 2cos((𝛳 + )/2) * cos((𝛳 - )/2)
-sin𝛳 - sin = -2sin((𝛳 + )/2) * sin((𝛳 - )/2)
+sin𝛳 + siny = 2sin((𝛳 + y)/2) * cos((𝛳 - y)/2)
+sin𝛳 - siny = 2cos((𝛳 + y)/2) * sin((𝛳 - y)/2)
+cos𝛳 + cosy = 2cos((𝛳 + y)/2) * cos((𝛳 - y)/2)
+sin𝛳 - siny = -2sin((𝛳 + y)/2) * sin((𝛳 - y)/2)
 ```
 
 ## Using identities in proofs
