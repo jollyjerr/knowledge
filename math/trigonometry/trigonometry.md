@@ -10,3 +10,5 @@
 [inverse trig functions](./inverse-trig-functions.md)
 [trig identities](./trig-identities.md)
 [law of sines and law of cosines](./law-of-sin-cos.md)
+[polar coordinates](./polar-coordinates.md)
+[polar curves](./polar-curves.md)

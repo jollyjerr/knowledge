@@ -8,4 +8,3 @@ differential calculus concerns instantaneous rates of change, and the slopes of 
 while integral calculus concerns accumulation of quantities, and areas under or between curves. 
 These two branches are related to each other by the fundamental theorem of calculus.
 
-[polar coordinates](./polar-coordinates.md)
