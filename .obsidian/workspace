@@ -7,8 +7,12 @@
         "id": "c2b97f7db331e97d",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "math/trigonometry/polar-curves.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "math/trigonometry/polar-curves.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,15 +89,15 @@
   },
   "active": "c2b97f7db331e97d",
   "lastOpenFiles": [
+    "math/trigonometry/trigonometry.md",
+    "math/math.md",
+    "math/trigonometry/parametric-curves.md",
+    "math/algebra/common-graphs.md",
     "programming/css.md",
     "math/algebra/rational-functions.md",
     "math/proofs/proofs.md",
     "math/proofs/fundamentals/cartesian-product.md",
     "math/proofs/fundamentals/sets.md",
-    "proofs.md",
-    "math/algebra/factoring.md",
-    "math/algebra/polynomials.md",
-    "programming/clean-architecture.md",
-    "programming/computer-science/asymptotic-analysis.md"
+    "proofs.md"
   ]
 }

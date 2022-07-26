@@ -12,3 +12,5 @@
 [law of sines and law of cosines](./law-of-sin-cos.md)
 [polar coordinates](./polar-coordinates.md)
 [polar curves](./polar-curves.md)
+[parametric curves](./parametric-curves.md)
+[analytic geometry](./analytic-geometry.md)
