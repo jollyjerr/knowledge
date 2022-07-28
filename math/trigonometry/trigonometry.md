@@ -1,5 +1,7 @@
 # Trigonometry
 
+Also some pre-calc type stuff in here
+
 ## Topics
 
 [angles](./angles.md)
@@ -14,3 +16,5 @@
 [polar curves](./polar-curves.md)
 [parametric curves](./parametric-curves.md)
 [analytic geometry](./analytic-geometry.md)
+[complex numbers](./complex-numbers.md)
+[matrices](./matrices.md)
