@@ -45,6 +45,7 @@ An augmented matrix is in row-echelon form if
 |0 2 5
 |0 0 3
 ```
+
 The first non-zero entry in each row is called a **pivot**.
 
 If every pivot is equal to 1 and all non-pivots are equal to 0, the matrix is in **reduced row-echelon form**.
@@ -67,6 +68,7 @@ C1 = x
 C2 = y
 etc...
 ```
+
 **Gauss-Jordan elimination** is an algorithm to reduce matricies to row-echelon form.
 
 1. Pull out any scalars from each row
@@ -115,7 +117,7 @@ result = 4(4) + 6(1)   2(2) + 6(0)
          3(4) + 1(1)   3(2) + 1(0)
 
 => 22 4
-   13 6 
+   13 6
 ```
 
 Find the dimensions of the product by taking the rows of the first and columns of the second:
@@ -216,4 +218,3 @@ a = M^-1 * b
 ```
 
 Remember `a` represents the column vector (x,y) which is the solution set to the system.
-

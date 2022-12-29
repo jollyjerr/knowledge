@@ -30,7 +30,7 @@ yet...
 
 (x^2 - 4)/(x-2) => ((x + 2)(x - 2))/(x - 2) => f(x) = x + 2 // call this B
 
-So f(2) = 4 
+So f(2) = 4
 
 A and B have different behavior at x = 2.
 
@@ -101,7 +101,7 @@ When substitution does not work, you may be able to use factoring to show the co
 
 ```
 lim (x^2-16)/(x-4)
-x->4 
+x->4
 
 // factor using difference of squares
 

@@ -12,11 +12,11 @@ Yoga is built on a system of teacher -> student relationships instead of the stu
 
 ## What is yoga?
 
-> The restraint of the modifications of the mind-stuff is Yoga. 
+> The restraint of the modifications of the mind-stuff is Yoga.
 
 Or, in other words, yoga is the _ability_ to direct your mind exclusively toward anything and sustain that direction without distraction.
 
-The **goal** of yoga is a total freedom called _Kaivalya_ which is a permanent state of mental transparency and unrestrained curiosity. Someone who has obtained kaivalya 
+The **goal** of yoga is a total freedom called _Kaivalya_ which is a permanent state of mental transparency and unrestrained curiosity. Someone who has obtained kaivalya
 always observes everything accurately, is able to make perfect choices, and effortlessly avoids any action that would have distracting or disturbing consequences.
 
 That is the core of yoga and a lot of teachings say you can basically stop there if you want. For example, any time you get in a flow state and focus so hard that everything else drops out of your mind you
@@ -30,7 +30,7 @@ If you keep it simple, yoga teachings say to work on these 8 things all at the s
 - Yama - our attitudes toward our environment
 - Niyama - our attitudes toward ourselves
 - Asana - the practice of body exercises
-- Pranayama - the practice of breathing exercises 
+- Pranayama - the practice of breathing exercises
 - Pratyahara - the restraint of our senses
 - Dharana - the ability to direct our minds
 - Dhyana - the ability to develop interactions with what we seek to understand
@@ -88,7 +88,7 @@ Asana and pranayama create favorable conditions for dhyana.
 
 ### Samadhi
 
-Samadhi is a complete understanding of an object - to the point where your unconscious mind has mastery over it and you understand all aspects of it from every perspective. 
+Samadhi is a complete understanding of an object - to the point where your unconscious mind has mastery over it and you understand all aspects of it from every perspective.
 
 Desikachar gives the example of doing dishes and suddenly knowing exactly how to write a 6 page essay you were working on for a class. If you can then just walk up and write the essay without stopping and it is excellent,
 that is basically samadhi.

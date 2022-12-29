@@ -92,7 +92,7 @@ So custom steps for lemniscates are as follows:
 ## Intersection of Polar Curves
 
 You can find the intersection points of two polar curves by setting the equations equal to one another
-and  simplifying. Then, use trig definitions to figure out half of the intersection points (either sin or cos), and then plug in that
+and simplifying. Then, use trig definitions to figure out half of the intersection points (either sin or cos), and then plug in that
 half to the original equations to find the other half (either sin or cosine).
 
 Polar curves can also have "hidden" points of intersection because of coterminal angles and points.

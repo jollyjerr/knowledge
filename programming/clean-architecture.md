@@ -186,4 +186,3 @@ And, as a fractal, you can see this same architecture scaling up and down with e
 Communication between these layers should be **humble objects** so that each layer is interchangable. You should be able to totally change frameworks at any time and only touch the bottom layer.
 
 **Note:** The start script (main) should be and interchangible plugin. You should easily be able to start in production, start in dev, start in qa, etc...
-

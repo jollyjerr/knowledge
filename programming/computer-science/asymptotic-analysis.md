@@ -51,4 +51,3 @@ A _Fast Algorithm_ 🔥 === worst-case running time grows slowly with input size
 Aim for mathematical tactility and **predictive power**
 
 Aspire to linear running time
-

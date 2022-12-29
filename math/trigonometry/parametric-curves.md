@@ -27,6 +27,7 @@ t      x=t^2       y=t-2
 
 sketch these points and use arrows to show the direction of the curve as t increases
 ```
+
 [porabolas](../algebra/common-graphs.md)
 
 ### From curve to equation
@@ -36,7 +37,7 @@ Express either x or y and then set the other variable equal to `t` for your seco
 ```
 Express the curve: x^3 - 6x^2 - y + 15 = 0 from (x,y) = (-2, -17) to (x,y) = (3, -12) in parametric form.
 
-x^3 - 6x^2 - y + 15 = 0 => y = x^3 - 6x^2 + 15 
+x^3 - 6x^2 - y + 15 = 0 => y = x^3 - 6x^2 + 15
 
 use x = t as parametric equation for x
 =>

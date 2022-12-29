@@ -5,7 +5,7 @@
 Analytic geometry of a porabola:
 
 |             | Equation         | Vertex | Axis | Focus   | Directrix |
-|-------------|------------------|--------|------|---------|-----------|
+| ----------- | ---------------- | ------ | ---- | ------- | --------- |
 | Opens up    | x^2=4py          | (0,0)  | x=0  | (0,p)   | y=-p      |
 | Opens down  | x^2=-4py         | (0,0)  | x=0  | (0,-p)  | y=p       |
 | Opens right | y^2=4px          | (0,0)  | y=0  | (p,0)   | x=-p      |

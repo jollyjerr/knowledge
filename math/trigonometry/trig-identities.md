@@ -135,4 +135,3 @@ Some hot tips:
 Just practice these bad bois
 
 Sometimes the value of 𝛳 will be constrained `Ex: 𝛳 ∈ [0,2pi)`
-

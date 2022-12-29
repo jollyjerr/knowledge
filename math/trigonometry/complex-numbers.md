@@ -12,11 +12,13 @@ b is called "imaginary part" -> Im(z)
 ```
 
 if a == 0 you have a pure imaginary number
+
 ```
 z = bi
 ```
 
 if b == 0 you have a real number
+
 ```
 z = a
 ```

@@ -19,7 +19,7 @@ Convert from polar to rectangular coordinates with:
 y = r * sin(𝛳)
 x = r * cos(𝛳)
 
-also 
+also
 
 r^2 = x^2 + y^2
 tan𝛳 = y/x
@@ -45,7 +45,7 @@ Convert the polar equation r = 8cos(𝛳) to rectangular coordinates.
 Recall: x = rcos𝛳
 Which can be transformed to: cos𝛳 = x/r
 
-r = 8(x/r) 
+r = 8(x/r)
 
 r^2 = 8x
 
