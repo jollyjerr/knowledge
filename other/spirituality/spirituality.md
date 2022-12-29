@@ -1,4 +1,4 @@
-# Religion
+# Spirituality
 
 ## Topics
 
