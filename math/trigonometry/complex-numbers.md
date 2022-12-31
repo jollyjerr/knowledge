@@ -38,7 +38,7 @@ Add and subtract complex numbers by seperating the imaginary parts
 30 + 12i
 ```
 
-Multiply and devide complex numbers like [polynomials](./algebra/polynomials.md)
+Multiply and devide complex numbers like [polynomials](../algebra/polynomials.md)
 FOIL, and multiply by the conjugate if you need to.
 
 Find the absolute value with `sqt(Re(z)^2 + Im(z)^2)`. This is just using the pythagorean theory

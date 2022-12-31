@@ -5,5 +5,5 @@ These notes do not get a lot of love
 ## Topics
 
 [veganism](./veganism/veganism.md)
-[religion](./religion/religion.md)
+[spirituality](./spirituality/spirituality.md)
 [books](./books/books.md)
