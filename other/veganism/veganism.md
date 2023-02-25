@@ -2,8 +2,8 @@
 
 ## Topics
 
-[general](./general.md)
+- [general](./general.md)
 
 ## Books
 
-[animal liberation](./animal-liberation.md)
+- [animal liberation](./animal-liberation.md)

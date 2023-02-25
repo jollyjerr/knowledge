@@ -2,7 +2,7 @@
 
 Used to solve oblique triangles
 
-You can solve any oblique trianle as long as you know three pieces of information, and one thing you know
+You can solve any oblique triangle as long as you know three pieces of information, and one thing you know
 is a side length.
 
 ```

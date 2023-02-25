@@ -15,7 +15,7 @@ Analytic geometry of a porabola:
 | Opens right | (y-k)^2=4p(x-h)  | (h,k)  | y=k  | (h+p,k) | x=h-p     |
 | Opens left  | (y-k)^2=-4p(x-h) | (h,k)  | y=k  | (h-p,k) | x=h+p     |
 
-If given an equation for a porabola like `x^2 - 4x - 4y = 0`:
+If given an equation for a parabola like `x^2 - 4x - 4y = 0`:
 
 1. Check if you have an x^2 term or y^2 term
 2. Complete the square with respect to the squared term

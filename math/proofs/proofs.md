@@ -2,5 +2,5 @@
 
 ## Topics
 
-[sets](./sets.md)
-[cartesian product](./cartesian-product.md)
+- [sets](./sets.md)
+- [cartesian product](./cartesian-product.md)

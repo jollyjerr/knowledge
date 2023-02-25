@@ -2,4 +2,4 @@
 
 ## Topics
 
-[asymptotic analysis](./asymptotic-analysis.md)
+- [asymptotic analysis](./asymptotic-analysis.md)

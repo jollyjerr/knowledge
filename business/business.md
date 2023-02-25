@@ -2,4 +2,4 @@
 
 ## Books
 
-[essentialism](./essentialism.md)
+- [essentialism](./essentialism.md)
