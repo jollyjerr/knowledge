@@ -79,7 +79,7 @@ Used to transform 2(𝜭) to 𝛳
 To remove the constant from the angle you need to use a double angle identity
 
 ```
-sin2x = 2sin * xcosx
+sin2x = 2sinx * cosx
 cos2x = cos^2x-sin^2x = 1-2sin^2x = 2cos^2x-1
 tan2x = 2tanx/1-tan^2x
 ```

@@ -53,3 +53,11 @@ If your denominator is an irrational [polynomial](./polynomials.md), you can mul
 ```
 
 Distribute, and then simplify
+
+You can also rationalize out the _numerator_ with this method!
+
+```
+sqt(3x+10) - 2 / x + 2
+
+multiply numerator and denominator by sqt(3x+10) + 2
+```
