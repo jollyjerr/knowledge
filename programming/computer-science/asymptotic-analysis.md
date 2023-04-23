@@ -26,6 +26,22 @@ Solid resource on Big O -> [http://web.mit.edu/16.070/www/lecture/big_o.pdf](htt
 
 A merge sort example can be proved (via binary recursion tree) to have an upper bound of `6N(log2(n) + 6N)`, you can suppress constant factors and lower-order terms even farther to reach a "Big-Oh" of `Nlog(N)`
 
+Big O is used to categorize algorithms based on time _and_ space requirements. 
+
+EX: O(N) time can still be O(N^3) space
+
+### Common Big O's
+
+O(1) -> get element from dict "constant time"
+O(log N) -> Binary search trees "Pick a spot in N, half N, Pick a spot in N, half N..."
+O(sqt(N)) -> not common "go over N^1/2 items once"
+O(N log N) -> Quicksort "Go over N, half N, go over N, half N..."
+O(N) -> for loop "go over N"
+O(N^2) -> 2d array "go over N for every member of N"
+O(N^3) -> Matrix multiplication "N^2 for every member of N" (except for strassen algoritm)
+O(N!) -> yuck
+O(N^N) -> super yuck
+
 ## Guiding Principles for Analysis of Algorithms
 
 1.  Use "Worst Case" analysis
