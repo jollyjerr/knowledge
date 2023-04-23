@@ -167,7 +167,7 @@ sqt(4+h)-2/h * sqt(4+h)+2/sqt(4+h)+2
 
 [This](https://www.khanacademy.org/math/differential-calculus/dc-limits/dc-limits-algebraic/v/limits-by-rationalizing) khan video explains this method extremely well.
 
-*Hot Tip* If you find a limit `0/0` that is indeterminate form and does not mean the limit does not exist. Use a different method to find the limit if you have reached that answer.
+_Hot Tip_ If you find a limit `0/0` that is indeterminate form and does not mean the limit does not exist. Use a different method to find the limit if you have reached that answer.
 
 ## Pythagorean Identity
 
@@ -199,9 +199,9 @@ x->a
 If f(a) = b/0 you probably have a vertical asymptote (check the graph to be sure)
 If f(a) = b you probably have a limit b! (again, check the graph to be sure)
 If f(a) = 0/0:
-    Try factoring to cancel terms
-    Try conjugates to cancel terms
-    Try trig identities to cancel terms
+Try factoring to cancel terms
+Try conjugates to cancel terms
+Try trig identities to cancel terms
 
     Once you have canceled terms, evaluate the limit in it's new form (start this whole process over again as many times as necessary)
 
