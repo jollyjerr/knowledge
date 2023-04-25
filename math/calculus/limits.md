@@ -17,7 +17,16 @@ if, for every number epsilon > 0 there is some number delta > 0 such that
 
 So a function at any value x does not have a general limit if the left and right hand limits do not approach a single value.
 
-## Point discontinuities
+## Continuity
+
+A function is continuous at x = c if and only if lim(x -> c) == f(c)
+
+Discontinuities can be
+Point/Removable: two sided limit exists, but value at c is different
+Jump: two sided limit does not exist
+Asymptotic: left and right handed limit are unbounded
+
+### Point discontinuities
 
 ```
 Example:
@@ -203,9 +212,17 @@ Try factoring to cancel terms
 Try conjugates to cancel terms
 Try trig identities to cancel terms
 
-    Once you have canceled terms, evaluate the limit in it's new form (start this whole process over again as many times as necessary)
+Once you have canceled terms, evaluate the limit in it's new form (start this whole process over again as many times as necessary)
 
-If all else fails, try approaching the limit from below and above
+If all else fails, try approaching the limit from below and above or try squeeze theorem
+
+## Squeeze Theorem
+
+If you need to find the limit of a function (a) at a certain point (x) you may be able to use the squeeze theorem.
+
+1. Find a new function (b) that is always >= your function (a)
+2. Find another new function that is always <= your function (a) and has the same limit as (b) at point (x)
+3. Due to common sense, you now have your limit for function (a) at point (x)
 
 ## Infinite Limits
 
