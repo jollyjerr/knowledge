@@ -11,7 +11,7 @@ Useful when a normal loop approach does not work well. Especially if there is a 
 As you recurse you are placing functions on the stack who have a return address to the function
 above them that called them.
 
-Biggest tip is to move everything you possibly can into the base case. 
+Biggest tip is to move everything you possibly can into the base case.
 Don't try and prevent function calls, just exit early in base case logic.
 
 Example: Maze Solver
@@ -59,7 +59,7 @@ function walk(
 
 	// Recurse
 	// 1. pre operation
-    seen[curr.y][curr.x] = true;
+	seen[curr.y][curr.x] = true;
 	path.push(curr);
 	// 2. do recurse
 	for (let i = 0; i < directions.length; i++) {
@@ -83,7 +83,7 @@ function walk(
 	}
 	// 3. post operation
 	path.pop();
-    return false;
+	return false;
 }
 
 function solve(maze: string[], wall: string, start: Point, end: Point): Point[] {

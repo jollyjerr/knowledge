@@ -245,7 +245,7 @@ As x approaches infinity, you can remove lesser terms from an equation that will
 
 ```
 limf(x)  4x^5 - 3x^2 + 3 / 6x^5 - 100x^2 - 10
-x -> inf  
+x -> inf
 
 can be approximated to
 

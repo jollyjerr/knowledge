@@ -29,5 +29,3 @@ function bubbleSort(arr: number[]): void {
 ## Quicksort
 
 Quicksort takes advantage of [recursion](./recursion).
-
-
