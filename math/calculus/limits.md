@@ -233,3 +233,28 @@ A limit at infinity refers to the limit of a function as the input approaches in
 An infinite limit refers to the function itself approaching infinity at a particular point.
 
 Infinite limits exist around vertical asymptotes of a function.
+
+If a function is unbounded from the left and right in different directions, it must be unbounded - however if it is unbounded in the same direction you can say
+there is an infinite limit. Aka: an infinite limit at at point means left and right are approaching the same infinity.
+
+For "limits at infinity", keep in mind that your function can cross and/or oscillate around the horizontal asymptote while still having it as a limit.
+
+### Limits at infinity of quotients
+
+As x approaches infinity, you can remove lesser terms from an equation that will get proportionally less significant.
+
+```
+limf(x)  4x^5 - 3x^2 + 3 / 6x^5 - 100x^2 - 10
+x -> inf  
+
+can be approximated to
+
+4x^5/6x^5 as x approaches infinity
+
+which = 2/3
+```
+
+- If the numerator has a greater rate of growth than the denominator the limit is likely unbounded
+- If the denominator has a greater rate of growth than the numerator the limit is likely 0
+
+If the quotient has a radical in it, it can be helpful to divide both sides by the leading x term of the numerator
