@@ -1,4 +1,4 @@
-# Recursion
+# [Recursion](./recursion.md)
 
 Useful when a normal loop approach does not work well. Especially if there is a branching factor.
 
