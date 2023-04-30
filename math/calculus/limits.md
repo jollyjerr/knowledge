@@ -62,8 +62,14 @@ Although, sometimes asymptotes that both approach -Inf or +Inf will be described
 
 ##### Aside, Intermediate Value Theorem
 
-For any continuous function, given a closed interval, we can assume there is atleast one "root" (cross of x axis) if we can find a negative point and positive
+> Suppose f is a function continuous at every point of the interval [a, b]
+> f will take on every value between f(a) and f(b) over the interval
+> for any L between the values f(a) and f(b), there exists at leas one number C in [a, b] for which f(c) = L
+
+This is useful because - for any continuous function, given a closed interval, we can assume there is at least one "root" (cross of x axis) if we can find a negative point and positive
 point in that interval.
+
+If using the IVT to justify a value exists, make sure the function is continuous over the interval and that the value lies within the range produced by the function over that interval (inclusive).
 
 ## Properties of limits
 
@@ -183,6 +189,8 @@ _Hot Tip_ If you find a limit `0/0` that is indeterminate form and does not mean
 If you are solving a limit that uses pythagorean functions and you reach indeterminate form (0/0), you can substitute
 [trig identities](../trigonometry/trig-identities.md) to try and cancel out terms and work the problem.
 
+A common pattern for this is to use a Pythagorean identity and then use diff of squares to reach a common factor
+
 #### L Hopitals rule
 
 When you cancel out terms with conjugate method or pythagorean identity you must remember to specify which value the new function does not work at
@@ -257,4 +265,28 @@ which = 2/3
 - If the numerator has a greater rate of growth than the denominator the limit is likely unbounded
 - If the denominator has a greater rate of growth than the numerator the limit is likely 0
 
-If the quotient has a radical in it, it can be helpful to divide both sides by the leading x term of the numerator
+Same process applies for quotients with trig functions in them. Remember trig functions oscillate and figure out if the oscillations cause the limit to not exist or if they
+bound above and below by a constant value.
+
+If the quotient has a radical in it and reasoning out the limit is difficult it can be helpful to divide the numerator and denominator
+by the highest degree in both terms. This can be kinda tricky, here is an example:
+
+```
+sqt(4x^4 - x) / 2x^2 + 3
+
+highest degree is ^2 (not ^4 because that is under a sqrt), so divide both by x raised to that degree.
+
+remember to divide you can multiply by 1/the-thing
+
+(1/x^2)(sqt(4x^4 - x)) / (1/x^2)(2x^2 + 3)
+
+now you convert x^2 to sqt(x^4) so that you can combine and cancel
+
+(1/sqt(x^4))(sqt(4x^4 - x)) -> sqt((4x^4 - x) / x^4) -> sqt(4 - (1 / x^3)) // used some solid algebra here so go read on rules of radicals
+
+after the full division you have
+
+sqt(4 - (1/x^3)) / 2 + (3/x^2)
+```
+
+Another challenge can be signs. If the degree you chose in this process is even then you should have a positive answer, and vice versa
