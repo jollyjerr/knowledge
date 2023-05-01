@@ -28,4 +28,55 @@ function bubbleSort(arr: number[]): void {
 
 ## Quicksort
 
-Quicksort takes advantage of [recursion](./recursion.md).
+Quicksort takes advantage of [recursion](./recursion.md) and sorts an array in place.
+
+Pick a pivot, walk the array and put everything less than pivot to the left of the pivot and everything greater than the pivot behind it.
+Repeat tho process for the left of pivot and right of pivot - all the way down.
+
+Running time is O(nlogn) with good pivots, but worst case is O(n^2). Space is constant.
+
+Normally written as two parts:
+
+1. Partition -> produce the pivot index and moves the items to each side of the index
+2. Quick Sort (qs) -> calls partition and handles recursion and the base case
+
+```ts
+function qs(arr: number[], lo: number, hi: number): void {
+	// base case
+	if (lo >= hi) {
+		return;
+	}
+
+	const pivotIdx = partition(arr, lo, hi);
+
+	qs(arr, lo, pivotIdx - 1);
+	qs(arr, pivotIdx + 1, hi);
+}
+
+function partition(arr: number[], lo: number, hi: number): number {
+	const pivot = arr[hi]; // or whatever (normally midpoint)
+
+	let idx = lo - 1;
+
+	for (let i = 0; i < hi; i++) {
+		if (arr[i] <= pivot) {
+			idx++;
+
+			const tmp = arr[i];
+			arr[i] = arr[idx];
+			arr[idx] = tmp;
+		}
+	}
+
+	// put pivot in middle (at the pivot index)
+	idx++;
+	arr[hi] = arr[idx];
+	arr[idx] = pivot;
+
+	return idx;
+}
+
+function quickSort(arr: number[]) {
+	qs(arr, 0, arr.length - 1);
+}
+```
