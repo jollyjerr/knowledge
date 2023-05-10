@@ -10,3 +10,4 @@
 - [queue](./queue.md)
 - [stack](./stack.md)
 - [recursion](./recursion.md)
+- [trees](./trees.md)
