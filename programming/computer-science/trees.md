@@ -31,16 +31,23 @@ Depth first traversals use a stack and preserve the shape of the traversal
 - post order (do all next then visit node)
 
 ```ts
-function compare(a: BinaryNode<number>, b: BinaryNode<number>): boolean {
-	if (a === null && b === null) {
-		return true;
-	}
+function dfs(head: BinaryNode<number>, needle: number): boolean {
+   return search(head, needle);
+}
 
-	if (a?.value !== b?.value) {
-		return false;
-	}
+// on a binary search tree
+function search(curr: BinaryNode<number> | null, needle: number): boolean {
+    if (!curr) {
+        return false;
+    }
+    if (curr.value === needle) {
+        return true;
+    }
 
-	return compare(a.left, b.left) && compare(a.right, b.right);
+    if (curr.value < needle) {
+        return search(curr.right, needle);
+    }
+    return search(curr.left, needle);
 }
 ```
 
@@ -71,3 +78,9 @@ function bfs(head: BinaryNode<number>, needle: number): boolean {
 	return false;
 }
 ```
+
+## Binary Search Tree
+
+At each node, the left side children must be less than or equal to the current node, and right side children must be greater than.
+
+TODO: red black and AVL balancing strategies
