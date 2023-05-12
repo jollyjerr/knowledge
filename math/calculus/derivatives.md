@@ -2,11 +2,11 @@
 
 Derivatives are used to calculate instantaneous rate of change
 
-A derivative is a [limit](./limit.md)
+A derivative is a [limit](./limits.md)
 
 ```
 lim                change in distance / change in time
-change time -> 0 
+change time -> 0
 
 normally written as (leibniz notation)
 
