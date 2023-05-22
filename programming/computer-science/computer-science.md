@@ -12,3 +12,5 @@
 - [recursion](./recursion.md)
 - [trees](./trees.md)
 - [heap](./heap.md)
+- [trie](./trie.md)
+- [graph](./graph.md)
