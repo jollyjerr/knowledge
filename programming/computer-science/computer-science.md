@@ -14,3 +14,4 @@
 - [heap](./heap.md)
 - [trie](./trie.md)
 - [graph](./graph.md)
+- [maps](./maps.md)

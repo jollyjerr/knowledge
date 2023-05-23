@@ -27,5 +27,6 @@ insertion(str) {
     curr.isWord = true;
 }
 ```
+
 For deletion, recursively find the end of a word and then delete your way back up in a post
 recursion step.
