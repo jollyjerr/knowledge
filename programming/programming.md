@@ -11,6 +11,7 @@
 - [javascript](./javascript.md)
 - [web rtc](./web-rtc.md)
 - [css](./css.md)
+- [sql](./sql.md)
 
 ## Books
 
