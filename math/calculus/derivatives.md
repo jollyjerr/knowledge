@@ -37,7 +37,7 @@ All expressing "rate of change of y with respect to x of f" (slope of the tangen
 
 ## Tangent line equations
 
-You may be asked: For a function g, g(-1) = 3 and g'(-1) = -2. What is the equation for the 
+You may be asked: For a function g, g(-1) = 3 and g'(-1) = -2. What is the equation for the
 tangent line for g at x = -1?
 
 ```
@@ -69,10 +69,10 @@ slope = t^2 + 5t - 24 / t - 3
 
 ## Formal definition
 
-The derivative of function f at x=c is the limit of the slope of the secant line 
+The derivative of function f at x=c is the limit of the slope of the secant line
 from x=c to x=c+h as h approaches 0. Symbolically, this is the limit of [f(c)-f(c+h)]/h as h→0.
 
-Think of these two points to find a general function (this is called "formal form" and is a general function of x): 
+Think of these two points to find a general function (this is called "formal form" and is a general function of x):
 
 ```
 (x, f(x)) and (x + h, f(x + h))
