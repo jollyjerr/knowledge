@@ -22,9 +22,10 @@ So a function at any value x does not have a general limit if the left and right
 A function is continuous at x = c if and only if lim(x -> c) == f(c)
 
 Discontinuities can be
-Point/Removable: two sided limit exists, but value at c is different
+Point/Removable or hole: two sided limit exists, but value at c is different
 Jump: two sided limit does not exist
-Asymptotic: left and right handed limit are unbounded
+Asymptotic/infinite: left and right handed limit are unbounded
+Infinite oscillation: f(x) = sin(1/x)
 
 ### Point discontinuities
 
