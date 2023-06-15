@@ -7,3 +7,22 @@ f(x) = {
     2x+4 if x>3
 }
 ```
+
+## Tips for writing |f(x)| as a piecwise defined function
+
+1. Determine the roots of f(x). Do this by setting what is inside the absval to 0 to split into pieces.
+2. Use -f(x) on each piece that is < 0
+3. Verify graphically - it should be a reflection for all negative sections.
+
+Example:
+
+```
+f(x) = |2 - x|
+
+2 - x = 0 -> x = 2
+
+f(x) = {
+    -(2-x) if x<2
+    2-x if x<=2
+}
+```

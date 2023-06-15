@@ -22,10 +22,11 @@ So a function at any value x does not have a general limit if the left and right
 A function is continuous at x = c if and only if lim(x -> c) == f(c)
 
 Discontinuities can be
-Point/Removable or hole: two sided limit exists, but value at c is different
-Jump: two sided limit does not exist
-Asymptotic/infinite: left and right handed limit are unbounded
-Infinite oscillation: f(x) = sin(1/x)
+
+1. Point/Removable or hole: two sided limit exists, but value at c is different
+2. Jump: two sided limit does not exist
+3. Asymptotic/infinite: left and right handed limit are unbounded
+4. Infinite oscillation: f(x) = sin(1/x)
 
 ### Point discontinuities
 
@@ -67,10 +68,12 @@ Although, sometimes asymptotes that both approach -Inf or +Inf will be described
 > f will take on every value between f(a) and f(b) over the interval
 > for any L between the values f(a) and f(b), there exists at leas one number C in [a, b] for which f(c) = L
 
-This is useful because - for any continuous function, given a closed interval, we can assume there is at least one "root" (cross of x axis) if we can find a negative point and positive
+This is useful because - for any continuous function, given a closed interval, we can assume there
+is at least one "root" (cross of x axis) if we can find a negative point and positive
 point in that interval.
 
-If using the IVT to justify a value exists, make sure the function is continuous over the interval and that the value lies within the range produced by the function over that interval (inclusive).
+If using the IVT to justify a value exists, make sure the function is continuous over the interval
+and that the value lies within the range produced by the function over that interval (inclusive).
 
 ## Properties of limits
 
@@ -141,6 +144,9 @@ If a function is always defined you may be able to just substitute the limit as 
 lim log(x) == log(5)
 x->5
 ```
+
+If you are working with an absolute value function, try [rewriting it as a piecewise defined function](../algebra/piecewise-defined-functions.md)
+and solving from there.
 
 ### Factoring
 
