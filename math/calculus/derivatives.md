@@ -83,6 +83,8 @@ f'(x) =   lim  (f(x + h) - f(x)) / h
           h->0
 ```
 
+If the limit exists, we say f is differentiable at x
+
 Alternatively, you can take the direct approach by defining a secant line and finding the limit as the
 points in the secant line approach ("alternate form" used to find derivative at a specific point):
 
