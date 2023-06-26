@@ -94,3 +94,122 @@ two points (a, f(a)) and (x, f(x))
 f'(x) = lim  (f(x) - f(a)) / (x - a)
         x->a
 ```
+
+## Graphing derivatives
+
+You can approximate a graph of f'(x) by marking where a it's slope would be
+positive, 0, or negative.
+
+If you have a linear function `f(x) = mx + b` then `f'(x) = m`.
+
+For a constant function `f(x) = c` the derivative will always be 0.
+
+If you have a graph of f'(x), you can approximate f(x) by marking where the
+function is increasing (derivative is above 0) and decreasing (derivative is
+below 0) and then using the slope of each section to judge if the original
+function was concave up or concave down at that point.
+
+## Higher order derivatives
+
+The second derivative, or the derivative of a functions derivative, measures a
+function concavity or acceleration. A positive value means a function is concave up (like a
+smile), while a
+negative value means a function is concave down (like a frown). the second
+derivative is noted like:
+
+```
+f''(x) or d^2f/dx^2
+```
+
+Any n'th level derivative is notated like:
+
+```
+f^(n)(x) or d^nf/dx^n
+```
+
+If the function is increasing or decreasing, its first derivative will be positive or negative, respectively. If the function is concave up or concave down, its second derivative will be positive or negative, respectively
+
+A good analogy in motion is:
+
+f(x) = displacement
+f'(x) = velocity
+f''(x) = acceleration
+f^3(x) = jerk (strength of the acceleration is changing)
+
+## Differentiability
+
+A function is only differentiable at a point if you can find the slope of the
+tangent line at that point. So sometimes the derivative is undefined:
+
+1. A sharp corner where the function does not really have a defined slope.
+2. A discontinuity.
+3. A vertical tangent.
+
+EX: |x| at x = 0
+
+```
+limx->0 (|0+h| - |0|)/h
+
+limx->0- = h/h or 1
+
+limx->0+ = -h/h or -1
+```
+
+Keep in mind a function can still be continuous without being differentiable,
+but must be continuous if it is differentiable.
+
+## Other ways of finding derivatives
+
+You can always use the formal or alternate definition of a derivative to find
+a functions derivative, but some types of functions have easier methods.
+
+#### Constant
+
+Always 0
+
+#### Linear
+
+In a linear function `y = mx + b` the derivative will just be `m`.
+
+#### Constant multiples
+
+```
+d/dx[cf(x)] = cf'(x)
+```
+
+Find the derivative of the function and multiply by the
+same constant
+
+#### Sums and differences
+
+```
+d/dx[f(x) + g(x)] = f'(x) + g'(x)
+d/dx[f(x) - g(x)] = f'(x) - g'(x)
+```
+
+#### Power functions
+
+```
+d/dx(x^n) = nx^(n-1)
+```
+
+Keep definitions in mind for these power functions. If you have 1/2^x you can change to
+2^-x. If you have sqrt(x) you actually have x^(1/2).
+
+Also, the derivative of e^x is e^x (https://youtu.be/m2MIpDrF7Es)
+
+## Finding the tangent line
+
+You can use the derivative to obtain the exact function of a tangent line at any
+point.
+
+Recall the point slope form of an [equation of a line](../algebra/slope.md)
+
+```
+y - y1 = m(x - x1)
+```
+
+You know one point (x1, y1) on the tangent line already, which is exactly when the
+tangent intersects the function.
+
+The slope of the tangent is by definition the derivative at that point.
