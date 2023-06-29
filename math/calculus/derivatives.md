@@ -198,6 +198,33 @@ Keep definitions in mind for these power functions. If you have 1/2^x you can ch
 
 Also, the derivative of e^x is e^x (https://youtu.be/m2MIpDrF7Es)
 
+#### sin and cos
+
+```
+d/dx[sin(x)] = cos(x) 😮
+d/dx[cos(x)] = -(sin(x))
+```
+
+#### ln(x)
+
+```
+d/dx[ln(x)] = 1/x
+```
+
+#### Product rule
+
+```
+d/dx[f(x)g(x)] = f'(x)g(x) + f(x)g'(x)
+```
+
+#### Quotient rule
+
+```
+with f(x) = u(x) / v(x)
+
+f'(x) = [u'(x)v(x) - u(x)v'(x)] / [(v(x))^2]
+```
+
 ## Finding the tangent line
 
 You can use the derivative to obtain the exact function of a tangent line at any

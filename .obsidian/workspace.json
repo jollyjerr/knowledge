@@ -11,8 +11,12 @@
 						"id": "ef0ec5670c733082",
 						"type": "leaf",
 						"state": {
-							"type": "graph",
-							"state": {}
+							"type": "markdown",
+							"state": {
+								"file": "programming/computer-science/arrays.md",
+								"mode": "source",
+								"source": false
+							}
 						}
 					}
 				]
@@ -81,6 +85,7 @@
 						"state": {
 							"type": "backlink",
 							"state": {
+								"file": "programming/computer-science/arrays.md",
 								"collapseAll": false,
 								"extraContext": false,
 								"sortOrder": "alphabetical",
