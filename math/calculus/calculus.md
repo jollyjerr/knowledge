@@ -11,3 +11,4 @@ These two branches are related to each other by the fundamental theorem of calcu
 - [why calculus](./why.md)
 - [limits](./limits.md)
 - [derivatives](./derivatives.md)
+- [differentiation](./differentiation.md)
