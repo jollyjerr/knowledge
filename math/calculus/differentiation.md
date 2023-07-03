@@ -3,6 +3,8 @@
 You can always use the [ formal or alternate definition of a derivative ](./derivatives.md) to find
 a functions derivative, but some types of functions have easier methods.
 
+## Explicit (normal) differentiation
+
 ### Constant
 
 Always 0
@@ -38,7 +40,7 @@ Keep definitions in mind for these power functions. If you have 1/2^x you can ch
 
 Also, the derivative of e^x is e^x (https://youtu.be/m2MIpDrF7Es)
 
-### trig functions
+### Trig functions
 
 ```
 d/dx[sin(x)] = cos(x) 😮
@@ -47,6 +49,17 @@ tan(x)' = sec^2(x)
 sec(x)' = sec(x)tan(x)
 csc(x)' = csc(x)cot(x)
 cot(x)' = csc^2(x)
+```
+
+### Inverse trig functions
+
+It's helpful to review [the rules and notation of inverse trig relations and functions](../trigonometry/inverse-trig-functions.md).
+
+Proving these definitions is pretty involved so I'm not going to put it here.
+
+```
+arctan(x) -> 1/(1+x^2)
+arcsin(x) -> 1/sqrt(1-x^2)
 ```
 
 ### ln(x)
@@ -101,3 +114,28 @@ Written in chain rule form
 ### Natural Logarithm and Exponentials
 
 Keep in mind the [properties of logarithms](../algebra/exponential-and-logarithmic-functions.md)
+
+```
+ln'(x) = 1/x
+
+ln'(x^2 + 1) -> use chain rule -> (1/(x^2+1))(2x + 0)
+
+a^x -> (a^x)ln(a)
+```
+
+## Explicit differentiation
+
+If you have a statement not written as a function of x, like `x^2 + y^2 = 16`
+you have to use implicit differentiation.
+
+1. Differentiate both sides with respect to x. When you differentiate a y term,
+   multiply by dy/dx.
+2. Solve for dy/dx.
+
+```
+(x^2 + y^2 = 36)'
+2x + 2y(dy/dx) = 0
+2y(dy/dx) = -2x
+dy/dx = -2x/2y
+dy/dx = -x/y
+```
