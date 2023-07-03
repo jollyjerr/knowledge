@@ -38,11 +38,15 @@ Keep definitions in mind for these power functions. If you have 1/2^x you can ch
 
 Also, the derivative of e^x is e^x (https://youtu.be/m2MIpDrF7Es)
 
-### sin and cos
+### trig functions
 
 ```
 d/dx[sin(x)] = cos(x) 😮
 d/dx[cos(x)] = -(sin(x))
+tan(x)' = sec^2(x)
+sec(x)' = sec(x)tan(x)
+csc(x)' = csc(x)cot(x)
+cot(x)' = csc^2(x)
 ```
 
 ### ln(x)
@@ -65,7 +69,7 @@ with f(x) = u(x) / v(x)
 f'(x) = [u'(x)v(x) - u(x)v'(x)] / [(v(x))^2]
 ```
 
-## The Chain Rule
+### The Chain Rule (compositions of functions)
 
 You can use the chain rule to find derivatives for [compositions of functions](../algebra/combinations-of-functions.md)
 
@@ -93,3 +97,7 @@ Written in chain rule form
 
 (10(x^2 + 1)^9) * 2x
 ```
+
+### Natural Logarithm and Exponentials
+
+Keep in mind the [properties of logarithms](../algebra/exponential-and-logarithmic-functions.md)
