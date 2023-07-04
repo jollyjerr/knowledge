@@ -123,7 +123,7 @@ ln'(x^2 + 1) -> use chain rule -> (1/(x^2+1))(2x + 0)
 a^x -> (a^x)ln(a)
 ```
 
-## Explicit differentiation
+## Implicit differentiation
 
 If you have a statement not written as a function of x, like `x^2 + y^2 = 16`
 you have to use implicit differentiation.
