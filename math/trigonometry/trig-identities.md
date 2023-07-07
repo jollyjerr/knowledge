@@ -20,7 +20,7 @@ sin^2x + cos^2x = 1
 ```
 cscx = 1/sinx
 secx = 1/cosx
-cotx = 1/tanx
+cotx = sinx/cosx
 ```
 
 #### Quotient identities

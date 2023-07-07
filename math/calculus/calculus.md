@@ -14,3 +14,4 @@ These two branches are related to each other by the fundamental theorem of calcu
 - [differentiation](./differentiation.md)
 - [linear approximation](./linear-approximation.md)
 - [mean value theorem](./mean-value-theorem.md)
+- [optimization](./optimization.md)
