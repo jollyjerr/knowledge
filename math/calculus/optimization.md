@@ -19,6 +19,9 @@ f'(x) = 1 - 1/x
 1 - 1/x = undefined <-- a critical point exists at x = 0
 ```
 
+Keep in mind the [zero product property](../algebra/equations.md) when solving
+for critical points, it comes up a lot.
+
 ## First Derivative Test
 
 You can use the behavior of a functions first derivative to define local
@@ -38,3 +41,55 @@ To solve problems with this:
    local min, local max, or neither.
 3. if the point is a min or max, take it as the x value and plug back in to the
    original function to find the coordinates (x, f(x)).
+
+## Second Derivative Test
+
+The first derivative test ends by plugging in points around your critical points
+to see graph behavior. This is not efficient, so you can use the second
+derivative test to remove that step:
+
+```
+local max:
+f'(c) = 0 or undefined (critical point) AND f''(c) < 0 (concave down)
+
+local min:
+f'(c) = 0 or undefined (critical point) AND f''(c) > 0 (concave up)
+```
+
+## Concavity
+
+The points where a function's concavity changes are called "inflection points".
+
+Places where the second derivative is 0 or undefined might be an inflection
+point. (similar to how it might be a critical point with first derivative).
+
+1. set the second derivative > 0 and < 0 in two [inequalities](../algebra/inequalities.md)
+   and solve for x to get where you are concave up and concave down.
+2. find critical points on the second derivative and compare them to your
+   concavity to deduce true inflection points.
+
+```
+Find inflection points of f(x) = x^2/(x^2 + 3)
+
+f'(x) = 6x/(x^2 + 3)^2 via the quotient rule
+
+f''(c) = 18(1 + x)(1 - x)/(x^2 + 3)^3 via quotient, chain rule and simplifying
+
+when is f''(c) > 0 and < 0?
+
+observe you basically have (positive)(1 + x)(1 - x)/(positive)
+
+observe f''(-2) < 0 and f''(0) > 0 and f''(2) < 0
+
+so -1 and 1 are the inflection points of f(x)
+```
+
+## Finding Global Extrema
+
+Local max and min are covered above, but also consider global max and min.
+
+1. Compute the value of the function at the endpoints (if given an interval of
+   inputs)
+2. Find all critical points
+3. Compute the value of the function at all critical points
+4. MAX(all_values) for global max and MIN(all_values) for global min

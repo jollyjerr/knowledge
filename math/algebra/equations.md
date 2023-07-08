@@ -26,3 +26,19 @@ x = 4
 x = product
 
 / = quotient
+
+## Zero Product Property
+
+If you have a product of factors = 0, the equation is true if either factor is 0.
+
+```
+4x(x^2 - 49) = 0
+
+4x = 0 -> x = 0
+
+(x^2 - 49) = 0
+(x - 7)(x + 7) = 0
+x = 7 || x = -7
+
+therefore x = 0 || 7 || -7
+```
