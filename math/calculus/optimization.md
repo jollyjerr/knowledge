@@ -56,6 +56,9 @@ local min:
 f'(c) = 0 or undefined (critical point) AND f''(c) > 0 (concave up)
 ```
 
+When there is exactly one critical point, the second derivative test can be used
+as proof that you have the global extrema at that point.
+
 ## Concavity
 
 The points where a function's concavity changes are called "inflection points".
@@ -93,3 +96,17 @@ Local max and min are covered above, but also consider global max and min.
 2. Find all critical points
 3. Compute the value of the function at all critical points
 4. MAX(all_values) for global max and MIN(all_values) for global min
+
+## Finding optimal solutions to problems
+
+Finding the global max and min can solve real world problems, like minimizing
+costs and maximizing profits or minimizing transportation time.
+
+1. Understand the problem. What is unknown? What are the given quantities?
+2. Draw a diagram if possible.
+3. Introduce notation. Ex: A = area, x = width, y = length
+4. Express what you are trying to max/min in terms of the other symbols. Ex: A=xy
+5. If there's too many variables, see if you can relate them. Ex: 2x+2y=100
+6. Find the absolute max or min value using calculus.
+7. Take your value back to the original problem and produce a correct answer.
+   (plug x into the relation, for example)
