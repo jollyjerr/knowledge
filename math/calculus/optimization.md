@@ -5,8 +5,10 @@ local maximum: if f(p) >= f(near p) then point p is a local maximum of f
 
 ## Critical Points
 
-A point is a critical point of a function if the derivative of
-the function at that point is zero or if it does not exist.
+A point is a critical point of a function if
+
+1. The point is in the domain of the function
+2. the derivative of the function at that point is zero or if it does not exist
 
 To find critical points of a function, take the derivative and set it equal to 0
 and solve for x. Then try to find any points where the derivative is undefined.

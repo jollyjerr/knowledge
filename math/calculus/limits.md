@@ -198,7 +198,7 @@ If you are solving a limit that uses pythagorean functions and you reach indeter
 
 A common pattern for this is to use a Pythagorean identity and then use diff of squares to reach a common factor
 
-#### L Hopitals rule
+#### Footnote on Conjugate and Pythagorean Identity
 
 When you cancel out terms with conjugate method or pythagorean identity you must remember to specify which value the new function does not work at
 
@@ -297,3 +297,24 @@ sqt(4 - (1/x^3)) / 2 + (3/x^2)
 ```
 
 Another challenge can be signs. If the degree you chose in this process is even then you should have a positive answer, and vice versa
+
+#### L Hopitals rule
+
+If f and g are [differentiable](./differentiation.md) and the limit is indeterminate of the form `0/0`
+or `inf/inf`, then:
+
+```
+limx->a f(x)/g(x) === limx->a f'(x)/g'(x)
+```
+
+Example:
+
+```
+limx->inf e^x/x^2
+=L'H=
+limx->inf e^x/2x
+=L'H=
+limx->inf e^x/2
+= inf/2
+= inf
+```
