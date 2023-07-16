@@ -66,4 +66,74 @@ Suppose f(x) is a continuous function on [a,b]. Divide the interval into n
 subintervals. The width of each subinterval is `deltax = (b-a)/n` (b-a is length
 of full interval and you divide by number of rectangles)
 
-#### Width of each rectangle approaching 0
+The total area would be `f(x)deltax` for n-1 of n rectangles using left endpoint
+approximation. Rewritten as `deltax(...f(n - 1) for each n)`
+
+As an example, estimate the area of f(x) = x^2 on [0, 2] using four rectangles
+and left-endpoint approximation:
+
+```
+area = deltax(f(x0) + f(x1) + f(x2) + f(x3))
+
+deltax = (b-a)/n = 2-0/4 = 1/2
+
+x0 = 0, x1 = 1/2, x2 = 1, x3 = 3/2
+
+area = 1/2(f(0) + f(1/2) + f(1) + f(3/2))
+     = 1/2(0^2 + (1/2)^2 + 1^2 + (3/2)^2)
+     = 1.75
+```
+
+If we let n approach infinity, we get a formula called a **Riemann Sum**:
+
+```
+limn->inf [(b-a)/n][...f(n - 1) for each n]
+```
+
+This exact concept can be rewritten with integral notation (I am going to just
+write `int` but google to see real symbol like ∫):
+
+The definite integral of f from a to b is `inta-b f(x)dx`
+
+dx tells you what the independent variable is, in this case the width of each
+rectangle. It is implied in this notation that dx approaches 0.
+
+This is the exact area under the graph f(x) on [a, b].
+
+f(x) is called the **integrand**
+
+a and b are the **limits of integration**
+
+## Types
+
+### Definite Integral
+
+A definite integral has given limits on the function like [a, b]
+
+### Indefinite Integral
+
+Indefinite integrals have no limits on the input of the function (-inf, inf)
+
+## Geometry
+
+Sometimes you can integrate a function easily by taking it's geometry.
+
+For example, `int1-3(y=x-1)dx` is just a triangle so the answer is (2\*2) / 2
+
+Also `int0-1(y=sqrt(1-x^2))dx` is the top half of a circle `x^2 + y^2 = 1`.
+Given the range you are taking 1/4 of the area of the circle so `(pi(1)^2)/4 =
+pi/4`.
+
+## The Fundamental Theorem of Calculus
+
+If f is continuous on the interval [a, b] and f(x) = F'(x), then
+inta-b(f(x)dx) = F(b) - F(a)
+
+The function F(x) is known as the antiderivative of f(x)
+
+### Units
+
+Definite integrals take rate of change and give you the quantity
+
+If f(x) is miles/hr then F(x) = miles
+If f(x) is liters/min then F(x) = liters
