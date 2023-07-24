@@ -1,119 +1,5 @@
 # Integration
 
-## Intuition
-
-The [derivative](./derivatives.md) is taking a distance
-function (position) and calculating it's velocity over time. Integration is the process of taking a
-velocity function and deducing the distance traveled. Hence the nickname
-"anti-derivative"
-
-1. Given a position of an object, the derivative represents its velocity.
-2. Given the velocity of an object, the area under the curve to the x axis
-   represents it's position.
-
-## Distance vs displacement
-
-1. Distance is given by the area above the x-axis **plus** the area below the
-   x-axis.
-2. Displacement is given by the area above the x-axis **minus** the area below the
-   x-axis
-
-Displacement is also sometimes called the "signed area between a graph and the
-horizontal axis".
-
-Integration is typically interested in displacement.
-
-When the velocity function dips below the x axis, the area under that negative
-portion of the curve should typically be subtracted from your final answer
-because it is negative velocity.
-
-Intuitively if you run 3 miles and turn around and run 2 miles your displacement
-is only 1 mile.
-
-## Approximation
-
-Let's say we have a velocity function `f(x) = x(8-x)`
-
-### Endpoint Approximation
-
-Remember `distance = velocity * time` and the area of a rectangle is `area = x * y`
-
-We can approximate the distance traveled over an interval by breaking the
-interval into rectangle and calculating the distance of each rectangle.
-
-For each rectangle you can pick an approximation of the velocity at any point in the
-rectangles width `f(x) where x is inside rectangle`:
-
-left side = left-endpoint approximation
-right side = right-endpoint approximation
-any point in the middle would also work.
-
-If you calculate the distance (area) of **each** rectangle at left-endpoint and at right
-endpoint, you know that the real answer is somewhere between those two
-answers.
-
-### Improving the Approximation
-
-If you take endpoint approximation and imagine approaching infinite rectangles
-or the width of each rectangle approaching 0 you can calculate the actual area
-under the curve.
-
-#### Infinite Rectangles
-
-Define a rectangle as `width: deltax, height: f(n)`
-
-Suppose f(x) is a continuous function on [a,b]. Divide the interval into n
-subintervals. The width of each subinterval is `deltax = (b-a)/n` (b-a is length
-of full interval and you divide by number of rectangles)
-
-The total area would be `f(x)deltax` for n-1 of n rectangles using left endpoint
-approximation. Rewritten as `deltax(...f(n - 1) for each n)`
-
-As an example, estimate the area of f(x) = x^2 on [0, 2] using four rectangles
-and left-endpoint approximation:
-
-```
-area = deltax(f(x0) + f(x1) + f(x2) + f(x3))
-
-deltax = (b-a)/n = 2-0/4 = 1/2
-
-x0 = 0, x1 = 1/2, x2 = 1, x3 = 3/2
-
-area = 1/2(f(0) + f(1/2) + f(1) + f(3/2))
-     = 1/2(0^2 + (1/2)^2 + 1^2 + (3/2)^2)
-     = 1.75
-```
-
-If we let n approach infinity, we get a formula called a **Riemann Sum**:
-
-```
-limn->inf [(b-a)/n][...f(n - 1) for each n]
-```
-
-This exact concept can be rewritten with integral notation (I am going to just
-write `int` but google to see real symbol like ∫):
-
-The definite integral of f from a to b is `inta-b f(x)dx`
-
-dx tells you what the independent variable is, in this case the width of each
-rectangle. It is implied in this notation that dx approaches 0.
-
-This is the exact area under the graph f(x) on [a, b].
-
-f(x) is called the **integrand**
-
-a and b are the **limits of integration**
-
-## Types
-
-### Definite Integral
-
-A definite integral has given limits on the function like [a, b]
-
-### Indefinite Integral
-
-Indefinite integrals have no limits on the input of the function (-inf, inf)
-
 ## Geometry
 
 Sometimes you can integrate a function easily by taking it's geometry.
@@ -131,9 +17,56 @@ inta-b(f(x)dx) = F(b) - F(a)
 
 The function F(x) is known as the antiderivative of f(x)
 
-### Units
+## Indefinite Integrals
 
-Definite integrals take rate of change and give you the quantity
+When you find anti-derivatives you just use the existing [differentiation rules](./differentiation.md)
+but in reverse.
 
-If f(x) is miles/hr then F(x) = miles
-If f(x) is liters/min then F(x) = liters
+example: f(x) = 2x has a family of antiderivatives F(x) = x^2 + C
+
+### Constant
+
+∫kdx = kx + C
+
+∫dx = x + C
+
+### Power functions
+
+∫x^ndx = [x^(n+1)/(n+1)] + C when n != -1
+
+Keep in mind all the rules of fractions and exponents so you can jump around
+
+Example:
+
+```
+1/x^(9/4)
+x^(-9/4)
+(1/(-9/4 + 4/4))x^(-9/4 + 4/4)
+(1/(-5/4))x^(-5/4)
+(-4/5)x^(-5/4)
+
+-4/(5x^(5/4))
+```
+
+### Sums, differences, constant multiples
+
+∫(f(x) + g(x))dx = ∫f(x)dx + ∫g(x)dx
+∫(f(x) - g(x))dx = ∫f(x)dx - ∫g(x)dx
+∫cf(x)dx = c∫f(x)dx
+
+### Exponential and logarithmic
+
+∫e^x dx = ex + C
+∫a^x dx = (a^x)/ln(a) + C
+∫1/x dx = ln(|x|) + C
+
+### Trigonometric
+
+∫sinx dx = -cosx + C
+∫cosx dx = sinx + C
+∫sec^2(x) dx = tanx + C
+∫secxtanx dx = secx + C
+∫-cotxcscx dx = cscx + C
+∫-csc^2x dx = cotx + C
+∫1/(sqrt(1-x^2)) dx = sin^-1(x) + C = arcsinx + C
+∫1/(1+x^2) dx = tan^-1(x) + C = arctanx + C

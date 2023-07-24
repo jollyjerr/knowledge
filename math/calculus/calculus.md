@@ -15,4 +15,5 @@ These two branches are related to each other by the fundamental theorem of calcu
 - [linear approximation](./linear-approximation.md)
 - [mean value theorem](./mean-value-theorem.md)
 - [optimization](./optimization.md)
+- [integrals](./integrals.md)
 - [integration](./integration.md)
