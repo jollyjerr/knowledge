@@ -26,13 +26,16 @@ example: f(x) = 2x has a family of antiderivatives F(x) = x^2 + C
 
 ### Constant
 
+```
 ∫kdx = kx + C
-
 ∫dx = x + C
+```
 
 ### Power functions
 
+```
 ∫x^ndx = [x^(n+1)/(n+1)] + C when n != -1
+```
 
 Keep in mind all the rules of fractions and exponents so you can jump around
 
@@ -50,18 +53,23 @@ x^(-9/4)
 
 ### Sums, differences, constant multiples
 
+```
 ∫(f(x) + g(x))dx = ∫f(x)dx + ∫g(x)dx
 ∫(f(x) - g(x))dx = ∫f(x)dx - ∫g(x)dx
 ∫cf(x)dx = c∫f(x)dx
+```
 
 ### Exponential and logarithmic
 
+```
 ∫e^x dx = ex + C
 ∫a^x dx = (a^x)/ln(a) + C
 ∫1/x dx = ln(|x|) + C
+```
 
 ### Trigonometric
 
+```
 ∫sinx dx = -cosx + C
 ∫cosx dx = sinx + C
 ∫sec^2(x) dx = tanx + C
@@ -70,3 +78,25 @@ x^(-9/4)
 ∫-csc^2x dx = cotx + C
 ∫1/(sqrt(1-x^2)) dx = sin^-1(x) + C = arcsinx + C
 ∫1/(1+x^2) dx = tan^-1(x) + C = arctanx + C
+```
+
+## Initial Value Problems
+
+Sometimes you are provided with an initial value(s) so that the family of
+antiderivatives can be narrowed down to a single antiderivative.
+
+Find f(x) if f'(x) = cos(x) + sin(x) and f(0) = 5.
+
+Initial values are also helpful because you can graph the resulting function.
+
+## Average value of a function
+
+aka average slope of all tangent lines of the derivative
+
+signed area/width -> (∫[interval]f(x)dx)/interval
+
+```
+avg value of f(x) on interval [a, b]
+take (∫[a to b]f(x)dx)/b - a
+(F(b) - F(a))/b - a
+```

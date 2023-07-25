@@ -126,4 +126,16 @@ F(x) + C (any constant)
 Definite integrals take rate of change and give you the quantity
 
 If f(x) is miles/hr then F(x) = miles
+
 If f(x) is liters/min then F(x) = liters
+
+## Properties of definite integrals
+
+```
+∫ac fx dx + ∫cb fx dx = ∫ab fd dx
+∫aa fx dx = 0
+∫ab fx dx = -(∫ba fx dx)
+
+linearity property
+∫[a to b] (f(x) + g(x)) dx = ∫[a to b] f(x) dx + ∫[a to b] g(x) dx
+```
