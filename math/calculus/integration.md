@@ -100,3 +100,122 @@ avg value of f(x) on interval [a, b]
 take (∫[a to b]f(x)dx)/b - a
 (F(b) - F(a))/b - a
 ```
+
+## U Substitution
+
+Some functions can not be integrated using the above rules but you can use a
+process called u-substitution.
+
+This can only work if the function has one "chunk" that **is the derivative** of
+another "chunk" of the function. For example: in `∫3x^2(x^3 + 5)^7 dx` `3x^2` is
+the derivative of `x^3 + 5`. The chunk will almost always be the longest x
+expression that is composed inside another function, like `x^7` in this case.
+
+1. Define a new variable `u` to be the chunk of the function that has it's
+   derivative in the function, so in this case `u = x^3 + 5`
+2. Take the derivative of u. `du = 3x^2 dx`
+3. If `du` does not exist exactly in the remaining function, you have to
+   manipulate `du` and/or `u` algebraically until you have exactly what you need
+   for the substitution to work out. See other examples for this.
+4. Now that you have u and du, substitute into the original function: `∫(u^7)du`
+5. Integrate this new function: `((u^8)/8) + C` The `du` is removed here because
+   you inverted the chain rule behind the scenes.
+6. Back substitute `u` and simplify if you can: `(((x^3 + 5)^8)/8) + C`
+
+**Check the definite integral example to see special steps for definite
+integrals**
+
+### Examples
+
+#### Rearrange the du expression
+
+```
+∫(x^3)/sqrt(1 - x^4) dx
+
+u = 1 - x^4
+du = -4x^3 dx
+
+-4x^3 does not exist in the original expression
+
+(-1/4)du = x^3 dx
+
+now it does :), so substitute
+
+∫((-1/4)du)/sqrt(u)
+
+-1/4∫(1/u^1/2)du
+
+-1/4∫(u^(-1/2))du
+
+now integrate
+
+-1/4(u^1/2 / 1/2) + C
+
+simplify
+
+-1/4(2)u^1/2 + C
+
+back substitute u
+
+-1/2(1 - x^4)^1/2 + C
+```
+
+#### Rearrange the u expression
+
+```
+∫xsqrt(x + 2) dx
+
+u = x + 2
+du = dx
+
+rearrange u so you can substitute
+
+x = u - 2
+
+now substitute
+
+∫(u - 2)sqrt(u) du
+
+simplify
+
+∫(u - 2)u^1/2
+
+∫u^3/2 - 2u^1/2 du
+
+integrate
+
+(u^5/2 / 5/2) - (2c^3/2 / 3/2) + C
+
+simplify
+
+(2/5)u^5/2 - (4/3)u^3/2 + C
+
+back substitute
+
+(2/5)(x + 2)^5/2 - (4/3)(x + 2)^3/2 + C
+```
+
+#### Trig
+
+```
+∫sinx/cos^3x dx
+
+u = cosx
+du = -sinx dx -> -du = sinx dx
+
+∫-du/u^3 = -∫1/u^3 du = -∫u^-3 du
+
+integrate
+
+-(u^-2 / -2) + C = (1/2)u^-2 + C = (1/2u^2) + C
+
+back substitute
+
+(1/(2cos^2x)) + C
+```
+
+#### Definite integral
+
+```
+
+```
