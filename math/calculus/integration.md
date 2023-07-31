@@ -216,6 +216,69 @@ back substitute
 
 #### Definite integral
 
-```
+As soon as you get rid of the x variables and replace them with u variables, you
+need to adjust the limits by plugging them in for `x` in the `u` expression.
 
 ```
+∫[0 to 2]2x(x^2 + 4)^2 dx
+
+u = x^2 + 4
+du = 2xdx -> du/2x = dx
+
+∫[0 to 2]u^2 du // dx canceled out
+
+adjust limits
+
+u = 0^2 + 4 = 4 -> lower limit is 4
+u = 2^2 + 4 = 8 -> upper limit is 8
+
+∫[4 to 8]u^2 du
+
+evaluate
+
+(8^3 / 3) - (4^3 / 3)
+
+448/3
+```
+
+## Integration by parts
+
+This expression is true:
+
+```
+∫u dv = uv - ∫v du
+
+or written as
+
+∫f(x)g'(x) = f(x)g(x) - ∫g(x)f'(x)
+```
+
+And you can use it to rewrite integrals so they are solvable
+
+```
+∫xe^x dx
+
+u  = x
+dv = e^x dx
+du = 1 dx <- derivative of u
+v  = e^x <- intigrate dv (+C does not matter here)
+
+∫xe^x dx = xe^x - ∫e^x dx
+
+now solve the new equation
+
+xe^x - e^x + C
+```
+
+If you are struggling to pick u and dv, follow LIATE in order and take something
+of that type for u. u should get simpler when you take the derivative and dv
+should not get more complicated. dv always gets the dx.
+
+- L logs
+- I inverse trig
+- A algebraic
+- T trig
+- E exponential
+
+Sometimes you have to do integration by parts multiple times until you get
+something you can integrate.
