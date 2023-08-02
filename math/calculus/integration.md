@@ -243,6 +243,8 @@ evaluate
 
 ## Integration by parts
 
+> Really just the reverse of the product rule for derivatives
+
 This expression is true:
 
 ```
