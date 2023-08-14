@@ -9,7 +9,6 @@
 - [continuous-delivery](./continuous-delivery.md)
 - [golang](./golang.md)
 - [javascript](./javascript.md)
-- [web rtc](./web-rtc.md)
 - [css](./css.md)
 - [sql](./sql.md)
 - [vim](./vim.md)
