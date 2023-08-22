@@ -1,4 +1,4 @@
-# Proofs
+# Discrete Structures
 
 ## Topics
 

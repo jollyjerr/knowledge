@@ -4,7 +4,7 @@ All of mathematics can be described with sets. A **set** is a collection of **el
 
 Sets are equal if they contain the same elements - even if they are listed in a different order.
 
-`A = {1,2,3}`
+`A = {1,2,3}` 
 
 2 ∈ A (read as 2 is in A)
 
@@ -18,7 +18,25 @@ Some sets are special and get reserved symbols:
 
 Sets can have anything as elements (numbers, strings, other sets, functions), or nothing, which makes them equal to the _empty set_ or ∅.
 
-The cardinality of a set is marked with ||. `|{1,8}| = 2`
+## Conventions
+
+Lowercase letters represent elements in the set, while uppercase letters denote
+the set itself:
+
+```
+a ∈ A
+```
+## Notation
+
+#### Roster notation: write out all members of the set.
+
+```
+A = {True, False}
+```
+
+Ellipsis can be used if the pattern is clear `{1,3,5,7,...,99}`
+
+#### Set Builder Notation
 
 **Set-builder notation** is used to describe sets that are hard to write out in full. `X = {expression:rule}` Example:
 
@@ -29,3 +47,7 @@ Read: "E is the set of all things of form 2n, such that n is an element of Z"
 
 Translation: E is the set of all n in (all integers) where n is even
 ```
+
+## Cardinality
+
+Number of distinct elements in a set, denoted with  ||. Ex `|{1,8}| = 2`
