@@ -3,4 +3,5 @@
 ## Topics
 
 - [sets](./sets.md)
-- [cartesian product](./cartesian-product.md)
+- [tuples](./tuple.md)
+- [sequence](./sequence.md)

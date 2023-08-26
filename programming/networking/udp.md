@@ -17,5 +17,3 @@ Datagram: packets delivered via an unreliable service with no delivery
 guarantees
 
 ## Null Protocol Services
-
-

@@ -1,10 +1,10 @@
-## Sets
+# Sets
 
 All of mathematics can be described with sets. A **set** is a collection of **elements**. Sets can be infinite or finite.
 
 Sets are equal if they contain the same elements - even if they are listed in a different order.
 
-`A = {1,2,3}` 
+`A = {1,2,3}`
 
 2 ∈ A (read as 2 is in A)
 
@@ -26,6 +26,7 @@ the set itself:
 ```
 a ∈ A
 ```
+
 ## Notation
 
 #### Roster notation: write out all members of the set.
@@ -50,4 +51,87 @@ Translation: E is the set of all n in (all integers) where n is even
 
 ## Cardinality
 
-Number of distinct elements in a set, denoted with  ||. Ex `|{1,8}| = 2`
+Number of distinct elements in a set, denoted with ||. Ex `|{1,8}| = 2`
+
+## Subsets
+
+A ⊆ B if and only if every element in A is also in B
+
+A ⊂ if and only if every element in A is also in B AND B has more elements than
+A
+
+A = B if both sets have all the same elements
+
+The empty set is a subset of any set
+
+## Power sets
+
+The power set of a set is the set of all subsets.
+
+```
+S = {1,2,3}
+P(S) = {∅, {1}, {2}, {3}, {1,2}, {1,3}, {2,3}, {1,2,3}}
+```
+
+If A is a set of carnality n, then |P(A)| = 2^n
+
+## Set operations
+
+- Intersection
+
+A set containing the elements that are in both sets
+
+{1,2} ∩ {2,3} = {2}
+
+- Union
+
+A set containing all elements from both sets
+
+{1,2,3} ∪ {2,3,4} = {1,2,3,4}
+
+- Difference
+
+Elements in first set that are not in the second one (note this is ordered!)
+
+{1,2,3} - {2,3,4} = {1}
+
+- Symmetric difference
+
+All elements that are in one or the other element but not both
+A ⊕ B = (A - B) ∪ (B - A)
+
+{1,2,3} ⊕ {2,3,4} = {1,4}
+
+- Set complement
+
+Difference between the universal set (scoped to some domain normally) and another set
+
+U - A
+
+## The Cartesian Product
+
+It is possible to multiply two [sets](./sets.md) and produce a new set, the **Cartesian Product**
+
+A cartesian product of two sets, A and B, is another set, denoted as A x B,
+and defined as `A x B = {(a,b): a ∈ A, b ∈ B}`
+
+Notice the [tuple](./tuple.md) in this definition
+
+You can also have ordered triples `(x,y,z)` etc...
+
+A _Cartesian plane_ is just the cartesian product R x R. `{(x,y): x,y ∈ R}`
+
+Expanding on this, you can have a **Cartesian power** like `A^n`
+
+```
+A^n = A * A * A ... * A = {(x1,x2,...,xn): x1,x2,...,xn ∈ A}
+```
+
+The cardinality of a cartesian product is the product of the cardinality of each set
+
+If A is a set of symbols or strings it is common to write the cartesian product
+without punctuation:
+
+```
+A = {0,1}, A^2 = {00, 01, 10, 11}
+```

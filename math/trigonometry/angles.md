@@ -21,7 +21,7 @@ Two angles that sum to 180° or pi are called **supplementary angles**
 
 ## Standard position
 
-If you line angles up on a [cartesian coordinate system](../discrete-structures/cartesian-product.md)
+If you line angles up on a [cartesian coordinate system](../discrete-structures/sets.md)
 you can measure from the _initial side_ to the _terminal side_ and have positive angles
 that rotate counterclockwise and negative angles that rotate clockwise.
 
