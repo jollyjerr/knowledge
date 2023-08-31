@@ -6,10 +6,11 @@ Meditation practices can be placed on two axis and they placement on these axis
 can actually be seen in brain scans.
 
 ```
-           inquisitive 
+           inquisitive
                      |
 open awareness <-------------> focus
                      |
              grounding
 ```
+
 For example, Zen zazzen is an inquisitive and open practice. Trataka is a focus practice. Ice diving is grounding.

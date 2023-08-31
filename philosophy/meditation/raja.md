@@ -49,4 +49,3 @@ Happens to you - not something you actually do
 #### Samadhi
 
 Temporary enlightenment
-
