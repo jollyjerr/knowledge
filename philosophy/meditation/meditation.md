@@ -16,4 +16,7 @@ A temporary state of enlightenment. Like REM sleep in the Dhyana sleep metaphor.
 
 ## Topics
 
-- [history](history.md)
+- [history](./history.md)
+- [styles](./styles.md)
+- [raja](./raja.md)
+- [kundalini](./kundalini.md)

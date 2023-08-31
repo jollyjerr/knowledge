@@ -4,47 +4,18 @@
 		"type": "split",
 		"children": [
 			{
-				"id": "92439f8bcd7b6857",
+				"id": "ad1386ada8913aa9",
 				"type": "tabs",
 				"children": [
 					{
-						"id": "35ba82fa703976b0",
+						"id": "1661d1ebc972a54f",
 						"type": "leaf",
 						"state": {
-							"type": "markdown",
-							"state": {
-								"file": "philosophy/meditation/meditation.md",
-								"mode": "source",
-								"source": false
-							}
-						}
-					},
-					{
-						"id": "2d7d94f94b5aaf55",
-						"type": "leaf",
-						"state": {
-							"type": "markdown",
-							"state": {
-								"file": "philosophy/meditation/history.md",
-								"mode": "source",
-								"source": false
-							}
-						}
-					},
-					{
-						"id": "127dc1955e2255e1",
-						"type": "leaf",
-						"state": {
-							"type": "markdown",
-							"state": {
-								"file": "philosophy/meditation/meditation.md",
-								"mode": "source",
-								"source": false
-							}
+							"type": "empty",
+							"state": {}
 						}
 					}
-				],
-				"currentTab": 1
+				]
 			}
 		],
 		"direction": "vertical"
@@ -110,7 +81,6 @@
 						"state": {
 							"type": "backlink",
 							"state": {
-								"file": "philosophy/meditation/history.md",
 								"collapseAll": false,
 								"extraContext": false,
 								"sortOrder": "alphabetical",
@@ -137,11 +107,11 @@
 			"markdown-importer:Open format converter": false
 		}
 	},
-	"active": "2d7d94f94b5aaf55",
+	"active": "1661d1ebc972a54f",
 	"lastOpenFiles": [
-		"other/spirituality/yoga.md",
 		"philosophy/meditation/meditation.md",
 		"philosophy/meditation/history.md",
+		"other/spirituality/yoga.md",
 		"philosophy/philosophy.md",
 		"other/other.md",
 		"meditation/meditation.md",

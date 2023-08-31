@@ -22,7 +22,7 @@ any of these paths, or mix and match.
 - Bhakti: religion, beliefs, devotion
 - Karma: doing good deeds
 - [Jnana](./jnana.md): contemplation, sit and think your way to enlightenment
-- Raja: willpower, step wise process
+- [Raja](./raja.md): willpower, step wise process
 
 Raja has eight steps:
 
@@ -36,7 +36,7 @@ Raja has eight steps:
 8. Samadhi
 
 - Hatha: Raja systemic approach only needed Asana and Pranayama
-- Kundalini: 7 chakra system
+- [Kundalini](./kundalini.md): 7 chakra system
 - Kriya: like Hatha but focused on the mind, not body
 
 ## Buddha

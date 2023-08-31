@@ -55,10 +55,10 @@ Number of distinct elements in a set, denoted with ||. Ex `|{1,8}| = 2`
 
 ## Subsets
 
-A ⊆ B if and only if every element in A is also in B
+A ⊆ B if and only if every element in A is also in B ("is a subset of")
 
 A ⊂ if and only if every element in A is also in B AND B has more elements than
-A
+A ("is a proper subset of")
 
 A = B if both sets have all the same elements
 
@@ -83,11 +83,19 @@ A set containing the elements that are in both sets
 
 {1,2} ∩ {2,3} = {2}
 
+Intersections can also be indexed, so if you have j sets you can intersect each
+set up to a jth set in a loop. The notation looks like the sum operator but with
+the intersection symbol.
+
 - Union
 
 A set containing all elements from both sets
 
 {1,2,3} ∪ {2,3,4} = {1,2,3,4}
+
+Unions can also be indexed, so if you have j sets you can union each
+set up to a jth set in a loop. The notation looks like the sum operator but with
+the unionion symbol.
 
 - Difference
 
@@ -107,6 +115,8 @@ A ⊕ B = (A - B) ∪ (B - A)
 Difference between the universal set (scoped to some domain normally) and another set
 
 U - A
+
+Can also be notated with a horizontal line above the set name.
 
 ## The Cartesian Product
 
