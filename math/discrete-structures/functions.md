@@ -37,7 +37,7 @@ there is some value x in X that maps to y.
 
 ### Bijection
 
-A function is a bijection function if it is *both* injective and surjective.
+A function is a bijection function if it is _both_ injective and surjective.
 
 Bijection is sometimes called "one-to-one correspondence"
 
