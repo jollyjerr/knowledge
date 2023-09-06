@@ -1,3 +1,5 @@
+See [functions](../discrete-structures/functions.md)
+
 In a function, every input value of x outputs a single value for y
 
 Every function has a domain (all valid real number arguments (x values)) and a range (all valid real number outputs (or y value))

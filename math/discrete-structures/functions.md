@@ -11,6 +11,9 @@ Target: set of all output values
 
 Range: target values that the function actually maps to
 
+A mapping between sets is not a function if an element in the domain does not
+have a mapping or if an element in the domain has more than one mapping.
+
 ## Notation
 
 f: X -> Y
@@ -27,19 +30,28 @@ Explicit Specification: {a: 2, b: 68, c: 421}
 
 ### Injective
 
+Also known as "one-to-one" functions.
 A function is injective if all inputs map to different outputs for all possible
 input values.
+
+If this is true, the size of the domain will be less than or equal to the size
+of the target: |D| <= |T|
 
 ### Surjective
 
 Also known as "onto" functions. The range == the target, so for every value y in Y
 there is some value x in X that maps to y.
 
+If this is true, the size of the domain will be greater than or equal to the
+size of the target: |D| >= |T|
+
 ### Bijection
 
 A function is a bijection function if it is _both_ injective and surjective.
 
 Bijection is sometimes called "one-to-one correspondence"
+
+If this is true, the size of the domain and the target will be the same
 
 ### Inverse
 
@@ -76,3 +88,8 @@ if x < x2 then f(x) < f(x2)
 ### Strictly decreasing
 
 if x < x2 then f(x) > f(x2)
+
+## Common functions
+
+Floor: ⌊2.9⌋ = 2
+Ceiling: ⌈2.1⌉ = 3

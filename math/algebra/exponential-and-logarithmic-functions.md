@@ -1,3 +1,17 @@
+## Properties of exponential functions
+
+```
+(b^x)b^y = b^x+y
+
+(b^x)^y = b^(xy)
+
+b^x / b^y = b^x-y
+
+(bc)^x = (b^x)c^x
+```
+
+## Logs
+
 Logarithms tell us how many times we multiply a variable by itself in order to get a different number.
 
 `2^x = 8` is called an **exponential equation** and can be written as
@@ -52,6 +66,20 @@ The base `a` must be positive and not equal to 1
 `log1(1) = 0, log1(1) = 1, log1(1) = 2` // leads to impossible statements
 
 The argument y must be positive
+
+### Properties of logarithmic functions
+
+```
+b != 1
+
+logb(xy) = logb(x) + logb(y)
+
+logb(x/y) = logb(x) - logb(y)
+
+logb(x^y) ylogb(x)
+
+logc(x) = logb(x) / logb(c) where c != 1
+```
 
 ### Evaluating logs
 
