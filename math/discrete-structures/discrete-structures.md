@@ -6,3 +6,4 @@
 - [tuples](./tuple.md)
 - [sequence](./sequence.md)
 - [functions](./functions.md)
+- [propositional logic](./logic.md)
