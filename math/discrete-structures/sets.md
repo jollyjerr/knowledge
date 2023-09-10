@@ -145,3 +145,11 @@ without punctuation:
 ```
 A = {0,1}, A^2 = {00, 01, 10, 11}
 ```
+
+## Logical operators
+
+Sets follow the same laws as [propositions](./logic.md) but with set symbols:
+
+¬ == ⎻ (complement)
+∧ == ∩
+∨ == ∪

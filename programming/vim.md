@@ -25,6 +25,8 @@ ctrl-V visual block
 `hjkl => move by letter , wbe => move by word`
 
 ```
+a end of word
+A end of line
 number action (repeat x times)
 f,t jump in line
 % jump brackets
