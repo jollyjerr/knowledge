@@ -282,5 +282,23 @@ should not get more complicated. dv always gets the dx.
 - T trig
 - E exponential
 
-Sometimes you have to do integration by parts multiple times until you get
+#### Solving integration by parts problems
+
+- Sometimes you have to do integration by parts multiple times until you get
 something you can integrate.
+
+- Check to see if it makes sense to do a usub first. It might make the
+  integration by parts easier
+
+- If you only have one function, sometimes you can just introduce a 1 to make
+  the problem solvable. `∫ln(x)dx -> ∫1*ln(x)dx`. 1 is the derivative of x.
+
+- If you do integration by parts multiple times and end up with the original
+  integral in your formula, you can move it over: `original = formula - original`
+  so `2original = formula` so `original = formula/2`. This is called boomerang
+  integral.
+
+- For definite integrals, the formula gets that line symbol
+  with lower and upper limit on it to show you would calculate both and
+  subtract lower from upper. this - that |. You can't really type it lol so
+  look at an example. Also don't add +c obviously.

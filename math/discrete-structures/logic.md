@@ -109,7 +109,7 @@ p or q == q or p
 p and q == q and p
 
 distributative laws
-p or (q and r) == (p or q) and (q or r)
+p or (q and r) == (p or q) and (p or r)
 p and (q or r) == (p and q) or (p and r)
 
 identity laws
