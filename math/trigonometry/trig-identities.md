@@ -15,12 +15,14 @@ sin^2x + cos^2x = 1
 1 + tan^2x = sec^2x
 ```
 
+These get used frequently like `sin^2x = 1 - cos^2x`
+
 #### Reciprocal identities
 
 ```
 cscx = 1/sinx
 secx = 1/cosx
-cotx = sinx/cosx
+cotx = cosx/sinx
 ```
 
 #### Quotient identities
@@ -32,8 +34,6 @@ you can easily find the **quotient identities**
 tanx = sinx/cosx
 cotx = cosx/sinx
 ```
-
-These get used frequently like `sin^2x = 1 - cos^2x`
 
 #### Co-function identities
 

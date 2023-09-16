@@ -285,7 +285,7 @@ should not get more complicated. dv always gets the dx.
 #### Solving integration by parts problems
 
 - Sometimes you have to do integration by parts multiple times until you get
-something you can integrate.
+  something you can integrate.
 
 - Check to see if it makes sense to do a usub first. It might make the
   integration by parts easier
