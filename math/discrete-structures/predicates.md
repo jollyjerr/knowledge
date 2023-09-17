@@ -87,8 +87,30 @@ The quantifiers are applied before the logical operations (∧, ∨, ->, and <->
 Keep in mind, if there are any free variables in a quantified statement, it is
 not a proposition but is a predicate with an unknown truth value.
 
+### Nested quantifiers
+
+A statement with multiple binding quantifiers before it is called a nested
+quantifier statement: `∃x∀y T(x,y,z)` - x and y are bound, z is free
+
+A common nested quantifier statement is "everything but itself"
+
+`∀x ∀y ((x ≠ y) → M(x, y))`
+
+Or "one other thing / someone else's"
+
+`∃x ∃y ((x ≠ y) ∧ M(x, y))`
+
 ### De Morgan's Law
 
 Universally qualified statements: `¬∀x P(x) = ∃x ¬P(x)`
 
 Existentially qualified statements: `¬∃x P(x) = ∀x ¬P(x)`
+
+Nested qualifiers:
+
+```
+¬∀x∀y P(x, y) ≡ ∃x∃y ¬P(x, y)
+¬∀x∃y P(x, y) ≡ ∃x∀y ¬P(x, y)
+¬∃x∀y P(x, y) ≡ ∀x∃y ¬P(x, y)
+¬∃x∃y P(x, y) ≡ ∀x∀y ¬P(x, y)
+```

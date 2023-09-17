@@ -74,6 +74,13 @@ cos2x = cos^2x-sin^2x = 1-2sin^2x = 2cos^2x-1
 tan2x = 2tanx/1-tan^2x
 ```
 
+Another helpful way to write these
+
+```
+sin^2(x) = (1 - cos(2x)) / 2
+cos^2(x) - (1 + cos(2x)) / 2
+```
+
 Remember to use Pythagorean identities if you are only provided with sin or cos
 to find the other one.
 

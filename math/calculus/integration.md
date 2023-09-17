@@ -78,6 +78,29 @@ x^(-9/4)
 ∫-csc^2x dx = cotx + C
 ∫1/(sqrt(1-x^2)) dx = sin^-1(x) + C = arcsinx + C
 ∫1/(1+x^2) dx = tan^-1(x) + C = arctanx + C
+
+More involved:
+∫cscx dx = -ln(|cscx+cotx|) + C
+∫secx dx = ln(|scsx+tanx|) + C
+```
+
+Some of them have a trick where you multiply by "1" and do u sub... it's rough 😞
+
+```
+∫cscx dx
+
+∫(csc^2x+cscxcotx)/(cscx + cotx) dx
+
+u = cscx+cotx
+du = -cscxcotx - csc^2x dx
+
+∫((csc^2x+cscxcotx)/u)(du/(-1(cscxcotx+csc^2x)))
+
+-1 * ∫1/u du
+
+-ln(|u|) + c
+
+-ln(|cscx+cotx|)+C
 ```
 
 ## Initial Value Problems
@@ -302,3 +325,89 @@ should not get more complicated. dv always gets the dx.
   with lower and upper limit on it to show you would calculate both and
   subtract lower from upper. this - that |. You can't really type it lol so
   look at an example. Also don't add +c obviously.
+
+## Method of partial fractions
+
+The integral of some rational functions can be found by splitting the integrand
+into partial fractions. The hint for this is that substitution is not going to
+work:
+
+```
+∫ x - 5 / [(2x - 3)(x - 1)] dx
+```
+
+Partial fractions is a technique from algebra where you split one fraction into
+two and then add them together with a common denominator to find a system of
+equations that will give you the constant multiples that are the "cost" of
+splitting the fractions:
+
+```
+A/2x-3 + B/x-1
+
+A(x-1)/[(2x-3)(x-1)] + B(2x-3)/[(2x-3)(x-1)]
+
+distribute and add
+
+(A + 2B)x - (A + 3B)/[(2x-3)(x-1)]
+
+the original numerator is x - 5 and the new one is (A + 2B)x - (A + 3B)
+
+so now you know:
+A + 2B = 1
+A + 3B = 5
+
+Solve the system of equations
+b = 4
+a = -7
+```
+
+Now you know A and B, so you can rewrite the original integral and break it into
+two solvable integrals:
+
+```
+∫ -7/(2x-3)dx + ∫ 4/(x-1)dx
+
+-7/2∫ 2/(2x-3)dx + 4∫ 1/(x-1)dx
+
+(-7/2)ln(|2x-3|) + 4ln(|x-1|) + C
+```
+
+Keep in mind you may need to factor the denominator first to produce a
+denominator where you can split the fractions. `x^2 + x = x(x + 1) = A/x + B/x+1`
+
+## Trig Integrals
+
+Trig integrals often have an additional step you can preform to clean up the
+integrand and create a more straight forward integration problem.
+
+Typically you will see a trig value raised to an odd power, and you can use a
+pythagorean identity to remove all but one of them and produce a straight
+forward u-sub problem.
+
+```
+∫sin^4(x)cos^5(x)dx
+
+∫sin^4(x)cos^4(x)cos(x)dx
+
+we know cos^2 = 1 - sin^2 so therefore cos^4 = (1-sin^2)^2
+
+∫sin^4(x)((1-sin^2(x))^2)cos(x)dx
+
+u = sin(x), du = cos(x)dx
+
+∫u^4((1-u^2)^2)du
+
+FOIL it out
+
+∫u^4(1 + u^4 - 2u^2)du
+
+∫(u^4 + u^8 - 2u^6)du
+
+1/5sin^5(x) + 1/9sin^9(x) - 2/7sin^7(x) + C
+```
+
+You can do the same thing with tan and sec using `tan^2(x) + 1 = sec^2(x)`
+
+If none of the trig statements are raised to an odd power, you can use double
+angle identities. Found [here](../trigonometry/trig-identities.md). It's common
+you need to use it more than once when solving the problem.

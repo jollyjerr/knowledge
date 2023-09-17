@@ -8,3 +8,4 @@
 - [functions](./functions.md)
 - [propositional logic](./propositions.md)
 - [predicates and inference](./predicates.md)
+- [logical reasoning](./reasoning.md)
