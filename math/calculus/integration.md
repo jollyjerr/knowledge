@@ -411,3 +411,44 @@ You can do the same thing with tan and sec using `tan^2(x) + 1 = sec^2(x)`
 If none of the trig statements are raised to an odd power, you can use double
 angle identities. Found [here](../trigonometry/trig-identities.md). It's common
 you need to use it more than once when solving the problem.
+
+## Trig substitution
+
+Sometimes an integral seems hard to solve and you need to do a clever type of
+u-sub where you plug in a trig function.
+
+```
+∫1/(1+x^2) dx
+
+x = tan(Θ) or arctanx = Θ
+dx = sec^2(Θ) dΘ
+
+∫sec^2(Θ)/(1+tan^2(Θ)) dΘ
+
+∫sec^2(Θ)/sec^2(Θ) dΘ
+
+∫1 dΘ
+
+Θ
+
+tan^-1(x) + C
+```
+
+Pick the trig identity that fits your problem. 1 - x probs means sin, 1 + x
+probs means tan, etc...
+
+If you pick the correct trig function but it's not working, you may need to
+multiply the trig function by a constant:
+
+```
+∫1/sqrt(4-x^2)
+
+x = 2sin(Θ)
+dx = 2cos(Θ)dΘ
+
+∫2cosΘ/(sqrt(4)sqrt(1-sin^2Θ)) dΘ
+
+...
+
+arcsin(x/2) + C
+```
