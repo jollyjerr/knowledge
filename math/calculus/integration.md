@@ -81,7 +81,7 @@ x^(-9/4)
 
 More involved:
 ∫cscx dx = -ln(|cscx+cotx|) + C
-∫secx dx = ln(|scsx+tanx|) + C
+∫secx dx = ln(|secx+tanx|) + C
 ```
 
 Some of them have a trick where you multiply by "1" and do u sub... it's rough 😞
@@ -329,8 +329,8 @@ should not get more complicated. dv always gets the dx.
 ## Method of partial fractions
 
 The integral of some rational functions can be found by splitting the integrand
-into partial fractions. The hint for this is that substitution is not going to
-work:
+into partial fractions. You want to get the multiplication out of the
+denominator. The hint for this is that substitution is not going to work:
 
 ```
 ∫ x - 5 / [(2x - 3)(x - 1)] dx
@@ -374,6 +374,26 @@ two solvable integrals:
 
 Keep in mind you may need to factor the denominator first to produce a
 denominator where you can split the fractions. `x^2 + x = x(x + 1) = A/x + B/x+1`
+
+#### Exceptional cases
+
+If you have two factors and one or more is to a power, you have to add all fractions up
+to and including that power.
+
+```
+1/[(x+1)^2 * (x+3)^3]
+
+A/x+1 + B/(x+1)^2 + C/x+3 + D/(x+3)^2 + E/(x+3)^3
+```
+
+If you are given an irreducible factor, you have to account for it in the
+numerator of the fraction over the irreducible factor.
+
+```
+x+1/[x(x^2+1)]
+
+A/x + Bx+C/(x^2 + 1)
+```
 
 ## Trig Integrals
 
@@ -436,6 +456,14 @@ tan^-1(x) + C
 
 Pick the trig identity that fits your problem. 1 - x probs means sin, 1 + x
 probs means tan, etc...
+
+```
+∫sqrt(a^2 - x^2) dx -> x = asin(Θ)
+
+∫sqrt(a^2 + x^2) dx -> x = atan(Θ)
+
+∫sqrt(x^2 - a^2) dx -> x = asec(Θ)
+```
 
 If you pick the correct trig function but it's not working, you may need to
 multiply the trig function by a constant:
