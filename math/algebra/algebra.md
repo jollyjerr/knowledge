@@ -21,3 +21,4 @@
 - [common graphs](./common-graphs.md)
 - [combinations of functions](./combinations-of-functions.md)
 - [advanced equations](./advanced-equations.md)
+- [factorials](./factorials.md)

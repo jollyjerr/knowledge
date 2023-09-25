@@ -318,3 +318,14 @@ limx->inf e^x/2
 = inf/2
 = inf
 ```
+
+## Factorials
+
+To find the limit of a [factorial](../algebra/factorials.md), keep in mind that
+factorials get supah mega big really fast.
+
+```
+lim[n->inf] 2^n/n!
+
+= 0
+```

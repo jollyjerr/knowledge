@@ -9,3 +9,5 @@
 - [propositional logic](./propositions.md)
 - [predicates and inference](./predicates.md)
 - [logical reasoning](./reasoning.md)
+- [definitions](./definitions.md)
+- [proofs](./proofs.md)

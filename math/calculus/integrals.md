@@ -113,23 +113,7 @@ A definite integral has given limits on the function like [a, b]
 The definite integral represents the signed area under the graph of f(x) on [a,
 b]
 
-### Indefinite Integral
-
-Indefinite integrals have no limits on the input of the function (-inf, inf)
-
-The indefinite integral represents the family of antiderivatives of f(x)
-
-F(x) + C (any constant)
-
-### Units
-
-Definite integrals take rate of change and give you the quantity
-
-If f(x) is miles/hr then F(x) = miles
-
-If f(x) is liters/min then F(x) = liters
-
-## Properties of definite integrals
+#### Properties of definite integrals
 
 ```
 ∫ac fx dx + ∫cb fx dx = ∫ab fd dx
@@ -139,3 +123,72 @@ If f(x) is liters/min then F(x) = liters
 linearity property
 ∫[a to b] (f(x) + g(x)) dx = ∫[a to b] f(x) dx + ∫[a to b] g(x) dx
 ```
+
+#### Units
+
+Definite integrals take rate of change and give you the quantity
+
+If f(x) is miles/hr then F(x) = miles
+
+If f(x) is liters/min then F(x) = liters
+
+### Indefinite Integral
+
+Indefinite integrals have no limits on the input of the function (-inf, inf)
+
+The indefinite integral represents the family of antiderivatives of f(x)
+
+F(x) + C (any constant)
+
+### Improper Integrals
+
+Improper integrals involve infinity.
+
+```
+type 1: ∫[1,inf] 1/x^2 dx
+
+type 2: ∫[0,2] 1/sqrt(x) dx
+```
+
+You can solve this by writing it as a limit and then solving the limit:
+
+```
+lim[m->inf] ∫[1,m] 1/x^2 dx
+
+lim[m->inf] -1/x |1,m
+
+lim[m->inf] -1/m - -1/1
+
+-1/inf + 1 = 1
+```
+
+Because the limit is a number, we say this integral converges.
+
+The integral diverges if the limit goes to infinity or is undefined.
+
+You are not allowed to send both bounds to infinity at the same time, so if your
+integral is bounded above and below with inf/-inf you need to split it into two
+limits and bound 1 side with a number for each.
+
+Remember infinity does not cancel out. So inf - inf just diverges.
+
+In type 2, the limit is set up so m-> the bound that results in undefined. You
+might have to split it up if the undefined behavior is in the middle, like
+`∫[-1,1] 1/x dx`
+
+You can have combo of part1 and part2. Split it into however many you need and
+add them if they result in numbers. If any is inf, the whole thing diverges.
+
+### Factorials
+
+You can write [factorials](../algebra/factorials.md) as an integral with this
+formula:
+
+```
+n! = ∫[0,inf] x^n e^(-x) dx
+
+(1/2)! = ∫[0,inf] x^(1/2) e^(-x) dx
+```
+
+You can prove this with induction using integration by parts. Start at 1!, then
+2! works out to 2 _ 1! and 3! works out to 3 _ 2! etc...
