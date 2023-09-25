@@ -192,3 +192,20 @@ n! = ∫[0,inf] x^n e^(-x) dx
 
 You can prove this with induction using integration by parts. Start at 1!, then
 2! works out to 2 _ 1! and 3! works out to 3 _ 2! etc...
+
+```
+∫[0, inf] x^3 e^-x dx
+
+integration by parts: 
+
+u = x^3
+du = 3x^2
+dv = e^-x
+v = -e^-x
+
+(-x^3e^-x |[0,inf]) + 3∫[0,inf] x^2 e^-x dx
+
+0 + 3∫[0,inf] x^2 e^-x dx
+
+= 3 * 2!
+```
