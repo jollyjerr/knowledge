@@ -196,7 +196,7 @@ You can prove this with induction using integration by parts. Start at 1!, then
 ```
 ∫[0, inf] x^3 e^-x dx
 
-integration by parts: 
+integration by parts:
 
 u = x^3
 du = 3x^2
