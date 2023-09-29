@@ -20,6 +20,19 @@ sides of the inequality by x to get: x*x >= 1x
 Simplify the expression we get: x^2 >= x ∎
 ```
 
+## Language
+
+Proofs use language to give the purpose of each line:
+
+let/suppose: new variable
+thus/therefore: it follows from the last point
+since: restate a fact or assumption
+we will prove/show: purpose
+by definition
+by assumption
+in other words
+gives/yields
+
 ## Universal Proofs
 
 ### Proof by Exhaustion
@@ -41,4 +54,21 @@ hypotheses but contradict the conclusion.
 
 ## Existential Proofs
 
+To disprove an existential statement you have to prove that for every element
+the statement is false.
+
 ### Constructive proof of existence
+
+Give a specific example of an element that has the required properties.
+
+### Nonconstructive proof of existence
+
+Commonly done by showing that assuming no element exists leads to a
+contradiction.
+
+## Direct Proofs
+
+p -> c
+
+p is assumed to be true and the conclusion is proven to be true as a direct
+result of the proposition.
