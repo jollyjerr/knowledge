@@ -72,3 +72,66 @@ p -> c
 
 p is assumed to be true and the conclusion is proven to be true as a direct
 result of the proposition.
+
+example:
+
+```
+Theorem: The difference between two even integers is even.
+
+Let x and y be even integers. We will prove that x-y is even.
+
+Since x is even, there is an integer k such that x = 2k.
+Since y is even, there is an integer j such that y = 2j.
+
+x-y = 2k - 2j
+
+2k - 2j = 2(k-j)
+
+Since k and j are integers, k-j is also an integer.
+
+Since x-y is equal to 2m, where m = k-j which is an integer, x-y is even.
+∎
+```
+
+## Contrapositive
+
+To prove p -> q show that ¬q -> ¬p
+
+Do this when ¬q is a more useful assumption than p.
+
+If you have to negate and/or statements you can remember de morgan's laws:
+
+```
+If x < 0 and xy > 0, then y < 0.
+
+contrapositive:
+
+assume y >= 0, show x >= 0 or xy <= 0
+```
+
+## Contradiction
+
+A proof by contradiction is an indirect proof where you assume the theorem is
+false (¬t) and prove that a contradiction arises as a result of that assumption
+(r ∧ ¬r).
+
+## Proof by cases
+
+For a universal statement, you can break the domain into different groups and
+prove the theorem is true for a member of each group.
+
+```
+For every integer x, x2 - x is an even integer.
+
+Case 1: x is even
+Case 2: x is odd
+```
+
+Also you can sometimes break into one case without loss of generality:
+
+```
+Theorem: For any two integers x and y, if x is even or y is even, then xy is even.
+
+Proof:
+Without loss of generality, assume that x is even. Then x = 2k for some integer k. Plugging in the expression 2k for x in xy gives xy = 2ky = 2(ky). Since k and y are integers, ky is also an integer. Since xy is equal to two times an integer, xy is even.  ■
+```
