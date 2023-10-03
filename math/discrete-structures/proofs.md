@@ -50,7 +50,7 @@ The example at the top of this document is a universal generalization.
 
 Remember that you only need a single counterexample to prove universally
 quantified statements as false. A counterexample needs to satisfy all the
-hypotheses but contradict the conclusion.
+hypothesis but contradict the conclusion.
 
 ## Existential Proofs
 
@@ -134,4 +134,88 @@ Theorem: For any two integers x and y, if x is even or y is even, then xy is eve
 
 Proof:
 Without loss of generality, assume that x is even. Then x = 2k for some integer k. Plugging in the expression 2k for x in xy gives xy = 2ky = 2(ky). Since k and y are integers, ky is also an integer. Since xy is equal to two times an integer, xy is even.  ■
+```
+
+## Induction
+
+Induction is a proof technique especially helpful for proving statements about
+elements in a [sequence](./sequence.md). It can also be used when proving facts
+about lists of other mathematical objects like sets - even if those lists are
+infinitely long.
+
+```
+Principle of mathematical induction:
+
+Let S(n) be a statement parameterized by a positive integer n. Then S(n) is true for all positive integers n, if:
+
+1. S(1) is true (the base case).
+2. For all k ∈ Z+, S(k) implies S(k+1) (the inductive step).
+```
+
+Proofs using induction follow this general outline:
+
+```
+Theorem:
+Thing you will prove, including the inductive hypothesis
+
+Proof: 
+Induction on n (n is the variable you are tracking)
+
+Base:
+n = 1
+
+...show what happens
+
+Inductive step:
+
+...assume the inductive hypothesis (base case generalized to some k)
+
+...show n implies n+1 using the inductive hypothesis
+```
+
+Here is an example of an inductive proof:
+
+```
+Theorem: For every positive integer n, 3 evenly divides 2^(2n) - 1.
+
+Proof: By induction on n
+
+Base Case: n = 1
+
+2^(2*1) - 1 = 4 - 1 = 3. Since 3 evenly divides 3, the theorem holds for the
+case n = 1.
+
+Inductive step:
+
+Suppose that for positive integer k, 3 evenly divides 2^2k - 1. Then we will
+show that 3 evenly divides 2^2(k+1) - 1.
+
+By the inductive hypothesis 3 evenly divides 2^2k - 1, which means that = 3m for
+some integer m. By adding 1 to both sides of the equation, we get 2^2k = 3m + 1.
+
+We must show 2^2(k+1) - 1 can be expressed as three times an integer:
+
+2^2(k+1) - 1 = 2^(2k+2) - 1
+= 4 * 2^(2k) - 1 
+= 4(3m + 1) - 1 (subbing in our reworked inductive hypothesis)
+= 3 * 4m + 4 - 1
+= 3(4m + 1)
+
+Scince m is an integer, 3(4m + 1) is 3 multiplied by an integer. Therefore
+2^(2k) - 1 is divisible by 3. ∎
+```
+
+### Strong Induction
+
+In normal (weak) induction, the inductive hypothesis is just S(k), but in strong
+induction we assume the fact to be proven holds for every value up to k as well.
+This is needed for proving things like the Fibonacci sequence because you need
+to refer to deeper values than just k-1.
+
+You may need multiple base cases to establish the truth value on the sequence
+before you generalize to the inductive hypothesis.
+
+```
+For all k ≥ 6, if P(3), P(4),.....,P(k) are all true, then P(k+1) is true.
+Base case: show P(3), P(4), P(5), and P(6).
 ```

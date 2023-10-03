@@ -14,6 +14,9 @@ Sequences can have positive or negative indexes.
 
 They can be infinite or finite
 
+For a sequence to be considered increasing or decreasing, every indices must be
+larger or smaller than the previous one, respectfully.
+
 ## Formula
 
 Sequences can be defined as a formula:
@@ -50,8 +53,20 @@ a, a+d, a+2d,..., a+nd
 
 ```
 t (upper limit)
-∑ a[i]                       = a[s] + a[s + 1] + a[s + 2] + ... + a[t]
+∑ a[i]              = a[s] + a[s + 1] + a[s + 2] + ... + a[t]
 i = s (lower limit)
+```
+
+Sums can also sometimes be expressed without summation notation, this is called
+closed form:
+
+```
+Sum of terms in a geometric sequence for any real number r != 1 and any integer
+n >= 1:
+
+n-1
+∑ (a*r^k) = [a(r^n - 1)]/(r - 1)
+k=0
 ```
 
 ## Recurrence relation
@@ -66,3 +81,8 @@ f[0] = 0
 f[1] = 1
 f[n] = f[n-1] + f[n-2] for n >= 2
 ```
+
+This is an example of a dynamical system where state changes over time and a
+discrete time dynamical system where time is divided into intervals and the
+state of the system is fixed during each interval and is a function of the
+previous time interval.
