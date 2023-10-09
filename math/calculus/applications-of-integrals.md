@@ -1,4 +1,6 @@
-# Work
+# Applications of Integrals
+
+## Work
 
 One of the main applications of [integration](./integration.md) in engineering and physics is
 computing work.
@@ -9,7 +11,7 @@ work = ∫force
 
 In real life you always have a variable force.
 
-## Houke's Law (spring extension problems)
+### Houke's Law (spring extension problems)
 
 ```
 f= kx
@@ -44,7 +46,7 @@ so 20 = k * 10
 so k = 2
 ```
 
-## Bucket on a rope problems
+### Bucket on a rope problems
 
 A bucket weighs 4N and is hanging at the bottom of a 6m length of rope. The rope
 weighs (density) 1.5N/m. How much work does it take to pull up the bucket?
@@ -81,3 +83,45 @@ bucket stops filling when 2y = 8
 
 y = 8/2 = 4
 ```
+
+## Surfaces of revolution
+
+### Method of discs
+
+Take a 2d curved region, rotate it 360 degrees, find the volume of the 3d object
+you produced.
+
+Compose the 2d region of lines, scan the region and at each line you rotate it
+(creating a disc). ∫ area of discs to get the volume of your shape. Bounds of
+integration are normally the height of the shape.
+
+Area of disc is pir^2
+
+For example, curve x^2 going up to y=1
+
+y = x^2, so x=sqrt(y)
+
+∫[0,1] pi(sqrt(y))^2 dy
+
+= pi/2
+
+#### Donuts
+
+There might be a hole in the middle of the 3d shape. You can solve this in two
+parts: (vol if completely solid) - (vol of gap).
+
+ex:
+
+```
+Region between y=x, x=1, y=0 (makes a triangle)
+Rotate around x=4 (so there is a gap between x=1 and x=4)
+
+∫[0,1] pi(4-y)^2 dy - ∫[0,1] pi(3)^2 dy
+```
+
+The hardest parts of these problems are finding the expression for the length of
+the radius of both parts. Especially x^2, |x| etc... because the negative is
+lost and you have to re-add it to one side.
+
+You might have to break the shape up into multiple pieces and add the volume
+together at the end. Just draw it out and it normally makes sense.

@@ -158,7 +158,7 @@ Proofs using induction follow this general outline:
 Theorem:
 Thing you will prove, including the inductive hypothesis
 
-Proof: 
+Proof:
 Induction on n (n is the variable you are tracking)
 
 Base:
@@ -196,7 +196,7 @@ some integer m. By adding 1 to both sides of the equation, we get 2^2k = 3m + 1.
 We must show 2^2(k+1) - 1 can be expressed as three times an integer:
 
 2^2(k+1) - 1 = 2^(2k+2) - 1
-= 4 * 2^(2k) - 1 
+= 4 * 2^(2k) - 1
 = 4(3m + 1) - 1 (subbing in our reworked inductive hypothesis)
 = 3 * 4m + 4 - 1
 = 3(4m + 1)

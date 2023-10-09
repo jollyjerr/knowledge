@@ -17,4 +17,4 @@ These two branches are related to each other by the fundamental theorem of calcu
 - [optimization](./optimization.md)
 - [integrals](./integrals.md)
 - [integration](./integration.md)
-- [work](./work.md)
+- [applications of integrals](./applications-of-integrals.md)

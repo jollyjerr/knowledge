@@ -11,3 +11,4 @@
 - [logical reasoning](./reasoning.md)
 - [definitions](./definitions.md)
 - [proofs](./proofs.md)
+- [counting](./counting.md)
