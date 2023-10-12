@@ -20,7 +20,7 @@ distance/speed of propagation
 
 Amount of time required to push the packet's bits into the link.
 
-packet's lenght \* data rate of the link
+`packet length * data rate of the link`
 
 - Processing delay
 

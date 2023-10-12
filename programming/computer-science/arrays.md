@@ -8,7 +8,7 @@ a = int[3]
 a[1] <- go to memory address of a and add how big my type is * the index (in this case 4 bytes (32 bit int) * 1)
 ```
 
-- Insertion just overwrites a + width \* offset (O(1))
+- Insertion just overwrites `a + width * offset (O(1))`
 
 - Deletion depends on the system, just insert "not something"
 

@@ -5,7 +5,7 @@
 One of the main applications of [integration](./integration.md) in engineering and physics is
 computing work.
 
-work = force * distance if the force is constant. Special case of:
+`work = force * distance` if the force is constant. Special case of:
 
 work = ∫force
 

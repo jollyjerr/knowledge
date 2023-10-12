@@ -1,6 +1,6 @@
 # Counting
 
-In discrete mathematics the goal of counting is to count the number of elements 
+In discrete mathematics the goal of counting is to count the number of elements
 in (or the cardinality of) a finite set given a description of the set.
 
 ## Product rule
@@ -14,12 +14,12 @@ A, B, C be finite sets, then
 ```
 
 This can be used when limiting string characters and other similar stuff, so if
-there are 26^3 3 letter words, there are 26^2 * 2 three letter words that begin
+there are 26^3 3 letter words, there are `26^2 * 2` three letter words that begin
 with a or b.
 
 The _generalized counting rule_ considers the impact of selecting an item on the
 cardinality of the next choice. So if you have 20 runners in a race and want to
-see how many podium outcomes exist, it is not 20 * 20 * 20 but 20 * 19 * 18.
+see how many podium outcomes exist, it is not 20 _ 20 _ 20 but 20 _ 19 _ 18.
 
 ## Sum rule
 
@@ -64,8 +64,8 @@ of this counting procedure is show in code below.
 
 ```js
 function p(options, length, depth = 0, result = 1) {
-    if (depth === length) return result;
-    return p(options - 1, length, depth + 1, result * options);
+	if (depth === length) return result;
+	return p(options - 1, length, depth + 1, result * options);
 }
 ```
 
@@ -102,16 +102,16 @@ Where n is the number of elements and r is the subset size.
 
 ```js
 function choose(n, r) {
-    const factorial = (a) => {
-        let result = 1;
-        do {
-            result *= a;
-            a--;
-        } while (a > 1);
-        return result;
-    }
+	const factorial = (a) => {
+		let result = 1;
+		do {
+			result *= a;
+			a--;
+		} while (a > 1);
+		return result;
+	};
 
-    return factorial(n)/(factorial(r) * factorial(n-r))
+	return factorial(n) / (factorial(r) * factorial(n - r));
 }
 ```
 

@@ -4,7 +4,7 @@
 
 Sometimes you can integrate a function easily by taking it's geometry.
 
-For example, `int1-3(y=x-1)dx` is just a triangle so the answer is (2\*2) / 2
+For example, `int1-3(y=x-1)dx` is just a triangle so the answer is `(2*2) / 2`
 
 Also `int0-1(y=sqrt(1-x^2))dx` is the top half of a circle `x^2 + y^2 = 1`.
 Given the range you are taking 1/4 of the area of the circle so `(pi(1)^2)/4 =

@@ -9,7 +9,7 @@
 Bigger factorial overshoots the smaller one by some numbers and that is the
 remaining factors.
 
-8!/10! = 8!/(8! _ 9 _ 10) = 1/(10\*9)
+`8!/10! = 8!/(8! * 9 * 10) = 1/(10*9)`
 
 ## Simplifying
 

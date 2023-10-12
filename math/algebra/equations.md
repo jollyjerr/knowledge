@@ -19,7 +19,7 @@ x = 4
 
 - Words to keep in mind:
 
-(\*) = sum, increases
+(+) = sum, increases
 
 (-) = difference
 
