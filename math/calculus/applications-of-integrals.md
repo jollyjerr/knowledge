@@ -125,3 +125,42 @@ lost and you have to re-add it to one side.
 
 You might have to break the shape up into multiple pieces and add the volume
 together at the end. Just draw it out and it normally makes sense.
+
+## Method Of Shells / Cylinders / Tubes
+
+If the method of discs is resulting in a super painful integral, try the method
+of shells.
+
+Shells are like discs, but you slice the shape in parallel to the axis of
+rotation.
+
+If axis is vertical then integral is dx, dy if axis is horizontal.
+
+Integrate the surface area of the resulting cylinders.
+
+`surface areay = 2pirh`
+
+r = radius of disc, h = how tall is the cylinder
+
+Other then that it is super similar to the method of discs - just draw it out
+and it normally makes sense. Bounds of integration are the length of the
+original shape against whatever your axis of integration is.
+
+You can end up with multiple integrals with shells if the height of your
+cylinder changes at some point. Then you need two integrals and add them
+together to get the total volume.
+
+### Surface area
+
+Similar to volume problems but a little simpler.
+
+```
+Rotating y = e^x , 0 <= x <= 1 around the x-axis, what is the surface area?
+
+Set up a discs problem but integrate the circumference (2pir) and include
+account for curvature (more on this in calc III).
+
+∫ circumference (sqrt(1 + (f'(x))^2))
+
+∫[0,1] 2pie^x * sqrt(1 + (e^x)^2) dx
+```
