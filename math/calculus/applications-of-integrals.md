@@ -7,14 +7,14 @@ computing work.
 
 `work = force * distance` if the force is constant. Special case of:
 
-work = ∫force
+work = ∫force over distance
 
 In real life you always have a variable force.
 
 ### Houke's Law (spring extension problems)
 
 ```
-f= kx
+f = kx
 
 force = (spring constant) * (distance past resting)
 ```
@@ -82,6 +82,43 @@ for the upper bound on the water before full limit:
 bucket stops filling when 2y = 8
 
 y = 8/2 = 4
+```
+
+### Fluid forces
+
+A cylindrical tank is full of fluid which weight at height y is 5 - y. Tank has
+height 3 and radius 2. How much work to pump the fluid vertically out of the
+tank?
+
+Divide the fluid into discs and integrate `density * height * area of disc`
+
+`∫[0,3] (5-y)(3-y)pi2^2 dy`
+
+If the tank is not full, still use the full container height but only integrate
+to how full the tank is.
+
+#### More involved examples
+
+These questions can get challenging but it's normally in a unique way and you
+really just have to think about the problem. Here is an example that involves a
+changing radius of each disc and some unit conversions:
+
+```
+A tank in the shape of an inverted right circular cone has height 6 meters and
+radius 3 meters. It is filled with 3 meters of hot chocolate. Find the work
+required to empty the tank by pumping the hot chocolate over the top of the
+tank. The density of hot chocolate is 1090kg/m^3
+
+Volume of each slice is pir^2 dy, and you can see radius is a ratio of height
+and width 3/6 so radius is y/2 so pi(y/2)^2.
+
+Multiply by the density 1090(1.4)piy^2 dy and you get a mass because the
+original units are kg. To find the weight of that mass you need to multiply by
+gravity, 9.8
+
+Then you can set up the integral as normal:
+
+∫[0,3] (6-y)(1090)(1/4)piy^2(9.8) dy
 ```
 
 ## Surfaces of revolution
