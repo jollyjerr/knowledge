@@ -197,17 +197,16 @@ If n+1 elements are placed in n boxes, then one box has 2 elements.
 
 also,
 
-If a function f has a domain of size at least n+1 and a target of size at most n, where n is 
-a positive integer, then there are two elements in the domain that map to the same element 
+If a function f has a domain of size at least n+1 and a target of size at most n, where n is
+a positive integer, then there are two elements in the domain that map to the same element
 in the target.
 
 Useful to prove that you are forced to have duplicates or forced into having
 things close together:
 
 ```
-37 points are placed in a 6 mile by 6 mile square area. There must be 2 points that are within 
+37 points are placed in a 6 mile by 6 mile square area. There must be 2 points that are within
 sqrt(2) miles of each other.
 
 You have 36 1x1 mile squares and 37 items, so two must be in the same square.
 ```
-
