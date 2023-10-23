@@ -18,3 +18,4 @@ These two branches are related to each other by the fundamental theorem of calcu
 - [integrals](./integrals.md)
 - [integration](./integration.md)
 - [applications of integrals](./applications-of-integrals.md)
+- [series](./series.md)

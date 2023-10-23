@@ -86,3 +86,9 @@ This is an example of a dynamical system where state changes over time and a
 discrete time dynamical system where time is divided into intervals and the
 state of the system is fixed during each interval and is a function of the
 previous time interval.
+
+## Limits
+
+The limit of an infinite sequence is just where the sequence approaches as you
+use sequence elements close to the limit. Just think of it as a function of n.
+If you do not see a clear single grouping, the limit is not defined.
