@@ -31,3 +31,10 @@ while (i < n) {
 // to do this formally you have to prove every comment and show the loop will
 // end after a finite number of iterations
 ```
+
+Common loop invariants include: 
+
+1. `maximum` stores the maximum value up to the i'th element
+2. `sorted` is in sorted order up to the i'th element
+
+etc...

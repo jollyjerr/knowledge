@@ -41,6 +41,10 @@ things cancel...
 sum((1/2)^n, 0, 3000) = [1 - (1/2)^3001]/(1/2)
 ```
 
+Some questions will ask you to "find the common ratio of this geometric series".
+Just divide each term by the preceding term to get the difference and if it is a
+geometric series the difference will always be the same.
+
 ## Infinite Series
 
 An infinite series is just a limit where the stop value of the sum is your limit.
