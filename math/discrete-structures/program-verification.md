@@ -32,7 +32,7 @@ while (i < n) {
 // end after a finite number of iterations
 ```
 
-Common loop invariants include: 
+Common loop invariants include:
 
 1. `maximum` stores the maximum value up to the i'th element
 2. `sorted` is in sorted order up to the i'th element
