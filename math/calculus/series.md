@@ -60,3 +60,56 @@ lim[m->inf] [1 - (1/2)^(m+1)]/(1/2)
 
 2
 ```
+
+## Divergence and convergence
+
+Does this series diverge or converge? 
+Use convergence tests to tell.
+
+### The n'th term test
+
+If the `lim[n -> inf] a` is not zero, then the sum of `a` from zero to inf
+does not converge.
+
+So just take the series and find it's limit. If it results in anything but zero
+then it diverges. IMPORTANT: If it does result in zero, that does NOT mean that
+it converges! If you get zero you need to try a different method.
+
+## The P test
+
+Some `1/(n^p)` converges if p > 1, and diverges if p <= 1.
+
+```
+1/n diverges (p=1)
+
+1/sqrt(n) diverges (p = 1/2)
+```
+
+## Limit comparison test
+
+If you have a series you can compare it to a series that you know to tell if it
+converges or diverges. Typically the series that you know is found by
+simplifying the initial series by pulling out it's significant terms.
+
+```
+compared = lim|a/b|
+if compared > 0 and compared < inf, then both series a and series b either
+converge or diverge.
+```
+
+Here is a common example:
+
+```
+(n+2)/(n^3+n) basically works out to n/n^3 as n approaches infinity. This step
+is a little vague, but can be justified with the next step.
+
+lim[n -> inf] [(n+2)/(n^3+n)]/[n/n^3] = 1
+
+because the limit works out to 1 you know these both behave the same way, and
+because the bottom limit converges (via th p test) you know they both converge.
+```
+
+The way you solve that resulting fraction over fraction thing is normally
+multiplying the top and bottom by the denominator of the bottom, and then
+dividing all elements in the top and bottom by the highest common power.
+
