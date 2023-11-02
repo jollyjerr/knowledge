@@ -63,7 +63,7 @@ lim[m->inf] [1 - (1/2)^(m+1)]/(1/2)
 
 ## Divergence and convergence
 
-Does this series diverge or converge? 
+Does this series diverge or converge?
 Use convergence tests to tell.
 
 ### The n'th term test
@@ -113,3 +113,33 @@ The way you solve that resulting fraction over fraction thing is normally
 multiplying the top and bottom by the denominator of the bottom, and then
 dividing all elements in the top and bottom by the highest common power.
 
+## Ratio Test
+
+Normally used when there is a factorial in the problem.
+
+Take the `lim[n -> inf] (an + 1)/an`.
+
+```
+< 1 the series converges
+> 1 the series diverges
+> = 1 the ratio test was inconclusive
+```
+
+So basically taking the limit of the "next" term divided by the "current" term.
+
+These examples are long to write out, but just use factorial simplification and
+group like terms and trust yourself :)
+
+## Root Test
+
+Easier version of the ratio test. This is typically the way if the formula of
+the series is all raised to the power of n. The n and 1/n cancel and then you
+just solve.
+
+Take the `lim[n -> inf] (an)^(1/n)`
+
+```
+< 1 the series converges
+> 1 the series diverges
+> = 1 the test was inconclusive
+```

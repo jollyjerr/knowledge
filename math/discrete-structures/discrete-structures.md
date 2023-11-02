@@ -13,3 +13,4 @@
 - [proofs](./proofs.md)
 - [counting](./counting.md)
 - [program verification](./program-verification.md)
+- [asymptotic analysis](./asymptotic-analysis.md)
