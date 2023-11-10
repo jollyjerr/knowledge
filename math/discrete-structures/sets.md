@@ -153,3 +153,21 @@ Sets follow the same laws as [propositions](./propositions.md) but with set symb
 ¬ == ⎻ (complement)
 ∧ == ∩
 ∨ == ∪
+
+## Binary Relations
+
+A binary relation is a subset of the cartesian product of two sets:
+
+```
+p = {Sue, Harry, Sam}
+f = {file1, file2, file3, file4}
+
+pAf if person p has access to file f
+
+A = {(Sam, file2), (Harry, file4)}
+```
+
+These can also be expressed as a boolean matrix with the sets as the two axis.
+
+A Binary relation is *reflexive* if for every x in A, xRx.
+

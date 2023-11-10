@@ -61,6 +61,21 @@ lim[m->inf] [1 - (1/2)^(m+1)]/(1/2)
 2
 ```
 
+## Partial sum
+
+A partial sum is the sum of an infinite series up to some x'th element.
+
+S = series inf
+S sub 3 = sum of first 3 terms
+
+## Notation
+
+Series are commonly expressed as a function:
+
+```
+f(x) = sum(0, inf) x^n/n^2
+```
+
 ## Divergence and convergence
 
 Does this series diverge or converge?
@@ -190,3 +205,72 @@ converges. It is not true that they equal the same value.
 
 Anything that you can do with the p-test, you can do with an integral test, but
 you can also solve problems that cannot be solved with the p test.
+
+## Power Series
+
+A power series looks like this:
+
+```
+sum(0, inf) anx^2
+```
+
+### What is the domain of a power series?
+
+The domain of a power series is the range of values of x for which the series
+converges. So for what values of x is the function defined.
+
+You typically use the ratio test or the root test like usual - but the x term
+will end up in your answer.
+
+Make sure to include the absolute value in the ratio and root test setup.
+
+Then you compare your answer to one, like on a number line, so you can see the
+domain of the function.
+
+The endpoints of your domain will be uncertain because they might = exactly 1.
+To test the endpoints you just plug in the endpoint value and check if they
+converge. Checking if they converge will be some other test from this section.
+
+These problems can be long but the are systemic.
+
+```
+Example skipping the actual math just the problem outline: ratio test ends with |x|.
+
+Everything between -1 and 1 is defined. What about the endpoints?
+
+1 converges by the p test
+
+-1 converges by the alternating series test
+
+domain = [-1, 1]
+```
+
+If you end up with something like `|x - 2| < 1/e` you know the domain is
+`2-1/e, 2+1/e` because the distance between x and 2 will be at most `1/e`.
+
+##### So full process:
+
+1. Ratio or root test
+2. Compare result to 1 - including absolute value. Be super careful about `|x + 2| < 1`
+3. Plug in and do separate convergence test of endpoints
+
+##### Special cases
+
+1. Your fist answer is guaranteed to be zero no matter what x is
+
+Then the series converges everywhere - so your domain is all real numbers.
+
+2. The domain is exactly one point
+
+Just look for this and catch it - it will just look like it diverges but notice
+if x is exactly -5 the result is 0
+
+```
+|n(x + 5)|
+```
+
+3. The "center" of your domain (not the radius of convergence) makes the whole
+   thing zero
+
+You can notice right off the bat that the center is a specific value because it
+zeros out the function. This just helps you check your answer.
