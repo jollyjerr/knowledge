@@ -190,6 +190,18 @@ and negative results will kinda cancel out.
 An alternating series converges if the limit of its terms go to zero - basically
 the n'th term test but the result of zero _does_ mean that it converges.
 
+It can be more clear if you pull separate the expression into two fractions:
+
+```
+(-1)^n * 1/n^2 (as close as you can get to this)
+
+does 1/n^2 get smaller every term?
+
+does this whole expression go to zero with the limit of infinity?
+
+then it converges
+```
+
 ### Integral Test
 
 This one does not show up that often.
