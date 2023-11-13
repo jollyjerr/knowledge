@@ -169,5 +169,6 @@ A = {(Sam, file2), (Harry, file4)}
 
 These can also be expressed as a boolean matrix with the sets as the two axis.
 
-A Binary relation is *reflexive* if for every x in A, xRx.
+A Binary relation is _reflexive_ if for every x in A, xRx.
 
+A binary relation is anti-reflexive if no x in A, xRx.
