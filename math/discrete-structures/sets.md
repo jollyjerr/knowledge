@@ -169,6 +169,39 @@ A = {(Sam, file2), (Harry, file4)}
 
 These can also be expressed as a boolean matrix with the sets as the two axis.
 
-A Binary relation is _reflexive_ if for every x in A, xRx.
+The fact that (a,b) in R is written as aRb.
 
-A binary relation is anti-reflexive if no x in A, xRx.
+You can represent a binary relation as a matrix or graph. It's really just a
+directed graph.
+
+### Properties of binary relations
+
+Reflexive: A Binary relation is _reflexive_ if for every x in A, xRx. (self loops on every
+node)
+
+Anti Reflexive: A binary relation is anti-reflexive if no x in A, xRx. (no self loops on any
+nodes)
+
+Transitive: If for every three nodes you can get to each node in two hops and
+one hop. Rock paper scissors is not transitive
+
+Symmetric: Loops between every pair of nodes
+
+Anti symmetric: No pair of nodes is symmetric
+
+## Composite Relations
+
+The composite of two binary relations is a composite relation.
+
+```
+R = A X B
+S = B X C
+
+S ⚬ R = {(a, c) : ∃b such that aRb and bSc}
+```
+
+The result is basically taking every two step jump across sets and making it a
+direct connection.
+
+You can recursively compute composite relations on a graph on itself but I don't
+super get it yet need to fix up these notes.
