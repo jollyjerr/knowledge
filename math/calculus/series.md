@@ -151,7 +151,7 @@ Take the `lim[n -> inf] |(an + 1)/an|`.
 ```
 < 1 the series converges
 > 1 the series diverges
-> = 1 the ratio test was inconclusive
+= 1 the ratio test was inconclusive
 ```
 
 So basically taking the limit of the "next" term divided by the "current" term.
@@ -170,7 +170,7 @@ Take the `lim[n -> inf] |(an)^(1/n)|`
 ```
 < 1 the series converges
 > 1 the series diverges
-> = 1 the test was inconclusive
+= 1 the test was inconclusive
 ```
 
 ### Alternating Series Test
