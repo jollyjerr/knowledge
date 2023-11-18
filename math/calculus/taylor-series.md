@@ -5,14 +5,21 @@ The Taylor series of a function f(x) is a certain [power series](./series.md) th
 The purpose is to take a function that is not a polynomial and express it as a
 series - which is like an infinite polynomial.
 
-```
-f(x) = sum(0, inf) (f^(n)(0))/n! x^n
+The degree of a Taylor polynomial is how many terms you write out starting with
+index 0.
 
-where f^(n)(0) is the n-th derivative of f(x) evaluated at 0
 ```
+f(x) = sum(0, inf) f^(n)(a)/n! * (x - a)^n
+
+where f^(n)(0) is the n-th derivative of f(x) evaluated at a
+
+a is the expansion point
+```
+
+The 0-th derivative of f(x) is just f(x)
 
 For the n-th derivative bit: take higher order derivatives of f(x) until you see a pattern
-(normally 4?) and then evaluate all of them at 0. If they all equal the same
+(normally 4?) and then evaluate all of them at a. If they all equal the same
 thing then just use that, but if not you should be able to express them in terms
 of x.
 
@@ -28,6 +35,14 @@ sum(0, inf) n!/n! x^n
 sum(0, inf) x^n where |x| < 1
 ```
 
+## Maclaurin series
+
+A Taylor series with expansion about the point x = 0
+
+```
+f(x) = sum(0, inf) f^(n)(0)/n! * x^n
+```
+
 ## Common Taylor Series
 
 ```
@@ -35,7 +50,7 @@ e^x = sum(0, inf) x^n/n! // for all x
 
 1/(1-x) = sum(0, inf) x^n  // where |x| < 1
 
-sin(x) = sum(0, inf) (-1)^n/(2n+1) x^(2n+1) // for all x
+sin(x) = sum(0, inf) (-1)^n/(2n+1)! x^(2n+1) // for all x
 
 cos(x) = sum(0, inf) (-1)^n/2n! x^(2n) // for all x
 ```
@@ -52,6 +67,9 @@ what is f''(0) ?
 ```
 
 The secret is to match corresponding powers of x.
+
+Set the general maclurian series up equal to the term of your specific series
+where the powers of x match, the x's must cancel EVEN IF IT LOOKS OUT OF ORDER, then solve for the derivative.
 
 Write out what the formula actually means:
 
