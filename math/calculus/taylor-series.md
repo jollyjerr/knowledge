@@ -5,6 +5,13 @@ The Taylor series of a function f(x) is a certain [power series](./series.md) th
 The purpose is to take a function that is not a polynomial and express it as a
 series - which is like an infinite polynomial.
 
+Graphically, a Taylor series is a closer and closer approximation to a function
+centered about a point. By centered I mean - at a, each additional term of the
+Taylor series matches the original functions higher order derivatives up to the
+degree of the term. (tangent line, tangent parabola, tangent cubit, etc...). So
+as you take the limit of the number of terms going to infinity, the series
+converges into the original function.
+
 The degree of a Taylor polynomial is how many terms you write out starting with
 index 0.
 
@@ -14,6 +21,9 @@ f(x) = sum(0, inf) f^(n)(a)/n! * (x - a)^n
 where f^(n)(0) is the n-th derivative of f(x) evaluated at a
 
 a is the expansion point
+
+you should pick an a value close to the x that you are solving for so the
+approximation is accurate faster.
 ```
 
 The 0-th derivative of f(x) is just f(x)
@@ -119,7 +129,10 @@ compute that function? It uses the Taylor series of that function, computes a
 bunch of terms, and adds them together.
 
 1. So Taylor's series helps us approximate functions just by finding a bunch of
-   terms (not actually summing to infinity) and then summing them.
+   terms (not actually summing to infinity) and then summing them. When doing
+   this, remember to center your Taylor series close to the value you want to
+   solve the original function for. (ex: if approximating sqrt(26), center your
+   series around 25)
 
 2. Taylor series is used in the proof of l'hopitals rule.
 
@@ -148,3 +161,17 @@ your answer will be a power series
 ```
 
 4. Differential Equations 👀
+
+## Approximations
+
+The error in using a n term Taylor Series to approximate a function, f(x), with
+center at a is no more than:
+
+```
+[max(x <= t <= a)|f^(n+1)(t)| / (n + 1)!](x-a)^(n+1)
+```
+
+This is basically just saying you want your x and a to be as close as possible
+and you want as many terms as possible. In applications you don't use this
+formula directly, but technically this is the upper bound of your diff to the
+original function.
