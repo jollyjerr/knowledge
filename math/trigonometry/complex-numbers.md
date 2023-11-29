@@ -25,7 +25,7 @@ z = a
 
 ## Operations
 
-Add and subtract complex numbers by seperating the imaginary parts
+Add and subtract complex numbers by separating the imaginary parts
 
 ```
 (-2 + 17i) + (6-8i)
@@ -38,15 +38,31 @@ Add and subtract complex numbers by seperating the imaginary parts
 30 + 12i
 ```
 
-Multiply and devide complex numbers like [polynomials](../algebra/polynomials.md)
+Multiply and divide complex numbers like [polynomials](../algebra/polynomials.md)
 FOIL, and multiply by the conjugate if you need to.
 
-Find the absolute value with `sqt(Re(z)^2 + Im(z)^2)`. This is just using the pythagorean theory
+Division: multiply the numerator and denominator by the conjugate.
+
+When doing these operations, always remember i^2 is -1.
+
+Find the absolute value with `sqt(Re(z)^2 + Im(z)^2)`. This is just using the Pythagorean theory
 to find the distance from the origin.
 
 A complex number can be written in exponential form using Euler's number `e ≅ 2.718`
 
 `z = re^i𝛳` // how to find r and 𝛳 down below
+
+### Complex Conjugation
+
+Written as a bar over the complex number, you just flip the sign in front of the
+imaginary part.
+
+```
+______
+3 + 2i -> 3 - 2i
+```
+
+So it's just reflection on the complex plane
 
 ## Graphing
 
@@ -54,7 +70,7 @@ Complex numbers are graphed on the **complex plane** (also called the **argand p
 but the y axis is the imaginary value and the x axis is the real value.
 
 You can find the distance between two complex numbers by finding the distance between the
-real parts and imaginary parts independently and then using the pythagorean theory.
+real parts and imaginary parts independently and then using the Pythagorean theory.
 
 Same with midpoints: find the midpoint of the real part and then the midpoint of the imaginary part.
 
@@ -87,7 +103,7 @@ z = r(cos𝛳 + isin𝛳)
 ##### Multiplication
 
 To multiply two complex numbers in polar form, you pull out both `r` values, foil the parentheses,
-and then group together the real and imaginary parts - using the sum identites for sin and cosine to simplify.
+and then group together the real and imaginary parts - using the sum identities for sin and cosine to simplify.
 
 When you find the product, it's distance from the origin is the product of the original distances: `r = r * r`,
 and its angle is the sum of the original angles `𝛳 = 𝛳 + 𝛳`
@@ -98,9 +114,9 @@ A formula for this operation would look like this: (using 1 and 2 as labels here
 z1 * z2 = r1r2[cos(𝛳1 + 𝛳2) + isin(𝛳1 + 𝛳2)]
 ```
 
-##### Devision
+##### Division
 
-Similarly, with devision you have two options:
+Similarly, with division you have two options:
 
 ```
 z1/z2 = r1/r2[cos(𝛳1 - 𝛳2) + isin(𝛳1 - 𝛳2)]

@@ -175,3 +175,38 @@ This is basically just saying you want your x and a to be as close as possible
 and you want as many terms as possible. In applications you don't use this
 formula directly, but technically this is the upper bound of your diff to the
 original function.
+
+## Functions of Complex Numbers
+
+[complex numbers](../trigonometry/complex-numbers.md) are related to normal
+functions, and become useful, when we use Taylor series to break apart a
+function and plug in complex numbers.
+
+So Taylor series allow us to evaluate functions at the value of complex numbers.
+These series typically converge to a complex number.
+
+### Euler's Formula
+
+To compute the actual sum of e^ix, you can use a neat
+divide and conquer trick.
+
+Split the sum into two parts - one only contains the even terms and one only
+contains the odd terms.
+
+```
+e^ipi = sum(0, inf) ipi^n/n!
+
+even part: sum(0, inf) ipi^2n/2n!
+odd part: sum(0, inf) ipi^(2n+1)/(2n+1)!
+```
+
+use exponent rules to simplify the two parts. You end up with the taylor series
+for cosine and the taylor series for sin (multiplied by i), so your result is
+
+```
+e^ipi = cos(pi) + (i * sin(pi)) = -1
+
+so generally
+
+e^ix = cos(x) + (i * sin(x))
+```
