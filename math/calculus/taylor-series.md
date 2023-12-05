@@ -103,7 +103,7 @@ just like swap in the different terms but leave the result the same.
 ```
 1/(1-x^2) = sum(0, inf) (x^2)^n
 
-x/(1-x) x sum(0, inf) x^n
+x/(1-x) = sum(0, inf) x^n
 ```
 
 You can also take a derivative on both sides to get your function to look like a
@@ -210,3 +210,18 @@ so generally
 
 e^ix = cos(x) + (i * sin(x))
 ```
+
+#### Euler Formula for Sin and Cosine
+
+This is used a lot in proofs to show equivalence between two functions when one
+involves imaginary parts:
+
+```
+cos(x) = (e^ix + e^(-ix))/2
+
+sin(x) = (e^ix - e^(-ix))/2i
+```
+
+These can be used in turn to prove trig identities. Most modern trig proofs use
+these. Just write the trig identity and sub in the Euler Formula for sin and
+cosine and use algebra to show it is true.
