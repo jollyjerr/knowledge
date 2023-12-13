@@ -14,3 +14,5 @@
 - [counting](./counting.md)
 - [program verification](./program-verification.md)
 - [asymptotic analysis](./asymptotic-analysis.md)
+- [graphs](./graphs.md)
+- [trees](./trees.md)
