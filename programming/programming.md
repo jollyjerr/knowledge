@@ -12,6 +12,7 @@
 - [css](./css.md)
 - [sql](./sql.md)
 - [vim](./vim.md)
+- [big data architecture](./big-data-architecture/big-data-architecture.md)
 
 ## Books
 
