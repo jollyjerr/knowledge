@@ -3,3 +3,4 @@
 ## Topics
 
 - [fundamentals](./fundamentals/fundamentals.md)
+- [patterns](./patterns/patterns.md)
