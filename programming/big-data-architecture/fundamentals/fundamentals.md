@@ -46,3 +46,5 @@ last decade.
 ## Topics
 
 - [testing](./testing.md)
+- [no silver bullet](./no-silver-bullet.md)
+- [application continuum](./application-continuum.md)

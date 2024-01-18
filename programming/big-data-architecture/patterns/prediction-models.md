@@ -12,6 +12,13 @@ Machine learning models come in two primary types:
   like neural networks
 - Supervised: require labeled data sets and use traditional statistics
 
+## Key Vocab
+
+- True positives are when you predict an observation belongs to a class and it actually does belong to that class.
+- True negatives are when you predict an observation does not belong to a class and it actually does not belong to that class.
+- False positives occur when you predict an observation belongs to a class when in reality it does not.
+- False negatives occur when you predict an observation does not belong to a class when in fact it does.
+
 ## Models are code:
 
 When developing models, use notebooks at the start but quickly get the model
@@ -23,6 +30,8 @@ into the software system to integrate it.
 4. Use your model in integration tests
 
 ## Model evaluation
+
+See also: https://www.jeremyjordan.me/evaluating-a-machine-learning-model/
 
 Supervised prediction models typically accomplish one of three tasks:
 
