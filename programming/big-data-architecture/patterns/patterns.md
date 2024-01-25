@@ -3,3 +3,5 @@
 ## Topics
 
 - [prediction models](./prediction-models.md)
+- [CAP](./cap.md)
+- [messaging queues](./message-queue.md)
