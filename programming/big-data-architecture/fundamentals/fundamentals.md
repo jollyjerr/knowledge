@@ -48,3 +48,4 @@ last decade.
 - [testing](./testing.md)
 - [no silver bullet](./no-silver-bullet.md)
 - [application continuum](./application-continuum.md)
+- [service availability](./service-availability.md)

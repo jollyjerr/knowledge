@@ -1,5 +1,3 @@
 # Statistics and Probability
 
 ## Topics
-
-

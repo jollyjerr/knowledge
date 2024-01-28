@@ -16,7 +16,7 @@ Most engineers spend the majority of their time on the essential, which implies
 there is no longer any order of magnitude improvements available by shrinking
 the time of accidental tasks - even to zero.
 
-The hard problems of software development are the essential development of the program's "essence". 
+The hard problems of software development are the essential development of the program's "essence".
 Conceptual errors in the abstract specification of a system are a much bigger error than a syntax
 error or slow algorithm implementation.
 
@@ -79,7 +79,7 @@ The author argues that AI fundamentally cannot give us order of magnitude
 gains in productivity because their power, in the case of inference systems,
 grow with the scale of input data - not the algorithm itself. All in all the
 hard part of software is deciding what to say, not saying it. AI _will_ help
-communicate expert knowledge to less experienced programmers. 
+communicate expert knowledge to less experienced programmers.
 
 Similarly, the author argues that automatic programming only works for
 problems with favorable properties and are characterized by few parameters.
@@ -93,7 +93,7 @@ but the hard work is still coming up with the specification in the first place!
 
 ## Promising Essence improvements
 
-time of a task = SUM(frequency * time)
+time of a task = SUM(frequency \* time)
 
 - buy vs build
 - rapid prototyping and requirement refinement (you cannot plan products, you

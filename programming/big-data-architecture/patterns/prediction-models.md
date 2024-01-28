@@ -3,7 +3,7 @@
 Prediction modeling is a statistical analysis process that analyzes patterns in
 historical data and attempts to predict future events.
 
-Machine learning != predictive modeling, rather predictive modeling is a statistical 
+Machine learning != predictive modeling, rather predictive modeling is a statistical
 analysis technique that _uses_ machine learning models.
 
 Machine learning models come in two primary types:
@@ -91,6 +91,7 @@ Absolute Error:
 ```
 1/N * sum[1 to N]|xi - yi|^2
 ```
+
 #### Confusion Matrix (all types)
 
 A helpful matrix is to write out all the types of predictions and have columns
