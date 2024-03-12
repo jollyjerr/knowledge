@@ -15,3 +15,4 @@
 - [trie](./trie.md)
 - [graph](./graph.md)
 - [maps](./maps.md)
+- [algorithms](./algorithms/algorithms.md)
