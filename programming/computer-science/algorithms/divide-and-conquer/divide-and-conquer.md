@@ -23,3 +23,4 @@ describe the running time of divide and conquer algorithms.
 ## Topics
 
 - [max subarray problem](./max-subarray.md)
+- [karatsuba's multiplication](./karatsuba.md)
