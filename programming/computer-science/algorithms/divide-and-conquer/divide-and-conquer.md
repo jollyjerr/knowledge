@@ -24,3 +24,5 @@ describe the running time of divide and conquer algorithms.
 
 - [max subarray problem](./max-subarray.md)
 - [karatsuba's multiplication](./karatsuba.md)
+- [recurrences](./recurrences.md)
+- [fast fourier transforms](./fast-fourier-transforms.md)

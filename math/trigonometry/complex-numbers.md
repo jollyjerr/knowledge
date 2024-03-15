@@ -139,3 +139,26 @@ nsqt(z) = nsqt(r)[cos((𝛳+2pik)/n) + isin((𝛳 + 2pik)/n)]
 
 or replace (2pi) with 360 for degrees
 ```
+
+## Gauss Theorem
+
+If you have a polynomial equation to term n, you have n roots and some can be
+complex.
+
+```
+x^3 = 1
+
+has 3 roots, one is x = 1 the other two are complex
+```
+
+```
+x^n = 1
+
+has n roots
+```
+
+## Complex roots of unity
+
+x is a n'th root of unity if x^n = 1
+
+It's a set of n vectors of length one separated by angles of 2pi/n
