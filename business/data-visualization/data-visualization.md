@@ -10,3 +10,4 @@ https://www.printmag.com/article/data-humanism-future-of-data-visualization/
 - [grammar of graphics](./grammar-of-graphics.md)
 - [altair](./altair.md)
 - [mapping](./mapping.md)
+- [color](./color.md)

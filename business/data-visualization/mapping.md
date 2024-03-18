@@ -37,3 +37,20 @@ Expressiveness: Express all the data, but nothing else
 
 Effectiveness: The importance of the attribute should match the salience of the
 channel
+
+### Tips
+
+Log scales can help with uneven distributions of data, but can make your chart
+harder to read.
+
+Mapping data to size can be misleading. EX: twice as big diameter makes a circle
+4 times as large in terms of area.
+
+QTons: use shape complexity to represent a gradient of change. Texture density
+helps show complexity increase.
+
+Use motion very sparingly: direction, velocity, acceleration.
+
+Texture: Density, variation, pattern
+
+Color: Hue, chroma, luminance
