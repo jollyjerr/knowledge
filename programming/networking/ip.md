@@ -33,3 +33,49 @@ struct ipv4_header {
 
 This packet is sent as a datagram, so there is no guarentee the message will be
 delivered. Layers above IP can detect dropped packets and recover if they wish.
+
+## Internetworking
+
+Enables communication between multiple networks (links)
+
+Called gateway in 1974 "a protocol for packet network intercommunication" by
+Cerf and Kahn
+
+### Service model
+
+Best effort:
+
+- packets may get dropped
+- timing, no guarentee how long
+- order, packets may get re-ordered
+
+### Addressing
+
+Each interface gets an IP address.
+
+IPV4: 32 bits dotted decimal 192.168.0.1
+
+IPV6: 128 bits in hextets (16 bits) seperated by a colon. Drop leading 0's and
+:: replaces consecutive 0's
+
+### Subnet
+
+Set of consecutive IP addresses
+
+Higher order pits in a subnet all the same, lower order identify unique host
+
+Any message going to subnet just uses higher order bits
+
+### CIDR
+
+Classless Inter-Domain Routing
+
+Format: a.b.c.d/x (called the prefix)
+
+x is the length of the prefix - num of high order bits that are the same
+
+a.b.c.d are values which are the same (use 0 for low order bits)
+
+### Hierarchical
+
+Two subnets can combine: 1.1.0.0/24 and 1.1.1.0/24 = 1.1.0.0/23

@@ -54,3 +54,52 @@ Use motion very sparingly: direction, velocity, acceleration.
 Texture: Density, variation, pattern
 
 Color: Hue, chroma, luminance
+
+Percentages should add up to 100%
+
+Don't truncate the Y axis in general, if you think you need to perhaps your
+chart should graph the rate of change or something else
+
+Data in 3d can lead to occlusion, it's better to use mapping tools to show extra
+dimensions
+
+Avoid desert fog: zooming in should show where you are in the big picture.
+Overview + detail and focus+context
+
+## Detail
+
+1. Overview first
+2. Zoom and filter
+3. Details on demand
+
+## Interaction
+
+Selection
+
+- highlight
+- lowlight
+- filter
+
+Explore
+
+- panning
+
+Abstract/elaborate
+
+- zoom
+- semantic zoom: break apart aggregates
+
+filtering
+
+- direct manipulation
+- dynamic queries
+
+encode
+
+- change mapping
+- layering visualization
+
+cordination
+
+- brushing
+- linking
