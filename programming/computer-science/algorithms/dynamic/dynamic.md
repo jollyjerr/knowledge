@@ -69,6 +69,15 @@ def maxRevenueNew_Memoize(L, sizes, prices):
     return tbl[L][0], cuts
 ```
 
+### What happens when optimal substructure fails?
+
+The way you sequence a decision may not lead to an optimal substructure. This
+happens if the local optimal solution means that you have to re-examine the
+global problem. For example, if in knapsack you have a tipping point where
+taking over L items results in a change to the value of all items.
+
+current_optimal + solution_so_far != optimal
+
 ## Topics
 
 - [coin changing problem](./coin-changing.md)
