@@ -1,6 +1,6 @@
 # Router Data Plane
 
-A router is a gateway between different networks (can have different link layers). 
+A router is a gateway between different networks (can have different link layers).
 They also forward the traffic to the correct destination.
 
 ## Forwarding vs routing

@@ -6,11 +6,12 @@ Ex: you have 20, 25, 5 cent coins. Make coins for 40 and minimize the number of
 coins.
 
 ```
-Inputs: 
+Inputs:
 types of coins [c1, c2, c3]
 target T
 minimize combination of c that sum to T
 ```
+
 ```
 recurrence
 
