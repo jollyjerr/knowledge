@@ -79,3 +79,30 @@ a.b.c.d are values which are the same (use 0 for low order bits)
 ### Hierarchical
 
 Two subnets can combine: 1.1.0.0/24 and 1.1.1.0/24 = 1.1.0.0/23
+
+## Mapping IP Addresses
+
+Allocation:
+
+- IANA - Internet Assigned Numbers Authority
+- Regional registries - manage local IP address allocation
+- ISP's own large blocks of addresses and provide them
+
+### ARP - address resolution protocol
+
+Machine A wants to send a packet to a specific machine
+
+1. Broadcast "what is MAC for this IP?"
+2. Only the machine with that IP responds with it's MAC
+
+### Assigning an IP on a LAN
+
+1. Statically assign manually `sudo ip addr add 10.1.1.10/24 dev eth0`
+2. Dynamic - DHCP (dynamic host configuration protocol)
+
+```
+dhcp discover
+dhcp offer (can be multiple dhcp servers on a network that all offer)
+dhcp request
+dhcp ack
+```
