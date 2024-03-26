@@ -1,6 +1,6 @@
 # Data Visualization
 
-notes todo:
+## notes todo
 
 https://queue.acm.org/detail.cfm?id=1805128
 https://www.printmag.com/article/data-humanism-future-of-data-visualization/
@@ -11,3 +11,4 @@ https://www.printmag.com/article/data-humanism-future-of-data-visualization/
 - [altair](./altair.md)
 - [mapping](./mapping.md)
 - [color](./color.md)
+- [visualization tasks](./tasks.md)
