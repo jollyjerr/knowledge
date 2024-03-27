@@ -33,3 +33,4 @@ Also see: https://cs.uwaterloo.ca/~shallit/Papers/change2.pdf
 ## Topics
 
 - [greedy interval scheduling](./scheduling.md)
+- [huffman codes](./huffman-codes.md)
