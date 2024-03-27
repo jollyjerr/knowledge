@@ -2,7 +2,7 @@
 
 What is compression?
 
-Simple Example: 
+Simple Example:
 
 Take an ASCII text - represent text characters as binary
 
@@ -79,3 +79,5 @@ combine A, (TCG)
 
 Value of the tree = 1.8 bits per character
 ```
+
+Can be proved by the theory of general macros

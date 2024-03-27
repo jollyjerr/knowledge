@@ -1,7 +1,7 @@
 # Greedy Algorithms
 
 Dynamic programming is typically expensive (pseudo polynomial) so greedy
-algorithms can solve many of the same problems faster. 
+algorithms can solve many of the same problems faster.
 
 Also called Myopic algorithm
 
