@@ -29,6 +29,12 @@ Each TCP connection starts off with a three-way handshake:
 TCP Fast Open exists to allow sending application data with the SYN packet, but
 it has limitations on the type of data that can be sent.
 
+Error in handshake:
+
+- pkt 1 lost - A won't get an ACK, will resend
+- pkt 2 lost - A won't get an ACK, will resend. B will re-ACK
+- pkt 3 lost - B won't get an ACK, will resend. A will re-ACK
+
 ## Flow Control
 
 Each side of a TCP connection advertises it's own receive window (rwnd) to
