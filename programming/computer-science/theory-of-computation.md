@@ -104,7 +104,8 @@ algorithm.
 
 From this conclusion, you can understand good and bad news. If you know B is
 polynomial, then A is polynomial. If you know A is not polynomial, then you know
-B is also not polynomial.
+B is also not polynomial. The direction of provability is tricky so be sure to
+think through it before proving a problem can be reduced to another problem.
 
 A problem (A) is NP Complete if
 
