@@ -16,3 +16,4 @@
 - [graph](./graph.md)
 - [maps](./maps.md)
 - [algorithms](./algorithms/algorithms.md)
+- [theory of computation](./theory-of-computation.md)
