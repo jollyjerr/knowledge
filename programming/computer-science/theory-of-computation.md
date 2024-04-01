@@ -55,7 +55,7 @@ A subset of decidable problems.
 
 'O(n^c) for const c'
 
-Most polynomial time algorithms we know of have small exponents. 
+Most polynomial time algorithms we know of have small exponents.
 
 ### Known Exponential Time
 
@@ -93,7 +93,7 @@ little bit of ability like guessing. Classical computers have to iterate all
 possibilities to produce the guess, like running the algorithm in the first
 place.
 
-So, these algorithms __are__ polynomial time on a non deterministic computer. We
+So, these algorithms **are** polynomial time on a non deterministic computer. We
 just don't have one.
 
 #### NP Completeness
