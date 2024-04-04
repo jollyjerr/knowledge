@@ -120,3 +120,14 @@ We know of many NP complete problems (computers and intractability has many
 examples).
 
 Example: 3-CNF-SAT
+
+#### NP Complete Proofs
+
+- 3-CNF-SAT
+- K-Clique
+- K Vertex Cover Problem
+- 0-1 Integer Linear Problem
+- Traveling Salesperson
+
+These can all be reduced to each other but I'm not going to take all the notes
+here.
