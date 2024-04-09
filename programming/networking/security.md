@@ -59,3 +59,75 @@ sign, Bob uses Alice's public key to verify.
 Digital certificates: bind a public key and identity. A certificate authority
 verifies identity and signs the certificate with their private key. The CA's
 public key is trusted (pre-installed in a browser)
+
+## IPsec
+
+IPsec is a solution to eavesdropping on network traffic. Create an encrypted
+tunnel between two endpoints. Commonly used in VPNs. ISAKMP/IKE protocol is used
+to set the parameters and keys used.
+
+Check out StrongSwan
+
+### SA-1 Parameter Exchange: Initiator says what algorithms it supports
+
+(encryption,hash,dh group, auth) and responder chooses.
+
+Diffie Hellman - allow two parties to jointly establish shared secret key over insecure
+channel.
+
+1. Pick prime p and base g
+2. Pick secret x. Calculate G^x mod p. send value
+3. Other party pick secret y. calculate g^y mod p. send value
+4. Shared key is take value shared to them ^ secret they picked (mod p)
+
+So you cannot really calculate k without one of the secrets.
+
+### SA-2 Parameter Exchange
+
+Set up security association for traffic exchange. Set up traffic selectors to
+determine what traffic is allowed through the tunnel (protocol, src/dest, etc...)
+
+### Traffic Exchange
+
+- AH authenticating header
+- ESP encapsulating security payload
+- Transport (single endpoint)
+- Tunnel (whole site)
+
+## RPKI
+
+Resource Public Key Infrastructure
+
+Protect against man in the middle, fakes by identifying who owns an IP prefix.
+
+Regional Internet Registries (RIRs) digital cerificates contain IP prefix, AS
+origin, and tie that to the owner.
+
+Validator installs cache of verified prefixes and origins from regional internet
+registries onto AS.
+
+## TLS / HTTPs
+
+Attackers could get DNS to respond with wrong IP address or modify plain text
+TCP messages.
+
+Digital Certificate -> provides for asymmetrical key exchange -> provides for
+shared encrypted key.
+
+Let's Encrypt is a certificate authority but not trusted, it has you prove your
+domain ownership before signing a certificate.
+
+### TLS:
+
+- client hello
+- server hello
+- server sends certificate
+- server indicates done with handshake negation
+- client picks session key, encrypts with server public key, sends to server
+- they agree to encrypt traffic
+
+### Mutual TLS (mTLS)
+
+Client and server both need to validate each other.
+
+Servers have an explicit access control list.

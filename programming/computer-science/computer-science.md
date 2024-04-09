@@ -17,3 +17,4 @@
 - [maps](./maps.md)
 - [algorithms](./algorithms/algorithms.md)
 - [theory of computation](./theory-of-computation.md)
+- [quantum computing](./quantum-computing.md)
