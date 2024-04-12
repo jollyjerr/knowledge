@@ -12,3 +12,4 @@ https://www.printmag.com/article/data-humanism-future-of-data-visualization/
 - [mapping](./mapping.md)
 - [color](./color.md)
 - [visualization tasks](./tasks.md)
+- [evaluation](./evaluation.md)
