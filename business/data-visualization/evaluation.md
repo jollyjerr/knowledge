@@ -90,3 +90,71 @@ including metadata about your participants.
 - Give your collaborators the tool and let them play with it. Make sure to ask
   them to document things like interesting findings or confusing settings/bugs
   with screenshots
+
+## Experimental Design
+
+More precise than insights, but less about the domain. Measure how people
+complete a specific set of tasks under different conditions.
+
+1. Form a specific question
+2. Generate a set of falsifiable hypotheses
+3. Determine your independent (what you change) and dependent (what you measure)
+   variables.
+4. Build your stimuli & experimental infrastructure (task framing, how to
+   complete task, data collection, etc.)
+
+- experimental tasks: statistical, comparison (which approach is more effective), decision making (choose an approach for a given scenario)
+- experimental stimuli: the items people use to complete the tasks (where does data come from?)
+- independent variables (each participant can see one, all, or some conditions)
+- dependent variables: things to measure (time, accuracy, number of interactions, etc.)
+- control variables: things that might affect your result (order, etc.)
+
+### Analyze your data
+
+Descriptive statistics: 
+
+Use measures of the data distribution to estimate whether there's differences
+between independent variables.
+
+Inferential Tests:
+
+Use statistical tests to estimate the likelihood that your observed differences
+reflect true difference.
+
+## Evaluation Trade Offs
+
+Qualitative:
+
+- holistic input
+- real-world use
+- richer data
+- less controlled
+- slower
+- less precise
+
+Experimental
+
+- highly precise
+- more generalizable
+- easier to understand
+- less specific
+- less detailed
+- more abstract
+
+### Formative Evaluation
+
+Test our understanding of the problem space and gather insight into the user's
+processes. Measure how well different designs optimize for a given set of tasks
+or goals.
+
+Area Survey: what are the core tasks and needs of the problem
+Preference Mining: what design do people like
+
+### Summative Qualitative Evaluation
+
+Measure how well a given tool supports a domain. Provide a measure of
+performance against a target baseline.
+
+Thinkaloud: what are users' impressions of a tool
+Horserace: which design is most efficient for a set of tasks
+popular vote: what design do people like best
