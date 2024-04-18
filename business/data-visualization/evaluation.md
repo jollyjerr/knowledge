@@ -111,7 +111,7 @@ complete a specific set of tasks under different conditions.
 
 ### Analyze your data
 
-Descriptive statistics: 
+Descriptive statistics:
 
 Use measures of the data distribution to estimate whether there's differences
 between independent variables.
