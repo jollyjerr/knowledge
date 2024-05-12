@@ -8,6 +8,12 @@ Tools for troubleshooting:
 - traceroute (path to destination) implemented with incremental ttl on multiple
   packets
 - iperf3 (determine max throughput between client and server)
+- iproute2
+- iptables
+- tc
+- ipvsadm
+- tshark
+- wireshark
 
 ## Topics
 
@@ -24,3 +30,4 @@ Tools for troubleshooting:
 - [http](./http.md)
 - [grpc](./grpc.md)
 - [network security](./security.md)
+- [linux data plane](./linux-data-plane.md)

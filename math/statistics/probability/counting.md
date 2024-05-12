@@ -25,6 +25,9 @@ P(sum of two rolls is 8) = P({26,35,44,53,62}) = 5/36
 P(second roll is two more than first roll) = P({13,24,35,46}) = 1/9 (4/36)
 ```
 
+Another question you see a lot is a test has 20 5 answer questions, it can be
+completed 5^20 ways.
+
 ## Permutations
 
 Any ordered sequence of k objects taken from a set of n distinct objects is

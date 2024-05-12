@@ -12,3 +12,5 @@ then we pose and answer questions about the nature of a sample.
 
 - [axioms](./axioms.md)
 - [counting](./counting.md)
+- [conditional probability](./conditional-probability.md)
+- [independence](./independence.md)
