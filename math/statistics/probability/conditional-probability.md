@@ -37,8 +37,8 @@ Given two events A and B from the same sample space,
 ```
 B = (B ∩ A) ∪ (B ∩ Acomplement)
 
-P(B) 
-= P(B ∩ A) + P(B∩Acomplement) 
+P(B)
+= P(B ∩ A) + P(B∩Acomplement)
 = P(B|A)P(A) + P(B|Acomplement)P(Acomplement)
 ```
 
@@ -47,7 +47,7 @@ This can be extended to any _n_ sets.
 ```
 A1, A2,...,An where A1 ∩ ... ∩ An = {} and sum of all A's is S.
 
-Then 
+Then
 
 P(B) = sum(1, n) P(B|Ak)P(Ak)
 ```
