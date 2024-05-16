@@ -14,3 +14,4 @@ then we pose and answer questions about the nature of a sample.
 - [counting](./counting.md)
 - [conditional probability](./conditional-probability.md)
 - [independence](./independence.md)
+- [random variables](./random.md)
