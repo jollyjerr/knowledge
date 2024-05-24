@@ -414,3 +414,49 @@ You can see this is memoryless because the answer is always the same even though
 you don't know how long the customer has been in service (could be 30sec or
 10min who knows).
 ```
+
+## More on expectation and variance
+
+Of functions of random variables.
+
+```
+E(g(X)) = {
+    sum(k) g(k) P(X=k) if x is discrete,
+    ∫(-inf, inf)g(x) f(x) dx if x is continuous
+}
+
+E(aX + b) = aE(x) + b
+
+V(g(X)) = {
+    sum(k) (g(k) - E(g(X)))^2 P(X = k) if x discrete,
+    ∫(-inf, inf) (g(x)-E(g(x)))^2 f(x) dx if x is continuous
+}
+```
+
+Variance measures the spread of data, so shifts do not affect the variance
+calculation.
+
+Expected value measures the center of the data, so it does change when shifted.
+
+## Jointly Distributed Random Variables
+
+Given two discrete random variables, X and Y:
+
+```
+p(x,y) = P(X = x, Y = y) is the joint probability mass function for X and Y
+```
+
+Recall: Two events, A and B, are independent if `P(A ∩ B) = P(A)P(B)`.
+
+If X and Y are independent random variables if `P(X=x, Y=y) = P(X=x)P(Y=y)` for
+all possible values of x and y.
+
+If X and Y are continuous random variables, then f(x,y) is the joint probability
+density function for X and Y if this holds for all possible a, b, c, and d:
+
+```
+P(a<=X<=b,c<=Y<=d) = ∫(a to b)∫(c to d) f(x,y) dx dy
+```
+
+X and Y are independent random variables if `f(x,y) = f(x)f(y)` for all possible
+values of x and y.

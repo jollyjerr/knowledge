@@ -15,3 +15,5 @@ then we pose and answer questions about the nature of a sample.
 - [conditional probability](./conditional-probability.md)
 - [independence](./independence.md)
 - [random variables](./random.md)
+- [covariance and correlation](./covariance.md)
+- [limit theorems](./limit-theorem.md)
