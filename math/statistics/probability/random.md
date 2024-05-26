@@ -23,7 +23,7 @@ our random variable to be from the mean.
 ```
 V(X) = E[(X - E(X))^2]
 
-= E(X^2) = (E(X))^2 <- the "second moment" minus the mean squared
+= E(X^2) - (E(X))^2 <- the "second moment" minus the mean squared
 ```
 
 The standard deviation is the positive square root of the variance.

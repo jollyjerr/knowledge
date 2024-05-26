@@ -51,3 +51,9 @@ Then
 
 P(B) = sum(1, n) P(B|Ak)P(Ak)
 ```
+
+## Other stuff
+
+```
+P(A union B) = P(A) + P(B) - P(A intersect B)
+```
