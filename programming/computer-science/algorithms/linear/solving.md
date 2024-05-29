@@ -40,3 +40,10 @@ for v in model.variables():
     print(v.name, "=", v.varValue)
 print(f'Objective value - money obtained for charity: {value(model.objective)}')
 ```
+
+## Algorithms
+
+- Simplex: go through each vertex of the convex polyhedron until you cannot
+  continue without becoming less optimized.
+- Ellipsoidal
+- Interior point methods

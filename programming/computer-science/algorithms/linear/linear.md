@@ -26,3 +26,4 @@ constraints: [
 - [cake sharing problem](./cake-sharing.md)
 - [solving linear programs](./solving.md)
 - [network flow problems](./network-flow.md)
+- [geometry](./geometry.md)
