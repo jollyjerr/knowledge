@@ -38,7 +38,7 @@ O(sqt(N)) -> not common "go over N^1/2 items once"
 O(N log N) -> Quicksort "Go over N, half N, go over N, half N..."
 O(N) -> for loop "go over N"
 O(N^2) -> 2d array "go over N for every member of N"
-O(N^3) -> Matrix multiplication "N^2 for every member of N" (except for strassen algoritm)
+O(N^3) -> Matrix multiplication "N^2 for every member of N" (except for Strassen algorithm)
 O(N!) -> yuck
 O(N^N) -> super yuck
 
