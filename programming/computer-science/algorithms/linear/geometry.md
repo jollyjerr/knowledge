@@ -10,7 +10,7 @@ region.
 
 Objective function values will be parallel lines, and the optimal value is the
 highest possible value that touches the feasible region. The optimal solution is
-always at a vertex. 
+always at a vertex.
 
 ## General
 
@@ -24,3 +24,8 @@ polyhedron.
 ## Unbounded
 
 In an unbounded problem, the polyhedron will be unbounded.
+
+## Integer
+
+The entire region is not considered, only whole integer points inside the
+feasible region.

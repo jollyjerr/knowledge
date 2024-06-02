@@ -27,3 +27,4 @@ constraints: [
 - [solving linear programs](./solving.md)
 - [network flow problems](./network-flow.md)
 - [geometry](./geometry.md)
+- [integer](./integer.md)
