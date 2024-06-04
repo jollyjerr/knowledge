@@ -8,4 +8,5 @@ More notes on algorithms
 - [dynamic programming](./dynamic/dynamic.md)
 - [greedy algorithms](./greedy/greedy.md)
 - [linear programming](./linear/linear.md)
+- [approximation algorithms](./approximation/approximation.md)
 - [quantum algorithms](./quantum/quantum.md)
