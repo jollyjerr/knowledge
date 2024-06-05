@@ -30,7 +30,7 @@ j[1] .. j[m] all preset to 0
 
 Go through each job j[i] is the sum of the time of the jobs that each processor
 already has been assigned. Find k = processor where commitment time is the
-minimum and break ties arbitrarily. Assign i to that processor and increase j[i] 
+minimum and break ties arbitrarily. Assign i to that processor and increase j[i]
 by that jobs time.
 
 Use heap to store j values so finding k is fast.
@@ -50,3 +50,7 @@ this means the approximation is bounded by 2 over the optimum.
 
 You can do even better if you sort the jobs from largest to smallest before
 running the greedy scheduler. This bounds the difference from optimum by `3/2`.
+
+## Topics
+
+- [vertex cover](./vertex-cover.md)
