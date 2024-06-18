@@ -91,3 +91,11 @@ Layer 7 (application) considers HTTP headers
 
 IPVS implements transport layer load balancing inside the kernel, ipvsadm sets
 up and maintains the server table in the kernel.
+
+## QOS (Quality of Service)
+
+- filtering (token bucket filter)
+- load balancing
+- controlling loss and prioritization
+
+iptables, ipvsadm, tc qdisc
