@@ -107,3 +107,85 @@ from the last vertex to the first.
 
 One of the fastest algorithms in the general case, but others can beat the
 algorithm in practice.
+
+### Mixed Integer Linear Program
+
+Decision variables:
+
+```
+Xi->j: {
+    0 if i !-> j
+    1 if i -> j
+}
+
+ti: timestamp when did visit node i
+```
+
+Constraints:
+
+```
+sum(j) xi->j = 1 for all i (enter every vertex)
+
+sum(k) xk->i = 1 for all i (leave every vertex)
+
+ti + xi->j <= tj + (n-1)(1-xi->j) when j != 1 (avoid subtours using Big M trick)
+```
+
+Objective: 
+
+```
+min sum(vi->j) Cij * Xi->j
+```
+
+Runtime:
+
+Will be faster in normal cases because you get all the ILP optimization tricks
+for free but:
+
+```
+O(2^(n(n-1)) * n^3)
+```
+
+### ILP Incremental Subtour Elimination For Symmetric TSP
+
+Variables:
+
+```
+Xi->j (or Xj->i) binary
+```
+
+Constraints:
+
+```
+sum(j=1 to n) Xij = 2
+
+# Then you add worst case 2^n subtour elimination constraints, one at a time
+sum(where i in S and j not in s) Xij >= 2 # add this for all S you find while making tours
+```
+
+Objective:
+
+```
+min sum() Cij * Xij # i < j
+```
+
+## Approximation Algorithms
+
+These algorithms are looking at _Metric_ TSPs because general tsp cannot be
+approximated within a constant factor unless P = NP.
+
+- `Cij > 0`
+- `Cij = Cji`
+- `Cik <= Cij + Cjk` (triangle inequality)
+
+Many TSPs in real life are metric.
+
+You can use a concept called "short cutting" to extend a minimum spanning tree
+into a TSP tour. Walk the minimum spanning tree, then backtrack. Every time you
+hit a new node add an edge from your last node to the new node even if the edge
+is not in the tree. The tour you create is upper bounded by twice the MSP and is
+less than or equal to twice the optimal tour.
+
+Eulerian Tours: Every edge exactly once and come back to where you start
+
+If a vertex has an odd number of edges, then a Eulerian tour is not possible.
