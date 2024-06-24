@@ -131,7 +131,7 @@ sum(k) xk->i = 1 for all i (leave every vertex)
 ti + xi->j <= tj + (n-1)(1-xi->j) when j != 1 (avoid subtours using Big M trick)
 ```
 
-Objective: 
+Objective:
 
 ```
 min sum(vi->j) Cij * Xi->j
@@ -180,6 +180,8 @@ approximated within a constant factor unless P = NP.
 
 Many TSPs in real life are metric.
 
+### Christofides Algorithm
+
 You can use a concept called "short cutting" to extend a minimum spanning tree
 into a TSP tour. Walk the minimum spanning tree, then backtrack. Every time you
 hit a new node add an edge from your last node to the new node even if the edge
@@ -189,3 +191,8 @@ less than or equal to twice the optimal tour.
 Eulerian Tours: Every edge exactly once and come back to where you start
 
 If a vertex has an odd number of edges, then a Eulerian tour is not possible.
+
+Tour the min span tree using a Eulerian tour and use shortcutting to convert to
+a TSP tour.
+
+You end up with a 1.5 factor approximation for the optimum tsp tour.
