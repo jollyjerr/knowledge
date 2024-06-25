@@ -56,3 +56,4 @@ running the greedy scheduler. This bounds the difference from optimum by `3/2`.
 - [vertex cover](./vertex-cover.md)
 - [maximum satisfiability](./max-3-sat.md)
 - [traveling salesperson problem](./tsp.md)
+- [fully polynomial time approximation](./fully-polynomial.md)
