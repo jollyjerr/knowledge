@@ -10,3 +10,4 @@ More notes on algorithms
 - [linear programming](./linear/linear.md)
 - [approximation algorithms](./approximation/approximation.md)
 - [quantum algorithms](./quantum/quantum.md)
+- [cryptography](./cryptography/cryptography.md)
