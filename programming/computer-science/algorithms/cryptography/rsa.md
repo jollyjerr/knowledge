@@ -53,3 +53,43 @@ def extended_gcd(a, b):
 
   return gcd, x, y
 ```
+
+## Spec
+
+- Use code (like ASCII) to convert data into a number or sequence of numbers (message).
+- Take two large prime numbers and compute their product.
+- Choose e, some number that is relatively prime with n.
+- Message also has to be relatively prime with n.
+
+Relatively prime is when `gcd(e, n) = 1`
+
+- Public key is (e, n)
+- RSA calculates `M^e mod n = EM` called modular exponentiation.
+- Find private key d, such that `EM^d mod n = M`
+
+```
+gcd(e, phi(n)) = 1
+
+bezot coefficients
+
+e * d - phi(n) * v = 1
+
+M * M^phi(n) mod n
+
+EM^(e*d) mod n = M
+```
+
+RSA depends on the hardness of factoring, finding the initial two large numbers.
+
+### Euler's Totient Theorem
+
+```
+n -> phi(n) = # of relatively prime numbers to n
+```
+
+Find this manually by starting with set of all numbers up to n and then removing
+numbers that are not relatively prime. Then you have cardinality of set.
+
+Given a number n, take any M relatively prime with n, then `M^phi(n) mod n = 1`
+
+If n is the product of two prime numbers (p and q), then `phi(n) = (p-1) * (q-1)`
