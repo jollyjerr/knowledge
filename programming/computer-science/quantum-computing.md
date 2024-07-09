@@ -34,6 +34,38 @@ time.
 Electron "spins" up or down at the same time. Measuring the spin, it collapses
 to up or down.
 
+## Principles of Quantum Mechanics (with enough assumptions to build algorithms)
+
+- Quantization: fundamental properties (length, angular momentum) cannot be arbitrary values, they are
+  multiples of some fundamental unit
+
+This explains the spectrum of hydrogen atoms, because electrons can only exist
+in some discrete orbits.
+
+- Heisenberg Uncertainty Principle: things can exist in multiple states at the
+  same time until you measure it
+
+Quantum systems can exist in a superposition of multiple states.
+Measurement (any form of interaction - no person needs to observe) can cause a collapse to a single state.
+
+Not the same as lack of knowledge, it actually exists in multiple states at the same
+time.
+
+- Entanglement
+
+## Stern, Gerlach
+
+Shoot atoms of silver through a magnetic field. The field will make the diapold
+deviate in direction depending on it's spin as it goes through the field. You
+would expect to have a distribution across every direction, but in reality you
+end up with exactly two states - up and down. This shows the magnetic diapold is
+quantized.
+
+If you chain the experiment, so all atoms pointing up go through a device again,
+you can be up in the z direction and either left or right in the y direction.
+Measuring on y or z direction makes the orientation on the other direction
+uncertain.
+
 ## Quantum Information
 
 Qubits:
@@ -50,12 +82,15 @@ Superposition ɑ1|0> + ɑ2|1> where alpha is a complex number.
 
 Normalize quantum states so the modulus = 1 by adding a normalizing constant.
 
-Quantum Computing:
+Quantum Computing - take advantage of quantum parallelism:
 
 1. prepare qubits
 2. run quantum operations
 3. measurement
 4. get output
+
+Algorithm design is about making the right answer most probable when you measure
+the system.
 
 Kronecker Product: Combine two qubits into single system:
 
