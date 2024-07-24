@@ -54,7 +54,7 @@ Again, you can check your work by multiplying
 x^2 + 10x + 6 = 0 // before you start, make sure the highest term is `+1x^2` and set the equation to 0.
 x^2 +10x = -6
 
-// take the coefficient of the second term, devide by 2, square the result
+// take the coefficient of the second term, divide by 2, square the result
 (10/2)^2 = +25
 // add the result to both sides
 

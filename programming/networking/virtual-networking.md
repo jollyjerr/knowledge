@@ -5,7 +5,7 @@
 `Bare Metal -> Virtual Machines -> Containers`
 
 namespaces: what resources and naming of those resources a process sees (file
-descriptors, ip adresses)
+descriptors, ip addresses)
 
 cgroup: (control groups) groups processes and allocates resources (CPU, Memory)
 that the kernel enforces.

@@ -70,7 +70,7 @@ Relatively prime is when `gcd(e, n) = 1`
 ```
 gcd(e, phi(n)) = 1
 
-bezot coefficients
+Bezout coefficients
 
 e * d - phi(n) * v = 1
 

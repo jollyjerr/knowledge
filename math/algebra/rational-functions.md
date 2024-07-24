@@ -4,7 +4,7 @@ f(x) = (x^2 + 2x - 7)/(x - 2)
 
 You can simplify with [long devision of polynomials](./polynomials.md)
 
-You can also simplify with cancelation
+You can also simplify with cancellation
 
 ```
 4(a-3)/4 = (4/4)(a-3) = a-3
@@ -16,7 +16,7 @@ Same as normal fractions - find a common denominator and add or subtract the num
 
 #### Multiplication
 
-Factor out both sides and use cancelation to simplify the equation. If you cancel a factor in the
+Factor out both sides and use cancellation to simplify the equation. If you cancel a factor in the
 denominator that limits the [domain](./functions.md) of one of the functions, you need to explicitly provide that
 limitation in your simplified form because it limits the domain of the product.
 

@@ -100,7 +100,7 @@ Resource Public Key Infrastructure
 
 Protect against man in the middle, fakes by identifying who owns an IP prefix.
 
-Regional Internet Registries (RIRs) digital cerificates contain IP prefix, AS
+Regional Internet Registries (RIRs) digital certificates contain IP prefix, AS
 origin, and tie that to the owner.
 
 Validator installs cache of verified prefixes and origins from regional internet

@@ -39,7 +39,7 @@ Proof that ∀x ((1/(x+1)) < 1) for the domain all positive integers:
 
 1 < x+1 add one to both sides
 
-1/(x+1) < (x+1)/(x+1) devide both sides by x+1
+1/(x+1) < (x+1)/(x+1) divide both sides by x+1
 
 1/(x+1) < 1
 

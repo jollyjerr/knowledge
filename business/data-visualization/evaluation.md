@@ -58,8 +58,8 @@ of your solution.
 
 - systematic surveys: read and assemble knowledge on your target topic and
   existing solutions
-- semistructured interviews: conversation with collaborators
-- thinkalouds: work with collaborators while using your solution on their own
+- semi structured interviews: conversation with collaborators
+- think aloud: work with collaborators while using your solution on their own
   data
 - journaling: ask collaborators to use your tool and note their observations
 
@@ -72,14 +72,14 @@ including metadata about your participants.
 - determine what expertise is necessary for a holistic solution
 - spec key tasks, datasets and other considerations
 
-#### Semistructured interviews
+#### Semi structured interviews
 
 - figure out the problems that experts see as most impactful
 - decide who will best serve in which roles
 - verify your understanding of the target problem
 - get focused, fluid feedback about what is and isn't working
 
-#### Thinkaloud Studies
+#### Think aloud Studies
 
 - Establish limits in current solutions and key workflows
 - Get direct feedback on low-fi prototypes grounded in design
@@ -155,6 +155,6 @@ Preference Mining: what design do people like
 Measure how well a given tool supports a domain. Provide a measure of
 performance against a target baseline.
 
-Thinkaloud: what are users' impressions of a tool
-Horserace: which design is most efficient for a set of tasks
+Think aloud: what are users' impressions of a tool
+Horse race: which design is most efficient for a set of tasks
 popular vote: what design do people like best

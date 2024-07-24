@@ -37,15 +37,15 @@ to any constant factor is impossible.
 ```
 T = cost of algorithm
 
-Thus if 𝑇≤𝛼𝑛, we know that the optimal tour has to be of size ≤𝛼𝑛. This immediately tells us that
+Thus if 𝑇≤an, we know that the optimal tour has to be of size ≤an. This immediately tells us that
 a Hamiltonian cycle must exist in the original graph.
 
-On the other hand if 𝑇>𝛼𝑛 then, we have OPT≥1𝛼𝑇>𝑛.
+On the other hand if 𝑇>an then, we have OPT≥1𝛼𝑇>𝑛.
 However, OPT>𝑛 tells us that no Hamiltonian cycle may exist in the original graph.
 
 Therefore, even though the approximation algorithm does not compute an optimal tour, its
 approximation guarantees are sufficient for us to resolve whether or not the graph has a Hamiltonian cycle
-by simply checking if the approximation algorithm finds tour of cost ≤𝛼𝑛 or not.
+by simply checking if the approximation algorithm finds tour of cost ≤an or not.
 ```
 
 Only generic TCP is NP-Hard.

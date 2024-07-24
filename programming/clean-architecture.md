@@ -18,7 +18,7 @@ This book covers the entire other half, **architecture**.
 1. **Paradigmes** restrict engineers from making mistakes and enable them to write scientifically falsifiable code (or mathmatically provable code in some circumstances). You use paradigmes to code up **modules**.
 2. **Modules** are a group of behaviors that are responsible to one actor. You combine modules to create **components**.
 3. **Components** are independent .jar files, ruby gems etc. They can also be deployed as services. They balance many concerns to be easy to change and easy to use. Abstract components should be stable and depend on few things, concrete components should be flexible and depend on many abstract things. Multiple components are strung together to create a product or **project**.
-4. **Architecture** is the strategy you use to keep a **project** open to development, deployment, operation, and maintenance. This is done best by keeping buisness rules (things your company would do manually if computers did not exist) abstract and knowing nothing about the concrete plug-ins of implementation (ui, frameworks, database, cloud providers, the web at all, etc...). You should write buisness rules to connect with implementation via simple objects and interfaces that the implementation layer can plug in to. You should delay the decision of implementation details as long as possible. Every layer of your project should be testable horizontally and testable vertically.
+4. **Architecture** is the strategy you use to keep a **project** open to development, deployment, operation, and maintenance. This is done best by keeping business rules (things your company would do manually if computers did not exist) abstract and knowing nothing about the concrete plug-ins of implementation (ui, frameworks, database, cloud providers, the web at all, etc...). You should write business rules to connect with implementation via simple objects and interfaces that the implementation layer can plug in to. You should delay the decision of implementation details as long as possible. Every layer of your project should be testable horizontally and testable vertically.
 
 ## Programming Paradigms
 
@@ -38,9 +38,9 @@ _Imposes discipline on indirect transfer of control_
 
 OOP **did not** give us encapsulation,inheritance or polymorphism. All three of those things are equally possible in a structured language like C. OOP **did** make polymorphism easy and safe by standerdizing the conventions for using pointers to functions and abstracting it away. In this way, OOP imposed discipline on indirect transfer of control - something that was possible but was also messy and unsafe in C.
 
-This discipline makes it practical to use dependancy inversion across projects. For a given _caller_ class and _callee_, the caller can now reference an interface that represents any various implementation of the callee rather than refrencing the callee itself. This inverts the relationship between flow of control and source code dependencies.
+This discipline makes it practical to use dependency inversion across projects. For a given _caller_ class and _callee_, the caller can now reference an interface that represents any various implementation of the callee rather than refrencing the callee itself. This inverts the relationship between flow of control and source code dependencies.
 
-The big win from this revolution is that fact that you can point all external concerns (UI, Database, Etc...) to _depend on_ the buisness rules - rahter than the other way around. So buisness rules can stay stable while details of implementation can change freely (ex: a fax program can work with any fax machine, not just be written for one piece of hardware). Changes to the UI or Database can have zero effect on buisness rules - which is super powerfull.
+The big win from this revolution is that fact that you can point all external concerns (UI, Database, Etc...) to _depend on_ the business rules - rahter than the other way around. So business rules can stay stable while details of implementation can change freely (ex: a fax program can work with any fax machine, not just be written for one piece of hardware). Changes to the UI or Database can have zero effect on business rules - which is super powerfull.
 
 ### Functional Programming
 
@@ -70,7 +70,7 @@ _A module should be responsible to one actor_
 
 _A module should be open for extension but closed for modification_
 
-It is easier to write new code than it is to change old code. If component A should be protected from changes in component B, then component B should depend on component A. Abstract and stable code should have lots of dependants and few dependencies.
+It is easier to write new code than it is to change old code. If component A should be protected from changes in component B, then component B should depend on component A. Abstract and stable code should have lots of dependents and few dependencies.
 
 #### Liskov Substitution Principle
 
@@ -88,7 +88,7 @@ Instead of depending on something that does a million things, depend on a interf
 
 _The most flexible systems depend on abstractions, not concretions_
 
-Concrete implementation details should always depend on abstract stable code. Basically, buiseness logic should never need to change when the UI changes. Buiseness rules should never need to change when the database or ORM change.
+Concrete implementation details should always depend on abstract stable code. Basically, business logic should never need to change when the UI changes. Business rules should never need to change when the database or ORM change.
 
 If you find yourself in a situation where the abstract is depending the concrete, you should invert the dependency by creating an interface and then the abstract code and concrete implementation both depend on the interface (which is abstract).
 
