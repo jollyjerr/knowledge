@@ -49,4 +49,22 @@ own inverse (it is a little more involved then that but a lot to write down here
 
 `U^+ * U = I`
 
+### Unitary operators and reversible computation
+
+For any quantum operation, you can apply the inverse matrix and get back to the
+original state. The only non reversible operation is measurement.
+
 ## Multi Qubit
+
+Two ions of our element that are both isolated in one system from the outside
+world - they can influence each other.
+
+```
+|a> tensor product |b>
+```
+
+Tensor product symbol is circle with an x in it. Tensor product can also be
+called direct product.
+
+Both the qubits collapse when you measure the system. You have four bases for
+all the possible states `00 01 10 11`.
