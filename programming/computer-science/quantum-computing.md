@@ -139,7 +139,7 @@ states.
 
 #### Bells Inequality
 
-Alice and Bob sent to two planets. They cannot communicate with eachother.
+Alice and Bob sent to two planets. They cannot communicate with each other.
 
 Third party sends a bit to Bob and Alice, A and B, and they respond with X and
 Y.
@@ -148,14 +148,29 @@ If xor(A, B, X, Y) = 0 then they can come back to earth.
 
 Simplest strat: always respond with a zero - win 75% of time
 
-Classical: No matter what strategy they use, the potability of winning is always <= 0.75
+Classical: No matter what strategy they use, the probability of winning is always <= 0.75
 
 Quantum: share two entangled qubit. If you get zero do nothing, if you get 1
-then rotate by 22.5 deg. Measure your qubit and send the result back.
+then rotate by 22.5 deg in opposite directions. Measure your qubit and send the result back.
 Probability of winning is 80%.
 
 ```
 1/sqrt(2)(|00> + |11>)
+
+cos(pi/8)|0> + sin(pi/8)|1>
+```
+
+If they both get a zero they will win for sure (because of the entangled state)
+
+If one gets a 1 then they win `0.85%` of time (ish).
+
+```
+1/4 a=b=0 P(w)=1
+1/4 a=1,b=0 P(w) ~ 0.85
+1/4 a=0,b=1 P(w) ~ 0.85
+1/4 a=b=1 P(w)=0.5
+
+P(w) = 0.8
 ```
 
 This has been proven experimentally as well as mathematically.
