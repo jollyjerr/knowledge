@@ -64,7 +64,7 @@ slope = t^2 + 5t - 24 / t - 3
 
 -> (t + 8)(t - 3) / t - 3
 
-== t + 8 for t != -3 // because that information was lost during the devision to cancel t - 3 from denominator
+== t + 8 for t != -3 // because that information was lost during the division to cancel t - 3 from denominator
 ```
 
 ## Formal definition

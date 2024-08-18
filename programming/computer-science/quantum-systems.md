@@ -105,11 +105,13 @@ I = Identity (noop)
 ```
 
 Hadamard first, identity second
+
 ```
 |00> -> H x I -> (1/sqrt(2))(|00> + |10>)
 ```
 
 Hadamard both
+
 ```
 |00> -> H x H
 

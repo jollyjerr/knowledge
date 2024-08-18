@@ -15,14 +15,14 @@ pi/4`.
 If f is continuous on the interval [a, b] and f(x) = F'(x), then
 inta-b(f(x)dx) = F(b) - F(a)
 
-The function F(x) is known as the antiderivative of f(x)
+The function F(x) is known as the anti derivative of f(x)
 
 ## Indefinite Integrals
 
 When you find anti-derivatives you just use the existing [differentiation rules](./differentiation.md)
 but in reverse.
 
-example: f(x) = 2x has a family of antiderivatives F(x) = x^2 + C
+example: f(x) = 2x has a family of anti derivatives F(x) = x^2 + C
 
 ### Constant
 
@@ -106,7 +106,7 @@ du = -cscxcotx - csc^2x dx
 ## Initial Value Problems
 
 Sometimes you are provided with an initial value(s) so that the family of
-antiderivatives can be narrowed down to a single antiderivative.
+anti derivatives can be narrowed down to a single anti derivative.
 
 Find f(x) if f'(x) = cos(x) + sin(x) and f(0) = 5.
 
@@ -286,7 +286,7 @@ And you can use it to rewrite integrals so they are solvable
 u  = x
 dv = e^x dx
 du = 1 dx <- derivative of u
-v  = e^x <- intigrate dv (+C does not matter here)
+v  = e^x <- integrate dv (+C does not matter here)
 
 ∫xe^x dx = xe^x - ∫e^x dx
 

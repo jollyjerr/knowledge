@@ -109,7 +109,7 @@ and the correct prediction.
 The model makes oversimplified generalizations on the data and does not pay
 enough attention to the specifics of new data.
 
-#### Overfitting
+#### Over fitting
 
 The model is specific to the training dataset and cannot generalize to new data.
 

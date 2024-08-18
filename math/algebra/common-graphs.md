@@ -6,7 +6,7 @@ A Parallel line is: `y = 2x + anything`
 
 A Perpendicular line is: `y = -1/2x + anything` (use the negative reciprocal of the slope)
 
-### Porabolas
+### Parabolas
 
 Two primary notations:
 

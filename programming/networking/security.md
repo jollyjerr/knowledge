@@ -50,7 +50,7 @@ in the same message digest.
 
 HMAC (hash keyed message authentication code)
 
-sender and reciever share a secret key - `H(key | H(key | message))`
+Sender and receiver share a secret key - `H(key | H(key | message))`
 
 Digital signatures: use asymmetric keys to enable checking the message has not
 changed and that it came from the correct sender. Alice uses private key to

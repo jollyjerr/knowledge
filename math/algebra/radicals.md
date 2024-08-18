@@ -20,7 +20,7 @@
 
 `x^4/3 = (3sqt(x^4))`
 
-- Rationalizing denominattors
+- Rationalizing denominators
 
 rules
 

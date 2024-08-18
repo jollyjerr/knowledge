@@ -2,7 +2,7 @@
 
 ## Parabolas
 
-Analytic geometry of a porabola:
+Analytic geometry of a parabola:
 
 |             | Equation         | Vertex | Axis | Focus   | Directrix |
 | ----------- | ---------------- | ------ | ---- | ------- | --------- |
@@ -30,7 +30,7 @@ x^2 - 4x + 4 = 4y + 4
 (x-2)^2 = 4(y+1)
 ```
 
-If given information about a porabola and asked to find the equation:
+If given information about a parabola and asked to find the equation:
 
 1. Sketch the graph
 2. Plug in what information you have

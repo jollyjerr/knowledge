@@ -111,7 +111,7 @@ Written in chain rule form
 (10(x^2 + 1)^9) * 2x
 ```
 
-### Natural Logarithm and Exponentials
+### Natural Logarithm and Exponential
 
 Keep in mind the [properties of logarithms](../algebra/exponential-and-logarithmic-functions.md)
 

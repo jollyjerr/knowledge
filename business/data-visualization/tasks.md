@@ -35,7 +35,7 @@ https://openaccess.city.ac.uk/id/eprint/22644/1/Criteria%20for%20Rigor%20in%20Vi
 
 ## Stages of visualization perception
 
-### Preattention
+### Pre-attention
 
 The gist: featural and semantic information gathered at a glance
 

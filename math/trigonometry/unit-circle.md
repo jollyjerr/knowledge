@@ -22,7 +22,7 @@ The unit circle contains three key pieces of information:
 
 #### Radians
 
-Associated radian measurments to degrees
+Associated radian measurements to degrees
 
 (simplified pi/6 increments and pi/4 increments)
 

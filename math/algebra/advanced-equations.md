@@ -51,14 +51,14 @@ x-2 = 36
 x = 38
 ```
 
-When simplifieng a quadradic you may introduce **extranious solutions**,
-so you must plug in your answers and check. This happens because if youe take 1^2 or -1^2
+When simplifying a quadratic you may introduce **extraneous solutions**,
+so you must plug in your answers and check. This happens because if you take 1^2 or -1^2
 you get 1, so a radical equation is one interpretation, the positive square root. This means you lose
 some information and introduce an extraneous solution.
 
 `sqt(x) != +-sqt(x)`
 
-- Multivariable equations
+- Multi variable equations
 
 Just isolate the variable you are solving for.
 

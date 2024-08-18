@@ -4,4 +4,4 @@ Trichotomy: Two numbers can only be related in three ways -> `a < b, a = b, a > 
 
 If a !>= b, a must be < b
 
-Negative inequalities: Solve like an equation, but flip the > || < sign when multiplying or deviding by a negative number.
+Negative inequalities: Solve like an equation, but flip the > || < sign when multiplying or dividing by a negative number.

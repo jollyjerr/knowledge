@@ -108,7 +108,7 @@ commutative laws
 p or q == q or p
 p and q == q and p
 
-distributative laws
+distributive laws
 p or (q and r) == (p or q) and (p or r)
 p and (q or r) == (p and q) or (p and r)
 
@@ -149,7 +149,7 @@ to reduce and expand propositions.
 
 ```
 (p ∨ w) ∧ (p ∨ ¬w)
-== p ∨ (w ∧ ¬w)    # via distributative law
+== p ∨ (w ∧ ¬w)    # via distributive law
 == p ∨ false       # via complement law
 == p               # via identity law
 ```

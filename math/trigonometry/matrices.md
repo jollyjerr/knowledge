@@ -57,7 +57,7 @@ If every pivot is equal to 1 and all non-pivots are equal to 0, the matrix is in
 |0 0 0 1 = C4|
 ```
 
-If you can put an augmented matix into reduced row-echelon form, you can
+If you can put an augmented matrix into reduced row-echelon form, you can
 reverse the process to find the solution to the system.
 
 ```
@@ -69,7 +69,7 @@ C2 = y
 etc...
 ```
 
-**Gauss-Jordan elimination** is an algorithm to reduce matricies to row-echelon form.
+**Gauss-Jordan elimination** is an algorithm to reduce matrices to row-echelon form.
 
 1. Pull out any scalars from each row
 2. If the first entry is 0, swap it with another row that has a non-zero entry in it's first column
@@ -79,7 +79,7 @@ etc...
 
 ## Addition and subtraction
 
-Matricies must have the same dimensions to be added or subtracted.
+Matrices must have the same dimensions to be added or subtracted.
 
 Add and/or subtract the elements that overlap by row and column
 
@@ -96,7 +96,7 @@ You can multiply all elements in a matrix by a constant scalar factor
 
 Dimensions and order matter. `A * B != B * A`! (matrix multiplication is not commutative)
 
-To multiply two matricies you need the same number of columns in the first matrix as
+To multiply two matrices you need the same number of columns in the first matrix as
 you have rows in the second matrix.
 
 When you multiply, you multiply each row by each column using the **dot product**,
@@ -148,7 +148,7 @@ So `kk^-1 = 1`
 
 k multiplied by the inverse of k is 1.
 
-This is also true for matricies:
+This is also true for matrices:
 
 `KK^-1 = I // the identity matrix`
 
@@ -207,7 +207,7 @@ Ma   = b
 
 (The arrows are there but I'm just going to use `Ma = b` for notes)
 
-You can then solve for `a` by multipling M by it's inverse:
+You can then solve for `a` by multiplying M by it's inverse:
 
 ```
 M^-1 * Ma = M^-1 * b

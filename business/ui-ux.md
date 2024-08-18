@@ -34,7 +34,7 @@ Think like a designer
 
 Hue - color
 
-Saturation - intinsity
+Saturation - intensity
 
 Value - darkness to lightness
 
@@ -42,13 +42,13 @@ Color schemes:
 
 Monochromatic - one color with different values
 
-Analogous - colors next to eachother
+Analogous - colors next to each other
 
 Complementary - opposite
 
 Split complementary - opposite and split to left and right
 
-Does and Donts:
+Dos and Don'ts:
 
 If colors vibrate, play with the value of one color
 
@@ -62,7 +62,7 @@ Interface is any bridge connecting a user to content
 
 The medium shapes the experience
 
-UI - how it looks, surface and visual identity (design driven) / (tangable)
+UI - how it looks, surface and visual identity (design driven) / (tangible)
 
 UX - how it feels, content engagement (user driven) / (propositional)
 

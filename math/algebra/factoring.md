@@ -15,7 +15,7 @@ All terms must share a common factor that you can remove
 3x(1+2y-5a)
 ```
 
-2. Quadradic polynomial un-FOILing
+2. Quadratic polynomial un-FOILing
 
 ```
 x^2 - 6x - 16 // Find the factors of -16 that sum to -6
@@ -26,7 +26,8 @@ You can check your work by [multiplying](./polynomials.md) the polynomials
 
 - with coefficients
 
-Take the factors of the coefficient as well so that you can consider all posibilities
+Take the factors of the coefficient as well so that you can consider all
+possibilities
 
 ```
 6x^2 + 10 + 4

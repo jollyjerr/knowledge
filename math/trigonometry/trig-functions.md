@@ -30,7 +30,7 @@ EX: `sec𝜭 = 1/cos𝜭`
 
 ## Signs by quadrent
 
-Keep in mind that triangles can be in any of the four quadrents, and trig identites will have different
+Keep in mind that triangles can be in any of the four quadrents, and trig identities will have different
 signs depending on the quadrent.
 
 If you know the quadrent of a triangle and one trig function, you can find the other five.

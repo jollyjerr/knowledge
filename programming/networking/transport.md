@@ -67,7 +67,7 @@ expecting an old packet
 
 Flow Control: do not overwhelm the receiver
 
-Sender limits amount of unACKed data to whatever the reciever advertises as free
+Sender limits amount of unACKed data to whatever the receiver advertises as free
 buffer in "window size" of TCP header
 
 #### State
@@ -91,7 +91,7 @@ re-transmit. Positive feedback loop leading to congestion collapse.
 "goodput" is a measure of unique (not retransmitted) data going over the
 network. Congestion collapse is when goodput hits 0.
 
-Fair: each flow receices an equal share of the bandwidth of a link
+Fair: each flow receives an equal share of the bandwidth of a link
 
 Efficient: full bandwidth of link is used
 

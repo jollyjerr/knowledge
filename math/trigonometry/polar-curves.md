@@ -87,7 +87,7 @@ So custom steps for lemniscates are as follows:
 1. Identify as sine or cosine
 2. Identify as positive or negative
 3. Determine the value of c (not c^2)
-4. Use those facts to sketh the lemniscate
+4. Use those facts to sketch the lemniscate
 
 ## Intersection of Polar Curves
 

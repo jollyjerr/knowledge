@@ -8,7 +8,7 @@ The ICE protocol is used to generate media traversal candidates which can be use
 
 ICE utilizes different technologies and protocols to overcome the challenges posed by different types of NAT mappings. The two most prominent protocols are STUN and TURN. Both STUN and TURN require implementation of client and server-side components.
 
-STUN is used to figure out a path through the NAT configuration and then it goes away. TURN on the otherhand is a paid intermediate service that actually participates in the peer to peer connection.
+STUN is used to figure out a path through the NAT configuration and then it goes away. TURN on the other hand is a paid intermediate service that actually participates in the peer to peer connection.
 
 Typically both parties store their session description protocol (SDP) on an external server (your server) to keep a source of truth on the RTC session. Each peer uses their `RTCPeerConnection.localDescription` to generate this SDP.
 

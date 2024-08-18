@@ -15,7 +15,7 @@ straight angle (180)
 360-degree angle
 ```
 
-Two angles that sum to 90° or pi/2 are called **comlementary angles**
+Two angles that sum to 90° or pi/2 are called **complementary angles**
 
 Two angles that sum to 180° or pi are called **supplementary angles**
 

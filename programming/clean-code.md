@@ -8,7 +8,7 @@ I really liked Bjarne Stroustrup's definition:
 
 > I like my code to be elegant and efficient. The logic should be straightforward to make it hard for bugs to hide, the dependencies minimal to ease maintenance, error handling complete according to an articulated strategy, and performance close to optimal. Clean code does one thing well.
 
-Basically everyone seems to agree that code is clean when "there is nothing obvious you can do to make it better". Clean code is an artform and it is easier to label something as messy code than it is to define clean code. You should always leave files better than you found them.
+Basically everyone seems to agree that code is clean when "there is nothing obvious you can do to make it better". Clean code is an art form and it is easier to label something as messy code than it is to define clean code. You should always leave files better than you found them.
 
 ## Names
 
@@ -28,11 +28,11 @@ Keep functions simple by keeping argument lists small. Prefer 1 argument.
 
 If you have to describe the code with a comment it is a failure of your code to be descriptive enough. _Only_ comment if you can not get around this failure, such as an issue with a dependency or a truly special case. Make sure comments stay attached to the code they are commenting on.
 
-Comments are not documentation. If you have an api, documenting the api is it's own seperate concern and is a very good thing to do.
+Comments are not documentation. If you have an api, documenting the api is it's own separate concern and is a very good thing to do.
 
 ## Formatting
 
-Take your work seriosly and write exceptionally well formatted code that looks sharp.
+Take your work seriously and write exceptionally well formatted code that looks sharp.
 
 ## Objects and Data Structures
 
@@ -62,11 +62,11 @@ Should be small and do one thing. Just like functions and methods but one level 
 
 ## Emergence
 
-Clean code shows signs of emergent concepts. You should notice that you can call domain specific functions more often than implimentation functions. Your code should scream that it is about something and the level of abstraction for each individual function and class should be clear.
+Clean code shows signs of emergent concepts. You should notice that you can call domain specific functions more often than implementation functions. Your code should scream that it is about something and the level of abstraction for each individual function and class should be clear.
 
 ## Concurrency
 
-Concurrency is hard and is not always a good solution. If you do decide to use concurrency, make sure your code works individually first - concurrency is a seperate concern.
+Concurrency is hard and is not always a good solution. If you do decide to use concurrency, make sure your code works individually first - concurrency is a separate concern.
 
 Keep synchronization points few and short.
 

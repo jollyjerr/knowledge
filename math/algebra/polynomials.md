@@ -5,19 +5,19 @@ The sum of multiple power terms, EX: `(-3x^4 + x^2)` leading term = -3x^4 so deg
 ```
 (3x^2 + 6x - 8) + (-12x^2 + 1) // remove parens (here with understood 1 multiplied)
 3x^2 + 6x - 8 - 12x^2 + 1
-3x^2 - 12x^2 + 6x - 8 + 1 // group decending by degree
+3x^2 - 12x^2 + 6x - 8 + 1 // group descending by degree
 -9x^2 + 6x - 7
 ```
 
 ## Multiplication
 
-Use the [distributive property](./operations.md) then combine like terms
-In multivariable, remember the rules of [like terms](./like-terms.md)
+Use the [Distributive property](./operations.md) then combine like terms
+In multi variable, remember the rules of [like terms](./like-terms.md)
 
-## Devision
+## Division
 
-Use the first term of the devisor to find a value that you multiply through the devisor to get the next step in long devision.
-In multivariable polynomials, make sure to fully solve for the first step before bringing down the next step.
+Use the first term of the divisor to find a value that you multiply through the divisor to get the next step in long division.
+In multi variable polynomials, make sure to fully solve for the first step before bringing down the next step.
 
 ```
 (x^3 + y^3) / (x + y)

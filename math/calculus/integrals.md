@@ -136,7 +136,7 @@ If f(x) is liters/min then F(x) = liters
 
 Indefinite integrals have no limits on the input of the function (-inf, inf)
 
-The indefinite integral represents the family of antiderivatives of f(x)
+The indefinite integral represents the family of anti derivatives of f(x)
 
 F(x) + C (any constant)
 

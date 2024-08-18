@@ -15,7 +15,7 @@ Sketch the curve defined by x = t^2 and y = t - 2 where -2 <= t <= 1.
 
 y = t-2 => t = y+2
 
-x = t^2 => x = (y+2)^2 // notice this is an equation of a porabola
+x = t^2 => x = (y+2)^2 // notice this is an equation of a parabola
 
 use t interval [-2, 1]:
 
@@ -28,7 +28,7 @@ t      x=t^2       y=t-2
 sketch these points and use arrows to show the direction of the curve as t increases
 ```
 
-[porabolas](../algebra/common-graphs.md)
+[parabolas](../algebra/common-graphs.md)
 
 ### From curve to equation
 

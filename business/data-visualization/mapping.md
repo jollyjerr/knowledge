@@ -77,7 +77,7 @@ Overview + detail and focus+context
 Selection
 
 - highlight
-- lowlight
+- low light
 - filter
 
 Explore
@@ -99,7 +99,7 @@ encode
 - change mapping
 - layering visualization
 
-cordination
+coordination
 
 - brushing
 - linking

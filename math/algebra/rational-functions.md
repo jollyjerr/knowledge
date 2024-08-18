@@ -2,7 +2,7 @@
 f(x) = (x^2 + 2x - 7)/(x - 2)
 ```
 
-You can simplify with [long devision of polynomials](./polynomials.md)
+You can simplify with [long division of polynomials](./polynomials.md)
 
 You can also simplify with cancellation
 
@@ -28,7 +28,7 @@ limitation in your simplified form because it limits the domain of the product.
 2x + 1 / x + 2 with x != 1/2 or 2
 ```
 
-#### Devision
+#### Division
 
 1. Factor out both sides
 2. List all restrictions. Keep in mind all areas of the equation that can not be 0 `(anything)/(x!=0) / (x!=0)/(x!=0)`
