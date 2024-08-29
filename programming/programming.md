@@ -13,6 +13,7 @@
 - [sql](./sql.md)
 - [vim](./vim.md)
 - [big data architecture](./big-data-architecture/big-data-architecture.md)
+- [robotics](./robotics/robotics.md)
 
 ## Books
 
