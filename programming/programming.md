@@ -14,6 +14,7 @@
 - [vim](./vim.md)
 - [big data architecture](./big-data-architecture/big-data-architecture.md)
 - [robotics](./robotics/robotics.md)
+- [data mining](./data-mining.md)
 
 ## Books
 
