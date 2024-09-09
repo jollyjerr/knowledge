@@ -53,3 +53,55 @@ You can combine operations, add two images, etc....
 Also set operations like union is called masking.
 
 `⨂` indicates a "cross correlation".
+
+## Comparing images
+
+```
+low distance = alike
+low theta = alike
+high cos(theta) = alike
+high similarity = alike
+```
+
+Distance
+
+- Count different pixels, sum the amount of differences
+- L1: Calculate the distance between each pixel, sum the distances
+- L2: Calculate the distance squared, sum the results, take square root of sum
+
+Similarity
+
+- Dot product all pixels, take sum divided by square root of each pixel in
+  second image squared sum?
+
+### Image Moments
+
+Goal:
+
+`M(i,j) 3 x 3` represents some image `M(x,y) 20 x 20`
+
+Definition:
+
+Given an original image `I(x,y)`, `Mij = sum(x)sum(y)x^iy^iI(x,y)`
+
+_Pixels -> Histograms -> Distributions_
+
+Find histograms by counting patterns in pixels, convert to distributions by
+multiplication in a linear way to unify it 0 to 1.
+
+## Cross-Entropy
+
+Cross-Entropy is a measure of the difference between two probability
+distributions for a given random variable or set of events.
+
+```
+p
+-log2^p
+-p*log2^p
+sum(for each p)
+
+p and q
+-log2^q
+-p*log2^q
+sum(for each zip(p, q))
+```

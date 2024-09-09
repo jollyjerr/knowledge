@@ -38,3 +38,53 @@ Social network, power grid, co-authorship
 - Science and engineering
 - Security
 - Government
+
+Choose if you are trying to be descriptive, predictive, or prescriptive.
+
+### Knowledge View
+
+- Frequent pattern, association, correlation
+- Categorization (similarity and differences between groups)
+- Anomaly, outliers (fraud and extreme events)
+- Changes over time
+
+## Techniques
+
+### Frequent pattern analysis
+
+Identify frequent events, items, sequences, correlation, or structure.
+
+### Classification
+
+Build model to distinguish items into pr-defined classes. Need training data.
+
+### Prediction
+
+Make a numerical prediction (continuous value) like weather or stock price.
+
+### Clustering
+
+Work with no predefined classes, find intra-cluster similarity and inter-cluster
+dissimilarity.
+
+### Anomaly Detection
+
+Search for events differing from the norm.
+
+### Trend and evolution analysis
+
+Changes over time with periodical patterns.
+
+## Pipeline
+
+A data mining pipeline exists to take data and turn it into knowledge to be used
+in an application.
+
+1. Data understanding
+2. Data preprocessing
+3. Data warehousing
+4. Data modeling
+5. Pattern evaluation (also performance evaluation of the model)
+
+- Diverse data = diverse knowledge
+- Quality data = quality knowledge
