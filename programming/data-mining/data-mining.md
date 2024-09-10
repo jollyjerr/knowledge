@@ -80,8 +80,8 @@ Changes over time with periodical patterns.
 A data mining pipeline exists to take data and turn it into knowledge to be used
 in an application.
 
-1. Data understanding
-2. Data preprocessing
+1. [Data understanding](./data-understanding.md)
+2. [Data preprocessing](./data-preprocessing.md)
 3. Data warehousing
 4. Data modeling
 5. Pattern evaluation (also performance evaluation of the model)
