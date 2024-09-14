@@ -82,7 +82,7 @@ in an application.
 
 1. [Data understanding](./data-understanding.md)
 2. [Data preprocessing](./data-preprocessing.md)
-3. Data warehousing
+3. [Data warehousing](./data-warehousing.md)
 4. Data modeling
 5. Pattern evaluation (also performance evaluation of the model)
 
