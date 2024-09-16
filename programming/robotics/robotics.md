@@ -14,3 +14,4 @@ https://github.com/Introduction-to-Autonomous-Robots/Introduction-to-Autonomous-
 
 - [computer vision](./computer-vision/computer-vision.md)
 - [sensors](./sensors.md)
+- [state machines](./state-machines.md)

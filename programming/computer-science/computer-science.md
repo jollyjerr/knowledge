@@ -11,6 +11,7 @@
 - [stack](./stack.md)
 - [recursion](./recursion.md)
 - [trees](./trees.md)
+- [b tree](./b-tree.md)
 - [heap](./heap.md)
 - [trie](./trie.md)
 - [graph](./graph.md)
