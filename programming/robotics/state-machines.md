@@ -65,3 +65,8 @@ while robot.step(timestep) != -1:
     motor_left.setVelocity(phil)
     motor_right.setVelocity(phir)
 ```
+
+## Extended Finite State Machine
+
+- Use additional variables to extend state space.
+- Use `[guard condition] / action` syntax
