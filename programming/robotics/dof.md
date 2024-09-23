@@ -74,3 +74,24 @@ rotate-z = (r theta-r - r theta-l)/d
 
 Any time you change the configuration you have to re-think through each degree
 of freedom and derive the equations.
+
+## Coordinate Transforms
+
+To understand what a position in coordinate system B means in coordinate system
+A, you have to take the dot product with a rotation matrix.
+
+- The rotation matrix consists of the basis vectors of one coordinate system
+  expressed in the target coordinate system.
+- Constructing this element-by-element always works
+
+## Holonomy
+
+Systems in which closed loops in joint space result in closed loops in
+cartesian space are holonomic.
+
+- all robot arms
+- robot sliding on a track
+
+If that is not the case, they are non-holonomic
+
+- most wheeled platforms
