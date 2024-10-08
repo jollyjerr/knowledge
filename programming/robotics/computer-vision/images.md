@@ -105,3 +105,17 @@ p and q
 -p*log2^q
 sum(for each zip(p, q))
 ```
+
+## Filter
+
+### Cross Correlation
+
+Take a 1d list of pixels and form a matrix with it's left neighbor (shift right
+
+1. above and right neighbor (shift left 1) below (both neighbors have padding of
+   one nil value. This matrix can be multiplied by new vectors to achieve
+   filter operations.
+
+Convolution: flip filter vector
+
+Convolution is communicative and associative
