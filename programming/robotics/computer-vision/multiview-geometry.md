@@ -92,3 +92,40 @@ a matrix.
 ```
 
 Then you can derive how the camera must have moved.
+
+## Extrinsic/Intrinsic Matrix
+
+The extrinsic matrix is a transformation matrix from the world to camera
+coordinate system. Combine rotation and translation into one matrix describing a
+full movement.
+
+The intrinsic matrix is a transformation matrix from the camera to pixel
+coordinate system.
+
+```
+f = focal_length_scaled_x
+j = focal_length_scaled_y
+o = offset
+
+[
+  [f, x, o],
+  [x, j, o],
+  [x, x, 1]
+]
+```
+
+## Epipolar Geometry
+
+Goal - reduce the amount of search area for a camera to find points while it
+moves.
+
+Draw a triangle by connecting the two views through the scene. The flat 2d scene
+across the triangle is the epipole.
+
+```
+cross_product_matrix = [
+    [0, -c, b],
+    [c, 0, -a],
+    [-b, a, 0]
+]
+```
