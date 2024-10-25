@@ -11,6 +11,33 @@ They can be discrete or continuous:
 
 Usually denoted by X or Y, and specific instances of the variable are x or y.
 
+Notation:
+
+```
+pmf (probability mass function)
+
+P(X = x) {
+     1 - p, if x = 0
+     p if x = 1
+     0 otherwise
+}
+
+indicator function
+
+let A = set of real numbers
+
+I subA (x) = {
+    1 if x in A
+    0 if x not in A
+}
+
+X ~ Bernoulli(p) has pmf
+
+P(X = x) = p^x(1-p)^(1-x) * I sub{0, 1}(x)
+```
+
+## Expected Value
+
 The "expected value" of a rv is the average or mean of the random variable.
 
 Notation:
@@ -382,6 +409,12 @@ f(x) = {
     󰘧e^-2x if x >= 0,
     0           else
 }
+```
+
+```
+cdf
+
+P(X <= x) = e^−λx
 ```
 
 Notation: `X ~ exp(󰘧)`
