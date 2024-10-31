@@ -17,3 +17,4 @@ then we pose and answer questions about the nature of a sample.
 - [random variables](./random.md)
 - [covariance and correlation](./covariance.md)
 - [limit theorems](./limit-theorem.md)
+- [transformations of distributions](./distribution-transformation.md)

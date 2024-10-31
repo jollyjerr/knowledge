@@ -401,6 +401,8 @@ phi(1.087) - phi(-0.543)
 
 ### Exponential Random Variable
 
+Special case of Gamma distribution.
+
 A continuous random variable X has the exponential distribution with rate
 parameter lambda (lambda > 0) if the pdf of X is:
 
@@ -448,14 +450,63 @@ you don't know how long the customer has been in service (could be 30sec or
 10min who knows).
 ```
 
+There are two ways people define the exponential distribution:
+
+##### Rate parameter
+
+```
+X ~ exp(rate = lambda)
+
+f(x) = lambda e^(-lambda x) I(0, inf)(x)
+E[X] = 1/lambda
+```
+
+##### Mean parameter
+
+```
+X ~ exp(mean = lambda)
+
+f(x) = 1/lambda e^(-x/lambda) I(0, inf)(x)
+
+E[X] = lambda
+```
+
+### Gamma Distribution
+
+```
+pdf
+
+f(x) = 1/𝛤(a) b^a x^(a-1) e^(-bx) I(0, inf)(x)
+
+for a > 0 and b > 0
+```
+
+Parameter `b` is called the inverse scale parameter, a is the shape parameter.
+
+The gamma function is:
+
+```
+𝛤(a) = ∫(0 to inf) x^(a-1) e^-x dx
+```
+
+This gamma function just makes the entire pdf integrate to 1.
+
+### Chi-Squared Distribution
+
+```
+X ~ 𝓍^2 (n)
+
+Definition: X ~ 𝛤(n/2, 1/2)
+```
+
 ## More on expectation and variance
 
 Of functions of random variables.
 
 ```
 E(g(X)) = {
-    sum(k) g(k) P(X=k) if x is discrete,
-    ∫(-inf, inf)g(x) f(x) dx if x is continuous
+    sum(k) g(k) P(X=k) if x is discrete, # P(X=k) is PMF
+    ∫(-inf, inf)g(x) f(x) dx if x is continuous # f(x) is PDF
 }
 
 E(aX + b) = aE(x) + b
@@ -470,6 +521,16 @@ Variance measures the spread of data, so shifts do not affect the variance
 calculation.
 
 Expected value measures the center of the data, so it does change when shifted.
+
+Expectation is a Linear Operator:
+
+```
+E[aX + bY] = aE[X] + bE[Y]
+
+And independent:
+
+E[XY] = E[X]E[Y]
+```
 
 ## Jointly Distributed Random Variables
 
