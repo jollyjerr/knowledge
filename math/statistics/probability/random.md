@@ -55,6 +55,8 @@ V(X) = E[(X - E(X))^2]
 
 The standard deviation is the positive square root of the variance.
 
+Standard deviation is a measure of spread in the units of the problem.
+
 ## Discrete
 
 The expected value of a discrete random variable `E(X)` is given by
@@ -104,6 +106,8 @@ P(X = 1) = p
 P(X = 0) = 1 - p
 ```
 
+`p` is the probability that a single trial is a success.
+
 Cdf:
 
 ```
@@ -117,7 +121,9 @@ F(x) = P(X <= x) = {
 Notation: `X ~ Bern(p)` means X has the distribution of a bernoulli random
 variable.
 
-`E(X)` for a bern is `p`
+`E(X)` for a bern is `n * p`
+
+`n` is the number of trials
 
 `V(X)` for a bern is `p(1-p)`
 
@@ -416,7 +422,7 @@ f(x) = {
 ```
 cdf
 
-P(X <= x) = e^−λx
+P(X <= || >= x) = e^−λx
 ```
 
 Notation: `X ~ exp(󰘧)`
@@ -530,6 +536,11 @@ E[aX + bY] = aE[X] + bE[Y]
 And independent:
 
 E[XY] = E[X]E[Y]
+```
+
+```
+V[aX] = a^2 V[X]
+V[X + Y] = V[X] + V[Y] # if X and Y are independent
 ```
 
 ## Jointly Distributed Random Variables
