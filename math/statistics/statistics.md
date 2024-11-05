@@ -11,3 +11,4 @@ based on the characteristics of a sample.
 ## Topics
 
 - [probability](./probability/probability.md)
+- [estimation](./estimation/estimation.md)

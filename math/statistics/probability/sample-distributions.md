@@ -26,3 +26,41 @@ both is the goal.
 ```
 V[sample mean] = o^2/n
 ```
+
+## Distributions of sums
+
+You can use the moment generating function to uniquely identify distributions,
+this is useful when finding the distribution of a new random variable that is
+produced by taking the sum of all random variables in a sample distribution.
+
+Not all random variable samples sum to a nice, named, distribution.
+
+```
+X1, X2, ..., Xn iid
+
+Y = sum(i=1 to n) Xi
+
+MY(t) = [MX(t)]^n
+```
+
+Examples:
+
+Discrete
+
+```
+Bernoulli: M(t) = 1 - p + pe^t
+
+sum of bernoulli sample will have binomial distribution:
+
+Binomial: M(t) = (pe^t + 1 - p)^n
+```
+
+Continuous
+
+```
+Exponential: M(t) = lambda / (lambda - t)
+
+sum of exponential sample will have gama distribution:
+
+Gamma: M(t) = (beta/(beta - t))^a
+```
