@@ -1,8 +1,8 @@
 # Method of moments estimators
 
-Recall: 
+Recall:
 
-- "moments" of a distribution are `E[X], E[X^2], E[X^3], ...`, population 
+- "moments" of a distribution are `E[X], E[X^2], E[X^3], ...`, population
   or "distribution" moments.
 - `u = E[X]` is a probability weighted average of the values in a population.
 - `Xbar` is the average of the values in the sample.

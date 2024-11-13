@@ -1,6 +1,6 @@
 # Maximum Likelihood Estimation
 
-Given data `X1, X2, ..., Xn` a rndom sample (iid) from a distribution with
+Given data `X1, X2, ..., Xn` a random sample (iid) from a distribution with
 unknown parameter Θ, we want to find the value of Θ in the parameter space that
 maximizes our probability of observing that data.
 
@@ -35,11 +35,11 @@ f(x;p) = p^x (1-p)^(1-x) I{0,1}(x)
 
 the joint pmf for all of them is:
 
-f(vec<x>;p) 
+f(vec<x>;p)
     = product(i=1 to n) f(xsubi;p)
     = product(i=1 to n) p^xsubi (1-p)^(1-xsubi) I{0,1}(xsubi)
 
-so a likelhood is:
+so a likelihood is:
 
 L(p) = p^(sum(i=1 to n)xsubi) (1-p)^(n-sum(i=1 to n)xsubi)
 
@@ -108,3 +108,8 @@ will not be taking the derivative and you have to draw everything out and think
 through it like "the max would be if this param is 0 but the param cannot be
 lower than the largest xsubn so the MLE is the largest xsubn" in the case of a
 uniform distribution.
+
+## The Invariance Property
+
+If you want to estimate a _function_ of a parameter using MLE, you can find the
+(unbiased normally) estimator of the parameter and just plug it in the function.
