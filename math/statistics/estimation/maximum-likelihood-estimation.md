@@ -9,6 +9,8 @@ as a function of Θ and find the Θ that maximizes it.
 
 If continuous we maximize the joint pdf with respect to Θ.
 
+MLE is asymptotically unbiased (approaches unbiased as `n` grows).
+
 ## Notation
 
 The pmf/pdf for any one of `X1, X2, ..., Xn` is denoted by `f(x)`. No subscripts
