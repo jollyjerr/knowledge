@@ -565,3 +565,34 @@ P(a<=X<=b,c<=Y<=d) = ∫(a to b)∫(c to d) f(x,y) dx dy
 
 X and Y are independent random variables if `f(x,y) = f(x)f(y)` for all possible
 values of x and y.
+
+## Convergence
+
+A sequence of random variables converges in probability to a random variable X
+if, for any `i > 0`:
+
+```
+lim(n -> inf) P(|X_n - X| > i) = 0
+```
+
+### Chebyshev's Inequality
+
+Let X be a random variable with mean u and variance `o^2 < inf`. Let `k > 0`.
+
+```
+P(|X - u| >= ko) <= (1/k^2)
+```
+
+The probability that X is within k standard deviations of it's mean.
+
+### Properties of Convergence
+
+Take `{Xn}` and `{Yn}` as sequences of random variables such that their
+probabilities converge to X and Y respectively.
+
+```
+Xn + Yn -> X + Y
+XnYn -> XY
+Xn/Yn -> X/Y if P(Y != 0) == 1
+g(Xn) -> g(X) for g continuous
+```

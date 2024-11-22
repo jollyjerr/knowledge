@@ -66,3 +66,11 @@ The math to prove this is totally wack:
 ```
 CRLB = 1/(n/lambda^2)
 ```
+
+## Weak Law of Large Numbers
+
+Let `X_n` be a sequence of random variables, iid, from any distribution with
+mean u and variance `o^2 < inf`.
+
+Then `X_bar p_-> u`. In English "Sample mean always converges in probability to
+the true mean of the distribution."

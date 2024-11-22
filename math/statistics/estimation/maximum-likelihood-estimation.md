@@ -115,3 +115,26 @@ uniform distribution.
 
 If you want to estimate a _function_ of a parameter using MLE, you can find the
 (unbiased normally) estimator of the parameter and just plug it in the function.
+
+## Large Sample Properties
+
+Let X1, ..., Xn be a random sample from a distribution with pdf `f(x;theta)`.
+
+Let theta_hat be an MLE for theta.
+
+- theta_hat exists and is unique.
+- theta_hat converges in probability to theta. We say theta_hat is a consistent
+  estimator of theta.
+- theta_hat is asymptotically unbiased estimator of theta.
+- theta_hat is asymptotically efficient
+- theta_hat is asymptotically normal
+
+```
+lim(n to inf) E[theta_hat] = theta
+
+lim(n to inf) CRLB_sub_theta / Var[theta_hat] = 1
+
+theta_hat ~ N(theta, CRLB_sub_theta)
+
+theta_hat - theta / sqrt(CRLB_sub_theta) distribution approaches N(0, 1)
+```
