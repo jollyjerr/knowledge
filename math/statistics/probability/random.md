@@ -505,6 +505,12 @@ X ~ 𝓍^2 (n)
 Definition: X ~ 𝛤(n/2, 1/2)
 ```
 
+```
+Let X ~ N(0, 1)
+Let Y = X^2
+Then Y ~ chi^2(1)
+```
+
 ## More on expectation and variance
 
 Of functions of random variables.
