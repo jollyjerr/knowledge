@@ -143,7 +143,7 @@ p[1]_hat - p[2]_hat +- z[a/2] sqrt((p[1]_hat(1-p[1]_hat)/n[1]) + (p[2]_hat(2-p[2
 You need a new distribution, F distribution:
 
 ```
-Suppose that X1 and X2 are independent random variables with 
+Suppose that X1 and X2 are independent random variables with
 X1 ~ chi_squared(n1) and X2 ~ chi_squared(n2).
 
 define a new random variable
