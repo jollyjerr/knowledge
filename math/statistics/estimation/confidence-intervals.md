@@ -95,3 +95,107 @@ S[p]^2 = (n[1] - 1)S[1]^2 + (n[2] - 1)S[2]^2 / n[1]+n[2]-2
 ```
 X_bar[1] - X_bar[2] +- t[a/2,n[1]+n[2]-2] * sqrt(S[p]^2 * (1/n[1] + 1/n[2]))
 ```
+
+## Proportions
+
+Let p be the true proportion of the people in a country who prefer candidate A.
+
+An estimator `p_hat` is number who like A / number questioned
+
+This follows a Bernoulli distribution with parameter p.
+
+By the CLT `p_hat = X_bar` sample mean is the mean of any one of the random
+variables.
+
+so:
+
+```
+p_hat ~ N(p, p(1-p)/n)
+```
+
+99.7% of the area under a N(0,1) curve lies between -3 and 3 (within 3 standard
+deviations of the mean).
+
+```
+-z[-a/2] < p_hat - p / sqrt(p(1-p)/n) < z[a/2]
+
+isolate p...
+
+(p_hat - p)^2 - z[a/2]^2 p(1-p)/n <0
+
+...
+
+p_hat +- z[a/2] sqrt(p_hat(1-p_hat)/n)
+
+approximate 100(1-a)% confidence interval for p
+```
+
+## Confidence Intervals for Variances
+
+Same example but picture `p[2]_hat` from another region of the country.
+
+```
+p[1]_hat - p[2]_hat +- z[a/2] sqrt((p[1]_hat(1-p[1]_hat)/n[1]) + (p[2]_hat(2-p[2]_hat)/n[2]))
+```
+
+### Ratio of variances
+
+You need a new distribution, F distribution:
+
+```
+Suppose that X1 and X2 are independent random variables with 
+X1 ~ chi_squared(n1) and X2 ~ chi_squared(n2).
+
+define a new random variable
+
+F = X1/n1 / X2/n2
+```
+
+Create a 99% confidence interval of the ratio of the means and see if it
+contains 1.
+
+## Non Normal Confidence Intervals
+
+```
+Suppose that X1, ..., Xn is a random sample from the exponential distribution
+with rate y > 0.
+
+Find a 95% confidence interval for y.
+```
+
+1. Choose a statistic
+
+Choose one whose distribution you know and is one that depends on the unknown
+parameter.
+
+```
+For example try the sample mean
+
+X_bar = 1/n sum(i=1 to n) Xi
+
+sum(i=1 to n) Xi ~ gamma(n, y)
+
+so:
+
+X_bar ~ gamma(n, ny)
+```
+
+2. Find a function of the statistic and the parameter you are trying to estimate
+   whose distribution is known and parameter free
+
+```
+yX_bar ~ gamma(n, ny) # pivotal quantity
+
+=> chi_squared(n, 1/2)
+```
+
+3. Find the appropriate critical values
+
+Look them up lol
+
+4. Put your statistic from step two between the critical values and solve for
+   the unknown parameter in the middle.
+
+```
+chi(0.975, 2n)/2nX_bar < y < chi(0.025, 2n)/2nX_bar
+```
