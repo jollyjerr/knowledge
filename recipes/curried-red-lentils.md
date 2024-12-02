@@ -1,12 +1,12 @@
 # Curried Red Lentils
 
-2-3 tbs red curry paste
-1 can coconut milk
-1 can water
-1 cup red lentils
-1 tbs soy sauce
-1-2 tsp sugar
-1-2 handfuls spinach
+- 2-3 tbs red curry paste
+- 1 can coconut milk
+- 1 can water
+- 1 cup red lentils
+- 1 tbs soy sauce
+- 1-2 tsp sugar
+- 1-2 handfuls spinach
 
 Turn pot to med low heat and add a few tbs of coconut milk. Add curry paste and stir until smooth. Do not burn. If too hot, add a little more coconut milk. When curry paste is evenly distributed throughout coconut milk, add the rest of the coconut milk and one can of water.
 
