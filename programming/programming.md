@@ -20,3 +20,4 @@
 
 - [clean code](./clean-code.md)
 - [clean architecture](./clean-architecture.md)
+- [crafting interpreters](https://craftinginterpreters.com/)
