@@ -15,6 +15,7 @@
 - [big data architecture](./big-data-architecture/big-data-architecture.md)
 - [robotics](./robotics/robotics.md)
 - [data mining](./data-mining/data-mining.md)
+- [machine learning](./machine-learning/machine-learning.md)
 
 ## Books
 
