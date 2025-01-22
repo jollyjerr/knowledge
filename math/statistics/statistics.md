@@ -12,3 +12,4 @@ based on the characteristics of a sample.
 
 - [probability](./probability/probability.md)
 - [estimation](./estimation/estimation.md)
+- [testing](./testing/testing.md)

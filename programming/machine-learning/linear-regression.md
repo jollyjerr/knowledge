@@ -63,3 +63,21 @@ X^t(xB - y)
 ```
 R^2 = 1 - RSS/TSS
 ```
+
+## Summary
+
+1. How to determine coefficients
+
+Least squares method to minimize the residual sum of squares. RSS, Mean squared
+error.
+
+2. How well does the model fit
+
+R-squared derived with RSS and TSS
+
+3. How significant are the coefficients
+
+Standard error of the coefficients. T-score, p-value and hypothesis testing to
+find if they are significant. Confidence intervals.
+
+4. How well does the model predict on unseen data
