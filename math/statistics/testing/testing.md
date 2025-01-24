@@ -24,3 +24,7 @@ Probability of making this error is Denoted alpha, and called level of significa
 - Type 2
 
 The null hypothesis is false but you fail to reject it.
+
+## Topics
+
+- [patterns](./patterns.md)
