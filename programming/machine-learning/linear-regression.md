@@ -15,7 +15,7 @@ variable X:
 Y is approximately modeled as B[0] + B[1]X
 ```
 
-The B values (coefficients or parameters) are two unknown constants that represent the intercept 
+The B values (coefficients or parameters) are two unknown constants that represent the intercept
 and slope.
 
 By estimating the B values you can find an intercept and slope such that the
@@ -34,7 +34,7 @@ Let
 y_hat[i] = B-hat[0] + B_hat[1]x[i]
 ```
 
-Be the prediction for Y based on the ith value of X. Then `e[i] = y[i] - y_hat[i]` 
+Be the prediction for Y based on the ith value of X. Then `e[i] = y[i] - y_hat[i]`
 represents the ith residual, the difference between the ith observed response
 value and the ith response value that is predicted.
 
