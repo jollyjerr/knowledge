@@ -32,8 +32,8 @@ Other measures:
 
 - real valued
 - categorical
-    - ordinal (grade/age)
-    - non-ordinal (gender/race)
+  - ordinal (grade/age)
+  - non-ordinal (gender/race)
 
 To use non-ordinal variables you can encode them into binary or categorical
 variables (go as simple as possible).
