@@ -405,6 +405,9 @@ phi(1.087) - phi(-0.543)
 = .568
 ```
 
+You can use a `Q-Q plot` to check if a sample is actually from a normal
+distribution.
+
 ### Exponential Random Variable
 
 Special case of Gamma distribution.

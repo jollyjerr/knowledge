@@ -28,3 +28,4 @@ The null hypothesis is false but you fail to reject it.
 ## Topics
 
 - [patterns](./patterns.md)
+- [tests](./tests.md)
