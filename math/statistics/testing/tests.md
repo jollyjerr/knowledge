@@ -124,3 +124,50 @@ a = max(P(Type I Error))
 
 c = Z[a/2](o/(sqrt(n)))
 ```
+
+## T Tests
+
+Let `X[1],...,X[n]` be a random sample from the normal distribution with mean u
+and _unknown_ variance `o^2`.
+
+Consider testing:
+
+```
+H0: u = u[0]
+H1: u < u[0]
+```
+
+Idea: use the sample standard deviation in place of sigma?
+
+```
+S - sqrt(S^2)
+```
+
+Define a T random variable by taking a standard normal independent over a chi
+squared distribution over it's degrees of freedom:
+
+```
+X_bar - u / o/sqrt(n)
+/
+sqrt(
+    (n-1)S^2 /o^2
+    /
+    n-1
+)
+```
+
+So:
+
+```
+X_bar - u / S/sqrt(n) ~ t(n-1)
+```
+
+Reject H[0] in favor of H[1] if:
+
+```
+X_bar < u[0] + t[1-a,n-1](S/sqrt(n))
+
+In R use qt(1-a, n-1) for t critical value
+```
+
+In practice you do this for small samples because t approaches normal.
