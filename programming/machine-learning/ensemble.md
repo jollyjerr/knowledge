@@ -29,9 +29,9 @@ Generic boosting algorithm example:
 
 1. Initialize `F(x) = 0, r = y`
 2. For `b = 1,2,...,B` repeat:
-    a. Fit a tree `F[b](x)` to the training data `(X, r)`
-    b. `f(x) <- f(x) + yf[b](x)`
-    c. `r <- r - yf[b](x)`
+   a. Fit a tree `F[b](x)` to the training data `(X, r)`
+   b. `f(x) <- f(x) + yf[b](x)`
+   c. `r <- r - yf[b](x)`
 3. Output `sum(b=1 to B) yf[b](x)`
 
 Popular boosting algorithms:
