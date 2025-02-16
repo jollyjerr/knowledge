@@ -171,3 +171,83 @@ In R use qt(1-a, n-1) for t critical value
 ```
 
 In practice you do this for small samples because t approaches normal.
+
+## Exponential Examples
+
+Suppose that sample size n is a random sample from the exponential distribution
+with rate `y>0`.
+
+Derive a hypothesis test of size a for:
+
+```
+H[0]: y = y[0]
+H[1]: y > y[0]
+```
+
+What statistic should we use? We can try the sample mean and also the sample
+minimum.
+
+Sample mean form of test:
+
+```
+Reject H[0] if X_bar < c for some c.
+
+Less than because of the effect a larger lambda has on the distribution mean.
+```
+
+Find c:
+
+```
+a = P(type 1 error)
+  = P(reject H[0]; y[0])
+  = P(X_bar < c; y[0])
+
+X_bar has chi squared distribution (see notes on exponential distributions)
+
+a = P(W < 2ny[0]c)
+
+2ny[0]c = X^2[1-a,2n] critical value
+```
+
+Conclusion
+
+```
+Reject if X_bar < (X^2[1-a,2n]) / 2n[y[0]]
+
+X^2[a,n] = qchisq(area_to_left, degree_freedom)
+```
+
+## Neyman-Pearson Lemma
+
+Gives you the statistic you should use for the "best test" or "most powerful test". Minimizes the
+probability that you make type errors.
+
+## Uniformly Most Powerful
+
+You can use Neyman-Pearson Lemma to find the uniformly most powerful test. The
+math is too much for these notes, but for example:
+
+```
+For any y[1] != y[0]
+
+The best test if y[1] > y[0] is to reject H[0] if:
+
+X_bar < (X^2[1-a,2n])/(2ny[0])
+
+The best test if y[1] < y[0] is to reject H[0] if:
+
+X_bar > (X^2[a,2n])/(2ny[0])
+
+There is no one best test for all y[1] != y[0].
+```
+
+## Ratio of Variances
+
+Suppose that S[1] and X[2] are independent random variables with `X1 ~ X^2(n1)`
+and `X2 ~ X^2(n2)`. Define a new random variable:
+
+```
+F = X1/n1 / X2/n2
+
+F ~ F(n1, n2)
+```
