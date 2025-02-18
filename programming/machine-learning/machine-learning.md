@@ -36,3 +36,8 @@ Other:
 - [KNN](./knn.md)
 - [decision tree](./decision-tree.md)
 - [ensemble method](./ensemble.md)
+- [support vector machine](./svm.md)
+
+## Books
+
+- [introduction to statistical learning](https://www.statlearning.com/)

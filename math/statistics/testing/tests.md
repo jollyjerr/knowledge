@@ -251,3 +251,75 @@ F = X1/n1 / X2/n2
 
 F ~ F(n1, n2)
 ```
+
+## GLRT
+
+Generalized Likelihood Ratio Test
+
+If a UMP test does not exist, or if it is difficult, and if the common sense
+tests are not workable.
+
+Suppose you have a random sample of size n that is from any distribution with a
+PDF `f(x;theta)`. Let `theta` be the parameter space.
+
+Consider testing:
+
+```
+theta_not = some subset of the parameter space
+
+H[0]: theta is in theta_not
+H[1]: theta is in the rest of the space (theta \ theta_not) # set minus notation
+
+Let theta_hat be the maximum likelihood estimator of theta.
+
+Let theta_not_hat be a restricted MLE. (The MLE for theta if we assume that H[0]
+is true).
+
+Let L(theta) be a likelihood function
+
+The generalized likelihood ratio (GLR) is:
+
+lambda(X_vector) = L(theta_not_hat) / L(theta_hat)
+```
+
+The generalized likelihood ratio test (GLRT) says to reject `H[0]` if:
+
+```
+lambda(X_vector) <= c
+```
+
+So it gives you the thing to test with and the direction of the test.
+
+### Wilks' Theorem
+
+Under the assumption that `H[0]` is true:
+
+```
+-2lny(X_vec) converges_in_distribution-> X^2(1) # X^2 is chi squared
+```
+
+(does not work in uniform distribution and similar parameter defines support scenario)
+
+So:
+
+```
+a = P(y(X_vec) <= c; theta_not)
+  = P(-2lny(X_vec) >= c; theta_not)
+  = P(W >= c; theta_not) # where W is chi squared with 1 deg freedom
+
+c = X^2[a, 1]
+```
+
+Can prove Wilks' theorem in a mathematical statistics course - out of scope here.
+
+## Chi-Squared Goodness of Fit Test
+
+Null hypotheses: a sample comes from a particular, specified distribution.
+
+Not going to walk through it here, just look it up. More useful when finding if
+discrete data fits a distribution.
+
+## Chi-Squared Test For Independence
+
+- Two Categorical Variables: test if they are related/independent
+- One Categorical variable: test if distribution is the same for different populations
