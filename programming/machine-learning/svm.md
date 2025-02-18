@@ -30,7 +30,7 @@ sum(i, n)E[i] <= C
 ```
 
 C is hyper-parameter, so user gets to choose how much error we are okay with.
-(lower means tighter margin)
+(lower means tighter margin in book, but sk-learn is the opposite)
 
 ## Kernel Trick
 
