@@ -31,12 +31,18 @@ Other:
 
 ## Topics
 
+### Supervised
+
 - [linear regression](./linear-regression.md)
 - [logistic regression](./logistic-regression.md)
 - [KNN](./knn.md)
 - [decision tree](./decision-tree.md)
 - [ensemble method](./ensemble.md)
 - [support vector machine](./svm.md)
+
+### Unsupervised
+
+- [principal component analysis](./pca.md)
 
 ## Books
 
