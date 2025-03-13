@@ -56,6 +56,14 @@ Emitter/receiver pair gives you non linear distance measurement.
 - sound
 - phase shift (with laser scanner)
 
+### Laser Scanners
+
+Results in a list of ranges and a list of angles (often implicit)
+
+### 3d Range Finders
+
+aka "depth camera" using spherical and cylindrical projection.
+
 ## Actuation
 
 - Locomotion - moving oneself

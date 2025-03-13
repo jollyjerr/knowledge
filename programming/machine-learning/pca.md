@@ -2,7 +2,7 @@
 
 - Curse of dimensionality
 
-It is difficult to fit data well when the dimension of features is large. (In a high-dimensional space, the data might become more and more sparse. With sparse data, there is an increased chance of overfitting.)
+It is difficult to fit data well when the dimension of features is large. (In a high-dimensional space, the data might become more and more sparse. With sparse data, there is an increased chance of over fitting.)
 
 PCA can find the interesting features, defined by the features with the most
 variance.
@@ -48,7 +48,7 @@ from sklearn.decomposition import PCA
 ## PCR
 
 Principal Component Regression combines PCA and linear regression to handle
-multicollinearity and reduce overfitting in regression models.
+multicollinearity and reduce over fitting in regression models.
 
 Basically you perform linear regression with Y on the selected principal components.
 
