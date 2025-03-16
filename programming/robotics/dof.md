@@ -95,3 +95,18 @@ cartesian space are holonomic.
 If that is not the case, they are non-holonomic
 
 - most wheeled platforms
+
+## Homogeneous Transforms
+
+```
+T = [
+    R, t
+    0[1X3], 1
+]
+
+[p`, 1] = T[p, 1]
+```
+
+Here, R is the 3x3 rotation matrix and t the 3x1 translation vector. Together with the bottom row [0 0 0 1], they form 4x4 matrix. The approach also works in two dimensional space. Then R is a 2x2 rotation matrix, t is a 2x1 translation vector, and the bottom row is [0 0 1].
+
+p is the original point or vector.
