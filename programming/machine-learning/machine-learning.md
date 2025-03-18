@@ -43,6 +43,7 @@ Other:
 ### Unsupervised
 
 - [principal component analysis](./pca.md)
+- [clustering](./clustering.md)
 
 ## Books
 
