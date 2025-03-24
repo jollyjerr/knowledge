@@ -44,6 +44,7 @@ Other:
 
 - [principal component analysis](./pca.md)
 - [clustering](./clustering.md)
+- [recommender systems](./recommender.md)
 
 ## Books
 
