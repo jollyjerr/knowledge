@@ -10,6 +10,12 @@ intelligence. Use statistical models and learning algorithms to train from data.
 - reinforcement learning: learn desired behavior from experience with reward and
   punishment.
 
+## Interpretability vs. Flexibility
+
+In general as models become more flexible they proportionally lose their
+ability to be interpreted. Normally in real life situations the interpretation
+of the effect of features can be just as important as model accuracy.
+
 ## Tasks:
 
 Supervised:
