@@ -45,6 +45,7 @@ Other:
 - [decision tree](./decision-tree.md)
 - [ensemble method](./ensemble.md)
 - [support vector machine](./svm.md)
+- Bayes classifier
 
 ### Unsupervised
 
