@@ -246,3 +246,68 @@ class QuadTree:
             self.se.draw(ax)
             self.sw.draw(ax)
 ```
+
+## Probabilistic Map
+
+Each entry is the probability of a cell being occupied.
+
+Basic approach: increment cell by 1% whenever a cell is hit
+
+### Configuration Space
+
+Grow all obstacles by the radius of the robot and reduce the robot to a single
+point in your map.
+
+This can be made computationally more feasible by using a blurring operation
+rather than computing the exact dimensions of the obstacles.
+
+- In 3D, the robot is a rectangle and not a disc, convolve with a rectangular
+  kernel. Robot can move up and down by turning in 3D space up or down layers.
+
+### Convolution
+
+Takes something noisy and makes it blurry.
+
+- 1D
+
+```
+f[x] * g[x] = sum(-inf, inf) f[i]g[x-i]
+```
+
+- 2D
+
+Sweep Kernel over an image
+
+```
+f[x, y] * g[x, y] = sum(-inf, inf) sum(-inf, inf) f[i,j] g[x-i, y-j]
+```
+
+Edge detection kernels:
+
+```
+s_x(x,y) = [
+    [-1,0,1],
+    [-2,0,2],
+    [-1,0,1]
+]
+
+s_y(x, y) = [
+    [1,2,1],
+    [0,0,0],
+    [-1,-2,-1]
+]
+```
+
+### Bresenham's Line Algorithm
+
+Get full path of laser (free space), not just end point from measurement.
+
+If a laser passes through a point, you can assume there is no object there (in
+general).
+
+- Very fast, only integer operations
+- Each octant (45 degree slice) uses specific equation
+
+```
+y = ( y1 - y0 / x1 - x0 )* (x - x0) + y0
+```
