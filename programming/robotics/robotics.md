@@ -17,3 +17,4 @@ https://github.com/Introduction-to-Autonomous-Robots/Introduction-to-Autonomous-
 - [state machines](./state-machines.md)
 - [coordinate system and degrees of freedom](./dof.md)
 - [mapping](./mapping.md)
+- [trajectory](./trajectory.md)

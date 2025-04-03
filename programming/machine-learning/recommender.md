@@ -85,6 +85,11 @@ If `A` is symmetric, you get singular value decomposition as defined above.
 Eigen Value Decomposition requires square shaped matrix, but SVD is a
 generalization that handles any matrix.
 
+```python
+np.linalg.svd
+sklearn.decomposition.TruncatedSVD
+```
+
 #### Power Iteration Method
 
 Look this operation up, basically use this to do SVD if you have a computer.
@@ -97,4 +102,23 @@ For every iteration `k`, update `V[k+1]` to `AV[k]/||AV[k]||`.
 
 ### Non-negative Matrix Factorization
 
-### Approximation methods
+Things to consider:
+
+- Latent dimension: number of topics or genres
+- Objective/Loss function
+- Regularization and optimization
+
+```
+X[ij] = W[i] * H[j] + (some error E)
+
+X[ij] is random variable
+
+Minimize loss function
+```
+
+L1 and L2 loss are useful for data with lots of positive values like images.
+
+KL loss is useful for data with lots of zeros.
+
+If the error (noise) is gamma distribution, use IS Loss (Itakura-Saito).
+

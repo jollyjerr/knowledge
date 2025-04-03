@@ -16,7 +16,7 @@ Y is approximately modeled as B[0] + B[1]X
 ```
 
 The B values (coefficients or parameters) are two unknown constants that represent the intercept
-and slope.
+and slope. `B[0]` basically represents baseline behavior of `Y`.
 
 By estimating the B values you can find an intercept and slope such that the
 resulting line is close to your real data. The most common way of doing this is
