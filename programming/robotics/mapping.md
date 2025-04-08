@@ -90,7 +90,7 @@ class Rect:
                 point_y < self.south_edge)
 
     def intersects(self, other):
-        """Does Rect object other interesect this Rect?"""
+        """Does Rect object other intersect this Rect?"""
         return not (other.west_edge > self.east_edge or
                     other.east_edge < self.west_edge or
                     other.north_edge > self.south_edge or

@@ -121,4 +121,3 @@ L1 and L2 loss are useful for data with lots of positive values like images.
 KL loss is useful for data with lots of zeros.
 
 If the error (noise) is gamma distribution, use IS Loss (Itakura-Saito).
-
