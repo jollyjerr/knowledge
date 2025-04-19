@@ -46,6 +46,7 @@ Other:
 - [ensemble method](./ensemble.md)
 - [support vector machine](./svm.md)
 - Bayes classifier
+- [generative models](./generative-models.md)
 
 ### Unsupervised
 
