@@ -54,6 +54,10 @@ Other:
 - [clustering](./clustering.md)
 - [recommender systems](./recommender.md)
 
+### Neural Networks
+
+- [deep learning](./deep-learning.md)
+
 ## Books
 
 - [introduction to statistical learning](https://www.statlearning.com/)
