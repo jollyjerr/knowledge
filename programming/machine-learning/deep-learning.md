@@ -7,7 +7,7 @@ This is "the book" https://www.deeplearningbook.org/
 Deep learning neural networks are loosely based on neurons in biological brains,
 but are developed my mathematics and statistics.
 
-A perceptron is on "neuron" with input from others, with weights, and an activation function 
+A perceptron is on "neuron" with input from others, with weights, and an activation function
 to control the output.
 
 ### Perceptron rule

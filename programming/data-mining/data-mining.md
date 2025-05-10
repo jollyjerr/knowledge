@@ -88,3 +88,12 @@ in an application.
 
 - Diverse data = diverse knowledge
 - Quality data = quality knowledge
+
+## Technique
+
+- Frequent Pattern Analysis
+- Classification
+- Prediction
+- Clustering
+- Anomaly Detection
+- Trend Analysis
