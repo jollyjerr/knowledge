@@ -47,3 +47,30 @@ Called MLP - can approximate any nonlinear function.
 Use chain rule to update inner layers from error.
 
 Real implementations use the "computation graph" with "autodiff".
+
+## Optimization Methods
+
+Find a set of optimized weights which minimize the error (or loss function) at
+the output.
+
+Hyper parameter tune the learning rate.
+
+### Stochastic Gradient Descent (SGD)
+
+Use mini batches of data to each weight to update it's calculation. Mini batches
+should be reasonable size to achieve best training efficiency.
+
+Estimate gradient with SGD gradient formula from batch and corresponding
+targets.
+
+Introduces problem: "learning rate scheduling".
+
+Adding the momentum "moving average" can make it faster. Makes learning converge
+on optimum faster.
+
+Read `keras` documentation on SGD for more information on specific
+implementation.
+
+Nestrov momentum does early correction on gradient.
+
+Also check out learning rate normalization techniques like Adadelta.
