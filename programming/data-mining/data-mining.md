@@ -97,3 +97,37 @@ in an application.
 - Clustering
 - Anomaly Detection
 - Trend Analysis
+
+### FPA
+
+`Apriori` algorithm used to find frequent sets and patterns using a data set and
+mean support threshold.
+
+Mean support multiplied by number of rows is lower bound for threshold number of
+occurrences. List individuals, filter with bound, list pairs, filter, etc....
+
+To handle big data, try partitioning, sampling, transaction reduction (skip if
+current does not contain known frequent pattern).
+
+Support counting using hash-tree. Use subset function for item specific
+branching.
+
+Also consider vertical data format, key is item set and value is transactions
+that contain item set.
+
+`FP-growth` algorithm - if `abc` is frequent and d is frequent in set of `abc`, then
+`abcd` is frequent.
+
+### Association Rule
+
+- Given a list of transactions, item sets X, Y
+- Association rule: `X => Y`
+- Support: `P(X U Y)`
+- Confidence: `P(Y | X)`
+
+To measure correlation of numerical attributes, use correlation coefficient. To
+measure the correlation of nominal attributes, use chi-squared test.
+
+```
+lift(A, B) = P(A U B) / P(A)P(B)
+```
