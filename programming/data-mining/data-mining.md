@@ -98,6 +98,8 @@ in an application.
 - Anomaly Detection
 - Trend Analysis
 
+[outlier analysis](./outlier-analysis.md)
+
 ### FPA
 
 `Apriori` algorithm used to find frequent sets and patterns using a data set and
