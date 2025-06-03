@@ -19,7 +19,7 @@ Anomalous data points can be errors, but are potentially significant events.
 
 ## Detection Methods
 
-- Groundtruth label (vetted cases of anomalous activity)
+- Ground truth label (vetted cases of anomalous activity)
 
 In real world setting you may use semi-supervised learning.
 
