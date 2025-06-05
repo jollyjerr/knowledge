@@ -99,6 +99,7 @@ in an application.
 - Trend Analysis
 
 [outlier analysis](./outlier-analysis.md)
+[complex data types](./complex-data-types.md)
 
 ### FPA
 

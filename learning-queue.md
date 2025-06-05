@@ -1,0 +1,2 @@
+- lamport clock
+- shadow devices

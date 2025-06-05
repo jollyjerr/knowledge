@@ -50,3 +50,35 @@ anomalous. Typically have multiple clusters for normal and multiple clusters for
 abnormal.
 
 This approach is fairly general to different applications.
+
+- Distance based (absolute proximity like `kNN`)
+- Density based (relative proximity)
+
+#### Semi supervised Methods
+
+Partial labels of normal and abnormal cases, use a combination of clustering and
+classification.
+
+- normal: large clusters and/or normal cases
+- abnormal: small clusters and/or abnormal cases
+
+### Contextual Anomaly
+
+Context features to domain impact behavior of data
+
+- not an abnormal data point if low wind day has low wind power output
+
+You can identify context with frequent pattern analysis, subspace approaches, or
+domain-specific approaches.
+
+Once you have context identified, you can transition back to thinking about it
+as a global anomaly detection problem.
+
+### Collective Anomaly
+
+A group of objects deviate from the norm.
+
+Identify structural relationships among objects.
+
+Group related objects into a "super object", and transition back to global
+outlier detection.
