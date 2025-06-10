@@ -43,3 +43,13 @@ Special type of graph with users, groups, content, and interactions.
 - topic modeling, sentiment analysis
 - information diffusion, recommendation
 - cyber-safety: malicious accounts and behaviors
+
+### Web Data
+
+- use all methods: text, image, audio, video, links
+
+Build search engines, recommender systems, knowledge graphs
+
+Relates to data fusion, where you cluster multi modal data.
+
+Check out KDD conference for state of the art.
