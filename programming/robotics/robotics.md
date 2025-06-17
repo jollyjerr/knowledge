@@ -18,3 +18,4 @@ https://github.com/Introduction-to-Autonomous-Robots/Introduction-to-Autonomous-
 - [coordinate system and degrees of freedom](./dof.md)
 - [mapping](./mapping.md)
 - [trajectory](./trajectory.md)
+- [graph traversal](./graph-traversal.md)
