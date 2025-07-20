@@ -25,7 +25,7 @@ Four different views:
 - abstract
 - introduction
 - related work
-- proposed work 
+- proposed work
 - evaluation
 - discussion
 - conclusion
