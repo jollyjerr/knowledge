@@ -20,3 +20,4 @@ https://github.com/Introduction-to-Autonomous-Robots/Introduction-to-Autonomous-
 - [trajectory](./trajectory.md)
 - [graph traversal](./graph-traversal.md)
 - [randomized planning](./randomized-planning.md)
+- [behavior trees](./behavior-trees.md)
